@@ -1,0 +1,23 @@
+{
+  "week_start": "2025-10-13",
+  "week_end": "2025-10-19",
+  "title": "Weekly Product Pulse: October 13-19, 2025",
+  "overview": "This week's pulse highlights significant concerns regarding application stability and performance. Users frequently report critical glitches, including crashes, freezing, and unplaced orders, particularly during peak trading times. These technical issues are directly impacting user trust and causing financial losses.",
+  "themes": [
+    {
+      "name": "Slow, Glitches",
+      "summary": "User sentiment is highly negative due to recurring app crashes, freezing, and order execution failures, leading to significant financial frustration and missed opportunities."
+    }
+  ],
+  "quotes": [
+    "App crashes during procedures or even after completing all procedures my order is not placed. (Slow, Glitches)",
+    "Ditches you at the very moment of need. (Slow, Glitches)",
+    "The app hangs right at the moment when you need quick actions. (Slow, Glitches)"
+  ],
+  "actions": [
+    "Prioritize a deep dive into logs and crash reports specifically related to sell order execution failures.",
+    "Implement immediate performance optimizations to mitigate app freezing and hanging during critical market hours.",
+    "Initiate a dedicated sprint to investigate and resolve recurring application crashes across core trading procedures."
+  ],
+  "word_count": 148
+}

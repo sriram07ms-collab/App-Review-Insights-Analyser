@@ -1,0 +1,20 @@
+[
+  {
+    "review_id": "724048f6-ff86-4ea6-946d-3ecf993b7274",
+    "title": "Adi Sharma",
+    "text": "Best experience 👌 overall! But I faced one issue — I bought 3 stocks and tried paying via Fampay UPI but the payment didn’t go through. Also, the brokerage charges feel a bit high — even when I get ₹2–₹3 profit, ₹10–₹20 gets deducted, which is frustrating. Please fix this issue, otherwise Groww is really one of the best and most user-friendly trading apps! 🔥",
+    "rating": 5,
+    "date": "2025-10-05T00:00:00+00:00",
+    "week_start_date": "2025-09-29",
+    "week_end_date": "2025-10-05"
+  },
+  {
+    "review_id": "a462244c-b4d5-45a4-8fe4-31041da25417",
+    "title": "Karan Govindani",
+    "text": "I regret choosing this platform. While the user interface looks polished and onboarding was smooth, the app fails spectacularly at the absolute most critical time for any trader: market opening. Every single morning, without fail, as the clock hits 9:15 AM (or within the first five crucial minutes), the servers completely seize up. The app becomes unresponsive, trades won't execute, and worst of all, I can't exit positions. This isn't a minor glitch; it is a fundamental flaw",
+    "rating": 1,
+    "date": "2025-10-03T00:00:00+00:00",
+    "week_start_date": "2025-09-29",
+    "week_end_date": "2025-10-05"
+  }
+]

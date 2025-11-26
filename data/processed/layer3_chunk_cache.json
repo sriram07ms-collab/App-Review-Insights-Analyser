@@ -1,0 +1,539 @@
+{
+  "782af5e77f4f57038117899d7f6cb3202a2cebe86531b212d0ab6182f3761166": {
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "key_points": [
+      "Balance amounts are not accurately reflected in the wallet immediately after BTST commodity sales, pending settlement.",
+      "Realized profits are often reported as less than the profit target set by the user.",
+      "Financial data, such as values in Premium, OI chart, and positions, shows inconsistencies across different sections."
+    ],
+    "candidate_quotes": [
+      "doesn't show balance properly, if you do BTST in commodity, and you sell it next day.. so your balance amount wouldn't ahow in your wallet untill settmnt",
+      "Doesn't protest profit. like i set my profit at 5000, if it hit the target.. it never be accurate. it's always hit lesser than safe profit position..",
+      "The data is showing different wverytime,for example, in Premium it was showing 100 but in oi chart it was showing 90 and in positions it was showing 98..."
+    ]
+  },
+  "51bf80cb8fcaaf732249d23e728238862fa3e8944f86bc4ce9a4276c06838821": {
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "key_points": [
+      "An application error prevented a transaction (intraday to delivery conversion) despite the app indicating sufficient balance.",
+      "Customer support provided information that contradicted the application's initial message regarding funds.",
+      "Funds were deducted for an unsuccessful conversion due to the application error.",
+      "Evidence provided to customer support (screenshots) did not result in a resolution or response."
+    ],
+    "candidate_quotes": [
+      "they deducted the roundoff money.",
+      "they said, I didn't have sufficient money for the convertion. that is, we need to pay for their errors too.",
+      "I had screenshots but no reply, nothing...."
+    ]
+  },
+  "a25571910445244e306b6b8ce05906267b6d67f973206d7d25f43161bad9f8c6": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "The app is reported to be buggy, frequently preventing users from placing orders.",
+      "Order placement, particularly for intraday trades, is significantly delayed.",
+      "Orders can remain pending for extended periods, sometimes up to 20 minutes.",
+      "Users experience an inability to place new orders even after the market has opened for a considerable time, leading to missed profit opportunities."
+    ],
+    "candidate_quotes": [
+      "buggy like hell every other day cannot place orders.",
+      "place order really late and sometimes even after 20 mins order pending",
+      "already miss on profits."
+    ]
+  },
+  "401bbd871eacbcf0364eff4ad42a3f3d7cdd54c5dba51e6860881b9f65667725": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "IPO application process is reported to get stuck, failing to generate numbers or send mandates.",
+      "Executed buy/sell orders for options do not appear immediately in positions, leading to delays.",
+      "The app is generally perceived as slow, with specific functionality issues noted in the commodity section.",
+      "Users resort to canceling and reapplying for IPO submissions due to initial failures."
+    ],
+    "candidate_quotes": [
+      "application process gets stuck on 'sending application to exchange'",
+      "executed orders don't appear immediately in the positions . it takes a lot of time.",
+      "Very slow app."
+    ]
+  },
+  "c0614b7faedff56d43f1dc4964e9861801219f02a63d38b114344c14ca3f61ec": {
+    "theme_id": "slow",
+    "theme_name": "Slow",
+    "key_points": [
+      "Users report being unable to open the app.",
+      "An 'OOPS, SOMETHING WENT WRONG' error message is frequently displayed.",
+      "Troubleshooting steps like updating and reinstallation provide only temporary resolution.",
+      "The issue recurs even with good internet connectivity, suggesting an app-specific problem."
+    ],
+    "candidate_quotes": [
+      "unable to open the app",
+      "keep getting the error 'OOPS, SOMETHING WENT WRONG.'",
+      "facing the same error again"
+    ]
+  },
+  "cfc5eb6f0b5d9f65ad55003da3f105b759e384c7711e7e4f5f7422318cc011f8": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "The app's UI is recognized for its cleanliness.",
+      "The user interface is considered beginner-friendly.",
+      "There is a desire for new features like stock recommendations for various investment horizons.",
+      "Users seek expert analysis, insights, and curated stock lists to aid decision-making."
+    ],
+    "candidate_quotes": [
+      "The UI is clean, and it's beginner-friendly.",
+      "one feature that could take it to the next level would be stock recommendations",
+      "It would be super helpful to get insights, expert analysis, or even curated stock lists"
+    ]
+  },
+  "46e86797e080578d47f15f262f061bb1c7ef708f3a6b072ab49b29a3ad9b4188": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users frequently encounter errors preventing the successful execution of sell orders.",
+      "The application crashes during critical trading procedures, affecting both buying and selling.",
+      "Orders are often not placed even after users complete the necessary steps within the app.",
+      "The app experiences freezing and hanging issues, particularly during market opening hours.",
+      "These technical problems have resulted in users missing profit opportunities or incurring financial losses."
+    ],
+    "candidate_quotes": [
+      "App crashes during procedures or even after completing all procedures my order is not placed.",
+      "Ditches you at the very moment of need.",
+      "The app hangs right at the moment when you need quick actions."
+    ]
+  },
+  "6256766c300b4270c9749812c55816af4c7e30e9693bb3544f73e5c670ebc2f4": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users frequently encounter 'OOPS, SOMETHING WENT WRONG' errors, preventing app access despite troubleshooting.",
+      "The IPO application process is consistently slow and gets stuck, failing to generate numbers or send mandates.",
+      "Order execution and display in the commodity and options sections are delayed, with executed orders not appearing immediately.",
+      "The app's overall performance and interface have deteriorated, leading to a very slow user experience."
+    ],
+    "candidate_quotes": [
+      "OOPS, SOMETHING WENT WRONG.",
+      "applying for an IPO is frustrating. The application process gets stuck on 'sending application to exchange,' failing to generate a number or send a mandate.",
+      "While putting buy/sell orders in options the executed orders don't appear immediately in the positions . it takes a lot of time. Very slow app."
+    ]
+  },
+  "9c4c7159fe8f265ae2aa6da9a30d5404a8506cb3d7f051995898fbc7ea23345a": {
+    "theme_id": "slow",
+    "theme_name": "Slow",
+    "key_points": [
+      "Users report recurring issues with the app failing to open, displaying an 'OOPS, SOMETHING WENT WRONG' error.",
+      "App performance problems, including slowness, persist even after updates and reinstallation, and are not related to internet bandwidth.",
+      "Executed orders in options trading experience significant delays, not appearing immediately in user positions.",
+      "General app slowness and poor functionality are noted, specifically impacting the commodity section."
+    ],
+    "candidate_quotes": [
+      "I’ve been unable to open the app and keep getting the error 'OOPS, SOMETHING WENT WRONG.'",
+      "While putting buy/sell orders in options the executed orders don't appear immediately in the positions . it takes a lot of time.",
+      "Very slow app."
+    ]
+  },
+  "0d6ea7293dd85a347ad4bffa36638dd48de255dd1d636b3f669761a6326d286f": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "The IPO application process is frequently reported as frustrating.",
+      "Applications often get stuck during submission, failing to generate numbers or send mandates.",
+      "The platform's IPO application speed is noted as slower compared to other services.",
+      "Users resort to repeated cancellations and reapplications, leading to stress on critical submission days."
+    ],
+    "candidate_quotes": [
+      "applying for an IPO is frustrating.",
+      "application process gets stuck on 'sending application to exchange,' failing to generate a number or send a mandate.",
+      "often have to cancel and reapply to get my application submitted, which is especially stressful on the final day."
+    ]
+  },
+  "e7d11c07bc67be5238ce56d1ebc678cb5bf7c62919ce888344268d7b92775ec6": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report delays in the activation of financial market segments.",
+      "Technical issues prevent access to specific features, such as F&O segment activation.",
+      "Recent updates have introduced bugs that hinder content viewing."
+    ],
+    "candidate_quotes": [
+      "technical team/system is unable to activate the F&O segment since last 7 days.",
+      "i cannot view the ipo related videos now with the latest update. Please fix the bug."
+    ]
+  },
+  "d88ac212a7cadad0abe3cb3c62b4e77fff26646c9d970e3104cc19003d9c690c": {
+    "theme_id": "slow",
+    "theme_name": "Slow",
+    "key_points": [
+      "Users report instances where the system experiences unresponsiveness.",
+      "Specific elements like 'price' and 'chart' are noted to get stuck.",
+      "There is an expressed need for prompt resolution of these performance issues."
+    ],
+    "candidate_quotes": [
+      "price and chart stuck some time",
+      "please solve it asap"
+    ]
+  },
+  "02449b1e9b055e8a513f69c6d6b246cc8d9e0b6336826c0df5cdd7dd09651480": {
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "key_points": [
+      "The application charges users for specific account updates.",
+      "Updating an email address is identified as an operation incurring a fee.",
+      "Users are encountering unexpected costs for profile management tasks."
+    ],
+    "candidate_quotes": [
+      "charged extra money for updating your email id."
+    ]
+  },
+  "6330902997756ce2fb3ecaba7861e4660b99a2a0adf03d8a6dde9e25f0c0be9a": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Users desire the functionality to use basket orders for both intraday and delivery.",
+      "A preference for the previous version of the option chain interface has been expressed.",
+      "There is a suggestion to integrate a specific Stop Loss (SL) and Take Profit (TP) placement method from one chart type to the normal chart.",
+      "Some users noted a discrepancy between video thumbnails and the actual video content."
+    ],
+    "candidate_quotes": [
+      "please basket order ko intraday aur delivery dono me kar do i requested you",
+      "पहले वाला option chain अच्छा था",
+      "jo groww chart ka sl or tp lagane ka tarika hai wo normal chart par lao sir"
+    ]
+  },
+  "8ebe51aff07e6e8cb4793ca0341b506d31138e6877d315849931e89911fe8ceb": {
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "key_points": [
+      "Customers frequently report high brokerage charges.",
+      "Concerns are raised about hidden charges impacting transaction costs.",
+      "Users note an increase in per-trade charges due to newly added external fees.",
+      "Instances where funds are blocked during buy/sell transactions due to charges have been reported.",
+      "Specific charges, such as DP charges and various brokerage fees, are perceived as substantial."
+    ],
+    "candidate_quotes": [
+      "one of the worst app having highest brokerage charges",
+      "lot of hidden charges",
+      "they block your amount when you buy or sell"
+    ]
+  },
+  "71f1201e3fc0dffdbb7deceea534d241306c7ef0cd10d01359730e5609cdba4c": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report experiencing significant, though not common, glitches.",
+      "Order execution, particularly for 'exit all position' features or simple sell orders, faces delays or failures.",
+      "Delays in order processing can result in orders remaining in a queue, potentially leading to missed opportunities or financial losses."
+    ],
+    "candidate_quotes": [
+      "sometimes gets glitches not common glitch but the bigger one",
+      "'exit all position' features or simple sell orders do not work immediately and remain in a queue",
+      "leading to missed opportunities or losses"
+    ]
+  },
+  "3afcb88284e9b6c3e9c58ade5d2ec5ece6a57aec833385971254b941e4230342": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Many users find the application to be user-friendly and easy for investments.",
+      "A specific request was made to update the drag-and-drop system to prevent missed trades.",
+      "An issue was reported regarding the non-display of OI data."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "so easy n grateful",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai"
+    ]
+  },
+  "7b2cc237f8aaa10af0ff3e297401496457c6f87be45bb2010a4cae8e469ec379": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users are reporting issues with specific functionalities, such as investing in Digi Gold.",
+      "The application has been noted as non-functional for extended periods, up to several days.",
+      "Some users are encountering difficulties opening the app or logging in, particularly with Gmail accounts."
+    ],
+    "candidate_quotes": [
+      "Unable to invest in Digi Gold.",
+      "Not working since last 5 days",
+      "App is not opening. Unable to login through Gmail account."
+    ]
+  },
+  "61771c4996bdc7d73c996be3d03e6a7e890bf796343533ceaefaa6803e708399": {
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "key_points": [
+      "Autopay functionality is reported as not working.",
+      "Users experienced difficulty or failure in setting up Autopay.",
+      "Withdrawal processing times are considered excessively long.",
+      "Long withdrawal times are causing issues for users with urgent needs."
+    ],
+    "candidate_quotes": [
+      "Autopay is not working in my account i tried many to set Autopay but it was unsuccessful",
+      "Withdrawal time is too long, It's an emergency right now and we have to wait for 4 days.😡"
+    ]
+  },
+  "0af05c7649b573b188cd353e610e6b7a15bd84e09177f013c197675d4e1f4a85": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report occasional significant glitches affecting platform functionality.",
+      "Order execution features, including sell orders and 'exit all position,' experience delays or failures, potentially causing financial losses.",
+      "The application has encountered launching issues, preventing user access for multiple days.",
+      "Inaccuracies in content display, such as video thumbnails not matching actual video content, have been noted."
+    ],
+    "candidate_quotes": [
+      "sometimes gets glitches not common glitch but the bigger one",
+      "Order Execution Delays/Failures: features or simple sell orders do not work immediately and remain in a queue, leading to missed opportunities or losses.",
+      "It is not launching. For the last few days..."
+    ]
+  },
+  "8baf292a17003623fbaecb45cbcfe254f4087abedf30998cd28b1cd8687f722b": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Users generally find the application very user-friendly and easy to navigate for investments and trading.",
+      "Positive feedback frequently mentions the app's ease of use for new buyers and general investment activities.",
+      "A specific area for improvement noted is the drag and drop system, with a request to update it.",
+      "Concerns were raised regarding manual input processes, suggesting they can lead to missed trading opportunities."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "so easy n grateful",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai"
+    ]
+  },
+  "11238a33f7b27f3353e8c934605770723cce19654013c6f5a9212e9715c82853": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report critical app malfunctions, including complete non-functionality and inability to open.",
+      "Specific features like Digi Gold investment and data display are not working as expected.",
+      "Login issues, particularly through Gmail accounts, are being experienced by users.",
+      "Some issues have persisted for an extended period, up to five days."
+    ],
+    "candidate_quotes": [
+      "Not working since last 5 days",
+      "App is not opening.",
+      "I am unable to invest in Digi Gold."
+    ]
+  },
+  "fb47cad483e183966b4693cc5a29d02b91da446f45a17aed8f4434b9ca70929d": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users are experiencing intermittent freezing of price and chart data.",
+      "A bug introduced with the latest update prevents viewing of IPO-related videos."
+    ],
+    "candidate_quotes": [
+      "price and chart stuck some time",
+      "cannot view the ipo related videos now with the latest update. Please fix the bug."
+    ]
+  },
+  "8f03153c6501b70841856c95c02250a9380b644ac89f8d7677039116b5af3fcb": {
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "key_points": [
+      "Users experience delays in activating specific account segments (e.g., F&O).",
+      "Technical teams/systems are cited as unable to resolve activation issues.",
+      "Problems can persist for several days without resolution.",
+      "Experienced users meeting eligibility criteria still encounter technical activation hurdles."
+    ],
+    "candidate_quotes": [
+      "their technical team/system is unable to activate the F&O segment since last 7 days."
+    ]
+  },
+  "ae6c9aa6fae50ac4094a3e943b530be031e74793ef77e0827a9f4ec7ad7dcbd8": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Many users find the application to be user-friendly, particularly for new investors.",
+      "The app is frequently praised for its ease of trading and investing.",
+      "There is a specific request for improvements to the drag-and-drop system, as current manual input methods can lead to missed trades."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "so easy n grateful",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai"
+    ]
+  },
+  "b0a8646cb26639ffe001de316e4acf28483efaa4aaa72041958ff8f4475bb1ea": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users are experiencing critical app functionality issues, including the app not opening.",
+      "Login failures are preventing access for some users.",
+      "Specific features, such as investment in Digi Gold, are reported as inoperable.",
+      "Data display problems have been identified, indicating incomplete information.",
+      "Some issues are persistent, with reports of problems lasting several days."
+    ],
+    "candidate_quotes": [
+      "Not working since last 5 days",
+      "App is not opening.",
+      "unable to invest in Digi Gold."
+    ]
+  },
+  "349dd4fd0472c3eb289a904c83eb35c24de47644a5c62f4bbcc7cbb54eb3337e": {
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "key_points": [
+      "Users report issues with Autopay functionality, stating it is unsuccessful despite multiple attempts.",
+      "Withdrawal processing times are criticized for being too long, with a specific mention of a 4-day waiting period.",
+      "A desire for maximum benefits related to payment features or rewards is expressed by a user."
+    ],
+    "candidate_quotes": [
+      "Autopay is not working in my account i tried many to set Autopay but it was unsuccessful",
+      "Withdrawal time is too long, It's an emergency right now and we have to wait for 4 days.😡",
+      "Give maximum benefits"
+    ]
+  },
+  "5e313e732d529efc9657b0ff5ff996e08ef2c11e0f02b8b6cb932eaba0ebd7d4": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Requests for enhanced order functionality, such as integrating intraday and delivery options for basket orders.",
+      "Feedback indicates a discrepancy between video thumbnails and the actual video content.",
+      "Users have expressed a preference for the previous version of the option chain interface.",
+      "There are suggestions to standardize chart features, like Stop Loss and Take Profit placement, across different chart types."
+    ],
+    "candidate_quotes": [
+      "please basket order ko intraday aur delivery dono me kar do i requested you",
+      "the video thumbnail had a women in it but the women didn't showed up in the video",
+      "पहले वाला option chain अच्छा था"
+    ]
+  },
+  "79ef65b4b6e8df8cbc4151c51bbbe30780856c67049dc1cfb24a50c090b99fad": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "The application is frequently described as user-friendly and easy for investments, especially noted as beneficial for new users.",
+      "Specific feedback highlights a need for improvements in system functionality, such as implementing a drag-and-drop feature to prevent missed trades due to manual input.",
+      "A point of concern raised includes the absence of certain data displays, specifically OI data."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "so easy n grateful",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai"
+    ]
+  },
+  "06ea8cf5161b2ca8bf084adc373ab4b16bf455ee9fc994da0ff11829c22f8fb6": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report experiencing significant glitches, not merely minor ones.",
+      "Order execution features, such as 'exit all position' and simple sell orders, can experience delays or failures, leading to missed opportunities or losses.",
+      "There are instances of the application failing to launch or users being unable to log in for extended periods."
+    ],
+    "candidate_quotes": [
+      "sometimes gets glitches not common glitch but the bigger one",
+      "Order Execution Delays/Failures: 'exit all position' features or simple sell orders do not work immediately and remain in a queue, leading to missed opportunities or losses.",
+      "It is not launching. For the last few days..."
+    ]
+  },
+  "4796c74030d9e40194435137feaf5d2226e67fb569d2bde0ceb75b59aa636db9": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report issues with specific app functionalities, such as investing in Digi Gold.",
+      "The application has been reported as non-functional for extended periods, up to 5 days.",
+      "Instances of users being unable to open the app or log in have been noted.",
+      "These operational failures contribute to a highly negative user experience."
+    ],
+    "candidate_quotes": [
+      "I am unable to invest in Digi Gold. Please solve the problem.",
+      "Not working since last 5 days",
+      "App is not opening. I am not able to login through Gmail account."
+    ]
+  },
+  "0049473081d17b98c50716c04e0b49aa86b617b0e455a642c9753785a8f18e9e": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report the application failing to open or operate.",
+      "Login functionality is experiencing issues for some users.",
+      "Specific features within the app, such as investment options, are reported as inaccessible.",
+      "Some users experience prolonged periods where the app is non-functional."
+    ],
+    "candidate_quotes": [
+      "Not working since last 5 days.",
+      "App is not opening. I am not able to login.",
+      "I am unable to invest in Digi Gold."
+    ]
+  },
+  "de5610821bb24fe32c388c515d276d7aac176c8537d222036520224adb57c4f6": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "The application is frequently described as user-friendly, particularly for new users.",
+      "Users generally find the app easy to use for trading and investing.",
+      "Feedback indicates some users experience issues with specific data displays.",
+      "One review suggests the app does not adequately assist with stock selection."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "easy to trade or invest",
+      "oi data show nhi hota hai"
+    ]
+  },
+  "6e9d74402c895691df51898b03c3c74039319fe5d994c4c6c5ad668ae79178e8": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "Users request expanded functionality for basket orders to include both intraday and delivery options.",
+      "There is a preference for the previous version of the option chain interface.",
+      "Feedback indicates a desire for consistency in applying Stop Loss (SL) and Take Profit (TP) features across different charting interfaces.",
+      "Some users expressed a need for better accessibility to investment presentations and quarterly result PDFs."
+    ],
+    "candidate_quotes": [
+      "Please make basket order available for both intraday and delivery.",
+      "The previous option chain was better.",
+      "Bring the method of applying SL or TP from the Groww chart to the normal chart."
+    ]
+  },
+  "2858d08cd0f4ab46b1f280a4e72a6e5db8a5f1fb859b46701a34f2e0c77691ec": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "A significant portion of feedback highlights the app's user-friendliness and ease of use for investing.",
+      "There is a specific request to enhance user interaction, such as implementing a drag-and-drop system for setting targets to prevent missed trades.",
+      "Some users report missing data displays, such as OI data, which impacts their ability to make informed decisions.",
+      "Overall, the app receives positive comments for its general design and accessibility for trading and investment."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai",
+      "oi data show nhi hota hai"
+    ]
+  },
+  "253e05a59b674a9bb308964c59a32f4acb50b311b8e3e02f9ce35f66c041224e": {
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "key_points": [
+      "Users report significant app non-functionality, with some experiencing issues for multiple days.",
+      "Specific features, such as Digi Gold investment, are inaccessible to users.",
+      "Login issues are preventing some users from accessing the application.",
+      "Data display problems within the app have been reported."
+    ],
+    "candidate_quotes": [
+      "Not working since last 5 days",
+      "App is not opening.",
+      "I am unable to invest in Digi Gold."
+    ]
+  },
+  "19313592bae1a8b9b6414fde8d220fab5d7d089195d4921e8a732e8bedd0f5d2": {
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "key_points": [
+      "The application is widely regarded as user-friendly and easy to use for trading and investments.",
+      "New users particularly appreciate the app's intuitive interface.",
+      "Feedback highlights a specific issue with the drag-and-drop system, noting that manual input can lead to missed trades.",
+      "One review indicates a lack of assistance or guidance in selecting appropriate stocks."
+    ],
+    "candidate_quotes": [
+      "very user friendly app for newly buyers.",
+      "pls update drag and drop system in target and stop manual type karne jaye hai to trade miss ho jata hai",
+      "easy to trade or invest"
+    ]
+  }
+}

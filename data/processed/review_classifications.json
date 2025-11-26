@@ -1,0 +1,212 @@
+[
+  {
+    "review_id": "6740d4c1-8ae1-4b59-a6ad-64d5ed963560",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "The review explicitly complains about \"worse customer support services.\""
+  },
+  {
+    "review_id": "b1d36f71-b682-486d-be72-2d434e17e839",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The user is requesting a new feature for order placement, which relates to the app's functionality and user experience."
+  },
+  {
+    "review_id": "77213b8e-3a0f-4457-a937-18db27e578e0",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review praises the app as \"nice,\" broadly implying a positive user experience."
+  },
+  {
+    "review_id": "2f79c05a-71e7-41a4-9553-e887ae789c3a",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review expresses general satisfaction with the app, implying a positive user experience."
+  },
+  {
+    "review_id": "aabd4368-d56b-4f22-acbf-d46a210ae715",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review expresses general satisfaction with the app, implying a positive user experience."
+  },
+  {
+    "review_id": "d78a0279-8e44-41a3-9e52-438fcd6faba6",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The review explicitly mentions that the app \"sometimes gets glitches,\" indicating a technical issue."
+  },
+  {
+    "review_id": "b6709893-28ea-4153-b20c-a6e96ad7f639",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The review complains about \"highest brokerage charges,\" which is a financial aspect related to transactions within the app."
+  },
+  {
+    "review_id": "feaf3297-1f26-483d-b95e-ec18ebc2e240",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The review describes \"Order Execution Delays/Failures\" and orders not working immediately, which aligns with glitches and slow performance."
+  },
+  {
+    "review_id": "bf044dcf-9e06-41f6-977f-c067d4cd8fd1",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The review discusses high and unexpected charges, including brokerage and DP charges, which directly relate to financial transactions."
+  },
+  {
+    "review_id": "d51b9c8e-9e5a-4779-9233-0fcdb7e2cb2c",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The user suggests adding a disclaimer, which relates to the clarity and presentation of information within the app's user experience."
+  },
+  {
+    "review_id": "95be0268-660e-4c9e-86b3-f34de5d08134",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review highlights missing features and content, such as investor presentations and SLBM facility, which impact the app's functionality and user experience."
+  },
+  {
+    "review_id": "f75ee013-fea0-4b9f-8b19-21c6c1b78782",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The user expresses dissatisfaction with a change in the option chain interface, indicating feedback on the app's design and usability."
+  },
+  {
+    "review_id": "d5245ecb-8aac-45f4-b627-477c286abb11",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The review reports that the price and chart get stuck, which is a malfunction or bug in the app's real-time data display."
+  },
+  {
+    "review_id": "4c27b521-13dc-43b9-a789-fd9fd61efae8",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "The user's F&O segment remains unactivated for an extended period despite involvement from the technical team, indicating a failure in support resolution."
+  },
+  {
+    "review_id": "081aad37-8c22-4375-a3e3-ee0b94c380c6",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The user explicitly states they cannot view videos after an update and asks to fix the bug, clearly indicating a software defect."
+  },
+  {
+    "review_id": "cafc0148-5334-459a-bbe4-24f17fa51c29",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The review mentions being charged extra money for updating an email ID, which is an issue related to unexpected financial transactions."
+  },
+  {
+    "review_id": "d285b5c7-cc44-4e96-83a7-18c546dfe40d",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review discusses issues with the app's display and functionality in landscape mode on tablets, which falls under user interface and experience."
+  },
+  {
+    "review_id": "852d1b14-2085-43be-9314-f9c88d9821ec",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The phrase \"Quality assurance\" can imply a need for better testing to prevent functional defects or glitches in the application."
+  },
+  {
+    "review_id": "ebe6a153-e5bc-46da-b296-5ff585c8d20c",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The positive sentiment \"very nice App\" suggests satisfaction with the overall user experience and interface."
+  },
+  {
+    "review_id": "08aba12a-e3b2-44f2-abab-6fa021fa1f8e",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The user is unable to perform a core function, investing in Digi Gold, which indicates a functional problem or bug."
+  },
+  {
+    "review_id": "2e2924cb-37d5-44e5-8ef0-97218c6e61cb",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review explicitly praises the app as \"very user friendly,\" which directly relates to its user interface and experience."
+  },
+  {
+    "review_id": "0e3d5691-dfa8-43a8-b6cf-53bb6dc07be6",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The statement \"Not working\" indicates a critical functional failure or bug preventing the app from operating."
+  },
+  {
+    "review_id": "1589ef14-3d42-4fc9-91d4-0432a9676bac",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The extreme negative sentiment \"please stop to this app\" suggests severe underlying functional problems or glitches making the app unusable."
+  },
+  {
+    "review_id": "3c19692b-7c8e-43fc-bc28-6e74dfb3b824",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The user reports critical functional failures, specifically the app not opening and inability to log in, which are indicative of glitches."
+  },
+  {
+    "review_id": "47f162fd-b062-4668-984e-e43f3ae8973a",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review requests an update to the drag and drop system, indicating a desire for improved user interface functionality."
+  },
+  {
+    "review_id": "00c574fe-3382-4d85-a8cb-ad7890065630",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The user reports an issue with the Autopay feature not working, which is directly related to payment functionality."
+  },
+  {
+    "review_id": "a8851d34-5a8a-41c0-97c9-2ab0e6eb8108",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "The review explicitly praises the good support provided by the team."
+  },
+  {
+    "review_id": "fd7e2282-0671-4d5b-bf60-9ecdeaf38e3c",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review provides a general positive sentiment about the application, which can be broadly categorized under overall user experience."
+  },
+  {
+    "review_id": "0e94e752-0732-499c-a893-3f132fef163d",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The review highlights a significant delay in withdrawal time, which is a critical issue related to financial transactions and payments."
+  },
+  {
+    "review_id": "2f7dc60f-308b-4342-ac93-7d9decdb97e4",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "The review indicates a lack of helpful functionality for stock selection, which impacts the overall user experience and utility of the application."
+  },
+  {
+    "review_id": "6fcd47aa-8fe6-41a2-a85f-3f5d5f1d4f4a",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The review reports that 'OI data' is not showing, indicating a functional glitch or missing information within the application."
+  },
+  {
+    "review_id": "c85e1224-b4ed-4b27-8f67-9af958854ea2",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "Default assignment (classification failed)"
+  },
+  {
+    "review_id": "6442b016-ca2b-42d0-8337-3ad324c6ae39",
+    "theme_id": "payments_statements",
+    "theme_name": "Payments/Statements",
+    "reason": "The review discusses unexpected and increased charges per trade, which relates to payment discrepancies."
+  },
+  {
+    "review_id": "8a27ce43-a7fb-43b2-a88a-f3dff45b100c",
+    "theme_id": "glitches",
+    "theme_name": "Slow, Glitches",
+    "reason": "The review states the app is \"not launching,\" indicating a critical malfunction or operational failure."
+  },
+  {
+    "review_id": "921c4412-f45f-4e8c-826b-81d867f58308",
+    "theme_id": "ui_ux",
+    "theme_name": "UI/UX",
+    "reason": "Default assignment (classification failed)"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "review_id": "d07786b1-15af-456e-87d0-414de009e168",
+    "title": "Sukesh Shetty",
+    "text": "Super impressed! The documentation process was incredibly quick and effortless. All my mutual funds were auto-loaded from the central repository, requiring zero manual effort. The best part was that it even retrieved some of my old mutual funds that I no longer had records of. I also raised a redemption request, which was processed swiftly. If the payout is completed within the estimated timeline, this would be an outstanding overall experience.",
+    "rating": 5,
+    "date": "2025-11-02T00:00:00+00:00",
+    "week_start_date": "2025-10-27",
+    "week_end_date": "2025-11-02"
+  },
+  {
+    "review_id": "ed27b3b5-ff2d-4911-8f57-f880d662838e",
+    "title": "43 Noah Jehiel Vaz",
+    "text": "Groww is one of the smoothest and easiest apps for beginners in trading and investing. The interface is clean, buying and selling stocks is simple, and GTT orders make it beginner-friendly. However, the app still needs a few advanced features like stop-loss / take-profit for delivery trades and trailing stop-loss options for swing traders. Adding those would make Groww perfect for both new and active users. Overall, it’s great for starting out, learning, and building a long-term portfolio",
+    "rating": 4,
+    "date": "2025-10-30T00:00:00+00:00",
+    "week_start_date": "2025-10-27",
+    "week_end_date": "2025-11-02"
+  }
+]

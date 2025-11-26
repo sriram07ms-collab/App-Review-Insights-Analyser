@@ -1,0 +1,31 @@
+{
+  "week_start": "2025-09-15",
+  "week_end": "2025-09-21",
+  "title": "Product Pulse: Performance & User Experience Update (Sep 15-21)",
+  "overview": "This week's pulse highlights critical app performance issues, including general slowness and transactional glitches (IPO, orders). Users reported difficulty opening the app and frequent errors. Positive UI feedback was noted alongside requests for stock recommendations and expert analysis.",
+  "themes": [
+    {
+      "name": "Slow, Glitches",
+      "summary": "Users report significant friction with transactional processes, experiencing stuck IPO applications and delayed order appearances, leading to reapplication attempts."
+    },
+    {
+      "name": "Slow",
+      "summary": "The app's overall performance remains a concern, with users frequently unable to open it or encountering 'OOPS' errors, often requiring troubleshooting for temporary relief."
+    },
+    {
+      "name": "UI/UX",
+      "summary": "The user interface is praised for its cleanliness and beginner-friendliness, alongside a strong desire for new features like stock recommendations and expert insights."
+    }
+  ],
+  "quotes": [
+    "application process gets stuck on 'sending application to exchange'",
+    "keep getting the error 'OOPS, SOMETHING WENT WRONG.'",
+    "It would be super helpful to get insights, expert analysis, or even curated stock lists"
+  ],
+  "actions": [
+    "Investigate and resolve IPO application hang-ups and immediate order display delays.",
+    "Prioritize stability fixes for general app slowness, 'OOPS' errors, and app access issues.",
+    "Explore integrating stock recommendations, expert analysis, or curated investment lists."
+  ],
+  "word_count": 170
+}

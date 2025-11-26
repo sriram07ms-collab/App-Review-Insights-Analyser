@@ -1,0 +1,31 @@
+{
+  "week_start": "2025-11-03",
+  "week_end": "2025-11-09",
+  "title": "Weekly Product Pulse: Nov 3-9, 2025",
+  "overview": "This week's pulse highlights significant user friction points. We observe critical performance issues with data glitches and a bug impacting video access. Additionally, customers report prolonged delays in F&O segment activation and express frustration over unexpected charges for routine profile updates. Addressing these areas is crucial for improving user experience.",
+  "themes": [
+    {
+      "name": "Slow, Glitches",
+      "summary": "Users are experiencing critical intermittent data freezing and a new bug preventing IPO-related video access, leading to significant frustration."
+    },
+    {
+      "name": "Customer Support",
+      "summary": "Customers face persistent delays and technical hurdles in activating key account segments, indicating a bottleneck in resolution processes."
+    },
+    {
+      "name": "Payments/Statements",
+      "summary": "Users are unexpectedly charged for basic profile updates like email changes, raising concerns about transparency and fairness in fees."
+    }
+  ],
+  "quotes": [
+    "price and chart stuck some time (Glitches)",
+    "their technical team/system is unable to activate the F&O segment since last 7 days. (Customer Support)",
+    "charged extra money for updating your email id. (Payments/Statements)"
+  ],
+  "actions": [
+    "Prioritize investigation and resolution of the intermittent data freezing and IPO video access bug immediately.",
+    "Evaluate and streamline the F&O segment activation process to reduce delays and improve customer support efficiency.",
+    "Review the fee structure for basic profile updates and enhance transparency regarding all charges for account management."
+  ],
+  "word_count": 186
+}

@@ -1,0 +1,35 @@
+# Python
+__pycache__/ 
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.coverage
+htmlcov/
+
+# Environments
+.env
+.env.*
+.venv/
+venv/
+ENV/
+
+# Credentials & tokens
+config/gmail_credentials.json
+config/gmail_token.json
+config/*_credentials.json
+config/*_token.json
+
+# Data & cache
+/data/raw/*.tmp
+/data/processed/*.tmp
+cache/
+.embeddings_cache/
+
+# Tools
+.playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+

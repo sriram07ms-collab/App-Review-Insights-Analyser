@@ -1,0 +1,38 @@
+[
+  {
+    "review_id": "7c755ca3-41ce-490c-ad9a-648601657453",
+    "title": "arun k",
+    "text": "For the past few days, I’ve been unable to open the app and keep getting the error “OOPS, SOMETHING WENT WRONG.” I updated the app, uninstalled it, and reinstalled it. After logging in, it worked fine the day before yesterday, but now I’m facing the same error again when opening the app. My internet bandwidth is good, so I’m not sure why the app is behaving like this.",
+    "rating": 1,
+    "date": "2025-09-20T00:00:00+00:00",
+    "week_start_date": "2025-09-15",
+    "week_end_date": "2025-09-21"
+  },
+  {
+    "review_id": "fb372797-ab66-41e8-b77e-ac0a48bb5b70",
+    "title": "Prashant Gupta",
+    "text": "This is one of the best platforms for investment, but applying for an IPO is frustrating. Recently, the application process gets stuck on \"sending application to exchange,\" failing to generate a number or send a mandate. Other platforms like AngelOne and INDmoney are much faster. But I prefer using Groww, so I often have to cancel and reapply to get my application submitted, which is especially stressful on the final day.",
+    "rating": 4,
+    "date": "2025-09-19T00:00:00+00:00",
+    "week_start_date": "2025-09-15",
+    "week_end_date": "2025-09-21"
+  },
+  {
+    "review_id": "edb92e0e-49cc-45c6-b041-45d8008946f2",
+    "title": "SANT KUMAR",
+    "text": "I've been using the Groww app for a while now, and it's fantastic for tracking investments, mutual funds, and buying/selling stocks. The UI is clean, and it's beginner-friendly. However, one feature that could take it to the next level would be stock recommendations for both long-term investments and short-term trades (like swing trading). It would be super helpful to get insights, expert analysis, or even curated stock lists based on different time horizons and risk appetites.",
+    "rating": 4,
+    "date": "2025-09-19T00:00:00+00:00",
+    "week_start_date": "2025-09-15",
+    "week_end_date": "2025-09-21"
+  },
+  {
+    "review_id": "bffdd033-cfac-4948-9271-3315e2af3dc0",
+    "title": "Rakesh Sarma",
+    "text": "#Go for another broker. This app has been giving a lot of issues. It is not working well in the commodity section. While putting buy/sell orders in options the executed orders don't appear immediately in the positions . it takes a lot of time. Very slow app. The interface was not this bad earlier. Bugs may be there too. The Worst customer service. Calls are not picked up.",
+    "rating": 1,
+    "date": "2025-09-18T00:00:00+00:00",
+    "week_start_date": "2025-09-15",
+    "week_end_date": "2025-09-21"
+  }
+]

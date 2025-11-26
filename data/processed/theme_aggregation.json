@@ -1,0 +1,61 @@
+{
+  "weekly_counts": [
+    {
+      "week_start_date": "2025-11-03",
+      "week_end_date": "2025-11-09",
+      "theme_counts": {
+        "glitches": 2,
+        "customer_support": 1,
+        "payments_statements": 1,
+        "ui_ux": 1
+      },
+      "total_reviews": 5
+    },
+    {
+      "week_start_date": "2025-11-10",
+      "week_end_date": "2025-11-16",
+      "theme_counts": {
+        "customer_support": 1,
+        "ui_ux": 8,
+        "glitches": 3,
+        "payments_statements": 3
+      },
+      "total_reviews": 15
+    },
+    {
+      "week_start_date": "2025-11-17",
+      "week_end_date": "2025-11-23",
+      "theme_counts": {
+        "glitches": 6,
+        "ui_ux": 6,
+        "payments_statements": 2,
+        "customer_support": 1
+      },
+      "total_reviews": 15
+    }
+  ],
+  "overall_counts": {
+    "glitches": 11,
+    "customer_support": 3,
+    "payments_statements": 6,
+    "ui_ux": 15
+  },
+  "top_themes": [
+    {
+      "theme_id": "ui_ux",
+      "count": 15
+    },
+    {
+      "theme_id": "glitches",
+      "count": 11
+    },
+    {
+      "theme_id": "payments_statements",
+      "count": 6
+    },
+    {
+      "theme_id": "customer_support",
+      "count": 3
+    }
+  ]
+}
