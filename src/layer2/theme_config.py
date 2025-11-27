@@ -42,6 +42,11 @@ FIXED_THEMES: Dict[str, ThemeDefinition] = {
         name="Slow",
         description="App performance issues, slow loading times, laggy interface, delayed responses, and general performance problems.",
     ),
+    "fees_financial_concerns": ThemeDefinition(
+        id="fees_financial_concerns",
+        name="Fees & Financial Concerns",
+        description="Complaints about unexpected charges, brokerage fees, balance deductions, or transparency around financial transactions.",
+    ),
 }
 
 # Default theme for invalid/empty classifications
@@ -64,5 +69,41 @@ def format_themes_for_prompt() -> str:
     for idx, (theme_id, theme) in enumerate(FIXED_THEMES.items(), start=1):
         lines.append(f"{idx}. {theme.name} ({theme_id}) – {theme.description}")
     return "\n".join(lines)
+
+
+def get_theme_by_id_or_discovered(
+    theme_id: str,
+    discovered_themes: list | None = None,
+) -> ThemeDefinition:
+    """
+    Get theme definition, checking discovered themes first, then predefined.
+    
+    Args:
+        theme_id: Theme ID to look up
+        discovered_themes: Optional list of DiscoveredTheme objects
+        
+    Returns:
+        ThemeDefinition (from discovered theme or predefined theme)
+    """
+    if discovered_themes:
+        from .theme_discovery import DiscoveredTheme
+        
+        discovered = next(
+            (t for t in discovered_themes if isinstance(t, DiscoveredTheme) and t.theme_id.lower() == theme_id.lower()),
+            None
+        )
+        if discovered:
+            # If mapped to predefined, return predefined
+            if discovered.mapped_to_predefined:
+                return FIXED_THEMES[discovered.mapped_to_predefined]
+            # Otherwise, create a dynamic theme definition from discovered theme
+            return ThemeDefinition(
+                id=discovered.theme_id,
+                name=discovered.theme_name,
+                description=discovered.description
+            )
+    
+    # Fallback to predefined
+    return get_theme_by_id(theme_id)
 
 

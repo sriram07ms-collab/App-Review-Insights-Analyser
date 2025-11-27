@@ -30,11 +30,23 @@ class WeeklyEmailPipeline:
         self.sender = sender or EmailSender(config)
         self.pulses_dir = pulses_dir or config.pulses_dir
 
-    def run(self) -> List[EmailDraft]:
-        notes = self._load_notes()
+    def run(
+        self,
+        notes: List[WeeklyPulseNote] | None = None,
+        single_latest: bool = False,
+    ) -> List[EmailDraft]:
+        notes = notes or self._load_notes()
         if not notes:
             LOGGER.info("No weekly pulse notes found; skipping Layer 4.")
             return []
+
+        if single_latest and notes:
+            notes = [self._select_latest_note(notes)]
+            LOGGER.info(
+                "Single-email mode enabled; sending only week %s-%s",
+                notes[0].week_start,
+                notes[0].week_end,
+            )
 
         drafts: List[EmailDraft] = []
         for note in notes:
@@ -74,4 +86,16 @@ class WeeklyEmailPipeline:
             except Exception as exc:
                 LOGGER.warning("Failed to parse weekly pulse %s: %s", json_file, exc)
         return notes
+
+    @staticmethod
+    def _select_latest_note(notes: List[WeeklyPulseNote]) -> WeeklyPulseNote:
+        from datetime import datetime
+
+        def _parse(date_str: str) -> datetime:
+            try:
+                return datetime.fromisoformat(date_str)
+            except ValueError:
+                return datetime.min
+
+        return max(notes, key=lambda note: _parse(note.week_end))
 

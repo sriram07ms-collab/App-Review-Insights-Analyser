@@ -18,6 +18,9 @@ from src.layer1.pii_detector import PIIDetector
 from src.layer1.scraper import GrowwReviewScraper, ReviewRecord, ScraperConfig
 from src.layer1.validator import ReviewModel, validate_reviews
 from src.layer2.theme_classifier import GeminiThemeClassifier, ThemeClassifierConfig
+from src.layer2.theme_discovery import ThemeDiscovery
+from src.layer2.theme_mapper import ThemeMapper
+from src.layer2.theme_config import FIXED_THEMES
 from src.layer2.weekly_aggregator import WeeklyThemeAggregator
 from src.layer3 import Layer3Config, WeeklyPulsePipeline
 from src.layer4 import Layer4Config, WeeklyEmailPipeline
@@ -92,6 +95,11 @@ def parse_args() -> argparse.Namespace:
         "--cron-tag",
         help="Optional identifier for scheduler runs (e.g., 'monday-9am-ist') for log correlation.",
     )
+    parser.add_argument(
+        "--email-single-latest",
+        action="store_true",
+        help="When set, Layer 4 only sends the most recent weekly pulse email.",
+    )
     return parser.parse_args()
 
 
@@ -151,13 +159,69 @@ def run_pipeline(args: Optional[argparse.Namespace] = None) -> None:
         LOGGER.warning("No reviews remaining after filtering; skipping Layer 2.")
         return
 
+    # Theme Discovery Phase (before classification)
+    discovered_themes = None
+    use_discovery = _env_bool("THEME_DISCOVERY_ENABLED", True)
+    
+    if use_discovery:
+        try:
+            discovery = ThemeDiscovery()
+            mapper = ThemeMapper(FIXED_THEMES)
+            
+            sample_size = int(os.getenv("THEME_DISCOVERY_SAMPLE_SIZE", "50"))
+            LOGGER.info("Discovering themes from %s reviews (sample size: %s)...", len(filtered_reviews), sample_size)
+            
+            discovered_raw = discovery.discover_themes(filtered_reviews, sample_size=sample_size)
+            
+            if discovered_raw:
+                # Map discovered themes to predefined
+                discovered_raw = mapper.map_all_themes(discovered_raw)
+                
+                # Log mapping results
+                for theme in discovered_raw:
+                    if theme.mapped_to_predefined:
+                        LOGGER.info(
+                            "Mapped discovered theme '%s' -> '%s' (confidence: %.2f)",
+                            theme.theme_id, theme.mapped_to_predefined, theme.confidence
+                        )
+                    else:
+                        LOGGER.warning(
+                            "Discovered theme '%s' has no predefined mapping (confidence: %.2f)",
+                            theme.theme_id, theme.confidence
+                        )
+                
+                discovered_themes = discovered_raw
+                LOGGER.info("Discovered %s themes", len(discovered_themes))
+                
+                # Save discovered themes for analysis
+                processed_dir = Path("data/processed")
+                processed_dir.mkdir(parents=True, exist_ok=True)
+                discovery.save_discovered_themes(
+                    discovered_themes,
+                    processed_dir / "discovered_themes.json"
+                )
+            else:
+                LOGGER.warning("Theme discovery returned no themes; falling back to predefined themes")
+        except Exception as exc:
+            LOGGER.error("Theme discovery failed: %s; falling back to predefined themes", exc)
+            discovered_themes = None
+
     # Layer 2: LLM-based theme classification
     classifier_config = ThemeClassifierConfig(
         batch_size=int(os.getenv("THEME_CLASSIFIER_BATCH_SIZE", "8")),
         temperature=float(os.getenv("THEME_CLASSIFIER_TEMPERATURE", "0.1")),
+        use_discovery=use_discovery and discovered_themes is not None,
+        discovery_sample_size=int(os.getenv("THEME_DISCOVERY_SAMPLE_SIZE", "50")),
+        min_discovery_confidence=float(os.getenv("THEME_DISCOVERY_MIN_CONFIDENCE", "0.6")),
+        max_discovered_themes=int(os.getenv("THEME_DISCOVERY_MAX_THEMES", "4")),
     )
-    classifier = GeminiThemeClassifier(config=classifier_config)
-    LOGGER.info("Classifying %s reviews into fixed themes...", len(filtered_reviews))
+    classifier = GeminiThemeClassifier(
+        config=classifier_config,
+        discovered_themes=discovered_themes
+    )
+    
+    theme_mode = "discovered" if (use_discovery and discovered_themes) else "predefined"
+    LOGGER.info("Classifying %s reviews into %s themes...", len(filtered_reviews), theme_mode)
     classifications = classifier.classify_reviews(filtered_reviews)
     LOGGER.info("Classified %s reviews", len(classifications))
 
@@ -194,7 +258,10 @@ def run_pipeline(args: Optional[argparse.Namespace] = None) -> None:
     notes = _run_layer3(weekly_dir, processed_dir)
 
     # Layer 4: Email drafting/sending
-    _run_layer4(notes)
+    email_single_latest = getattr(args, "email_single_latest", False) or _env_bool(
+        "EMAIL_SINGLE_LATEST", False
+    )
+    _run_layer4(notes, email_single_latest=email_single_latest)
 
 
 def _build_scraper_config(args: argparse.Namespace) -> ScraperConfig:
@@ -225,7 +292,7 @@ def _build_scraper_config(args: argparse.Namespace) -> ScraperConfig:
         locale=getattr(args, "locale", None) or os.getenv("PLAY_STORE_LOCALE", "en"),
         country=getattr(args, "country", None) or os.getenv("PLAY_STORE_COUNTRY", "in"),
         lookback_days=getattr(args, "lookback_days", None)
-        or int(os.getenv("REVIEW_LOOKBACK_DAYS", "84")),
+        or int(os.getenv("REVIEW_LOOKBACK_DAYS", "56")),
         min_offset_days=getattr(args, "min_offset_days", None)
         or int(os.getenv("REVIEW_MIN_OFFSET_DAYS", "7")),
         max_reviews=getattr(args, "max_reviews", None) or int(os.getenv("SCRAPER_MAX_REVIEWS", "2000")),
@@ -293,14 +360,14 @@ def _run_layer3(weekly_dir: Path, processed_dir: Path):
         return []
 
 
-def _run_layer4(notes) -> None:
+def _run_layer4(notes, email_single_latest: bool = False) -> None:
     if not notes:
         LOGGER.info("Skipping Layer 4 (no weekly notes).")
         return
     try:
         config = Layer4Config()
         pipeline = WeeklyEmailPipeline(config)
-        pipeline.run()
+        pipeline.run(notes=notes, single_latest=email_single_latest)
     except Exception as exc:
         LOGGER.error("Layer 4 failed: %s", exc)
 

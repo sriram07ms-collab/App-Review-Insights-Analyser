@@ -1,11 +1,11 @@
 ## App Review Insights Analyzer
 
-App Review Insights Analyzer turns the last 8–12 weeks of public Play Store reviews into a weekly one-page pulse. The system ingests reviews without logins, deduplicates and sanitizes them, groups the feedback into up to five product themes, surfaces the strongest insights and representative user quotes, and proposes concrete actions. Each weekly pulse is then converted into a draft email so stakeholders can consume the note directly in their inbox—while respecting public-data-only constraints and aggressively stripping any PII. This milestone showcases applied LLM orchestration, summarization, theme grouping, and workflow automation working end-to-end on live data.
+App Review Insights Analyzer turns the last 8 weeks of public Play Store reviews into a weekly one-page pulse. The system ingests reviews without logins, deduplicates and sanitizes them, groups the feedback into up to five product themes, surfaces the strongest insights and representative user quotes, and proposes concrete actions. Each weekly pulse is then converted into a draft email so stakeholders can consume the note directly in their inbox—while respecting public-data-only constraints and aggressively stripping any PII. This milestone showcases applied LLM orchestration, summarization, theme grouping, and workflow automation working end-to-end on live data.
 
 ### Project Architecture
 
 1. **Layer 1 – Ingestion & Cleaning**  
-   - HTTP scraper hits the Play Store `batchexecute` endpoint using staged window slices to gather 8–12 weeks of reviews across star ratings.  
+   - HTTP scraper hits the Play Store `batchexecute` endpoint using staged window slices to gather 8 weeks of reviews across star ratings.  
    - Enforces per-rating targets, deduplicates IDs, removes short/empty texts, normalizes whitespace, and strips obvious PII before any LLM call.  
    - Outputs weekly JSON buckets for downstream processing.
 
@@ -56,7 +56,13 @@ Fill `.env` with:
   - `SCRAPER_ENABLE_RATING_FILTERS` / `SCRAPER_RATING_FILTER_SEQUENCE` (e.g., `5,4,3,2,1`) to force per-rating passes through the Play Store UI
   - `PLAY_STORE_SORT_MODE`
   - `PLAY_STORE_SORT_FALLBACKS` (comma-separated, e.g., `highest_rating,lowest_rating`) to automatically re-run the scrape with alternate sort orders until each rating bucket fills up.
-- Layer 4 email delivery:
+- Layer 2 theme discovery (hybrid classification):
+  - `THEME_DISCOVERY_ENABLED` (default: `true`) - Enable/disable LLM-based theme discovery
+  - `THEME_DISCOVERY_SAMPLE_SIZE` (default: `50`) - Number of reviews to sample for discovery
+  - `THEME_DISCOVERY_MIN_CONFIDENCE` (default: `0.6`) - Minimum mapping confidence to use discovered theme
+  - `THEME_DISCOVERY_MAX_THEMES` (default: `4`) - Maximum number of discovered themes (top 4)
+  - `THEME_DISCOVERY_MODEL` (optional) - Gemini model for discovery (default: `models/gemini-2.5-flash`)
+- Layer 4 email delivery:
   - `EMAIL_TRANSPORT` (`smtp` or `gmail`), `EMAIL_DRY_RUN`
   - SMTP envs: `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_USE_TLS`
   - Gmail envs: `GMAIL_USER`, `GMAIL_CREDENTIALS_PATH`, `GMAIL_TOKEN_PATH` (after enabling Gmail API and running the OAuth consent flow once)
@@ -65,7 +71,7 @@ Fill `.env` with:
 
 ### 3. Running locally
 
-Fetch the default 8–12 week window ending last week:
+Fetch the default 8 week window ending last week:
 
 ```bash
 python main.py
@@ -79,7 +85,7 @@ python main.py ^
   --end-date 2025-10-15 ^
   --max-reviews 1000 ^
   --max-scrolls 600 ^
-  --per-rating-target 20 ^
+  --per-rating-target 50 ^
   --sort-mode newest ^
   --cron-tag "manual-rerun" ^
   --window-slices 2025-05-01:2025-07-31,2025-08-01:2025-10-31

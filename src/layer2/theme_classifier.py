@@ -12,10 +12,11 @@ from google import generativeai as genai
 
 from ..layer1.validator import ReviewModel
 from .theme_config import DEFAULT_THEME_ID, FIXED_THEMES, get_theme_by_id, get_all_theme_ids
+from .theme_discovery import DiscoveredTheme
 
 LOGGER = logging.getLogger(__name__)
 
-CLASSIFICATION_PROMPT_TEMPLATE = """You are tagging reviews into at most 5 fixed themes.
+CLASSIFICATION_PROMPT_TEMPLATE = """You are tagging reviews into at most {max_themes} themes.
 
 Allowed themes:
 {themes_list}
@@ -27,8 +28,8 @@ For each review, output:
 
 Return valid JSON array with one object per review. Format:
 [
-  {{"review_id": "...", "chosen_theme": "glitches", "short_reason": "..."}},
-  {{"review_id": "...", "chosen_theme": "ui_ux", "short_reason": "..."}}
+  {{"review_id": "...", "chosen_theme": "...", "short_reason": "..."}},
+  {{"review_id": "...", "chosen_theme": "...", "short_reason": "..."}}
 ]
 
 Reviews:
@@ -55,6 +56,10 @@ class ThemeClassifierConfig:
     batch_size: int = 8  # Process 8 reviews per LLM call
     temperature: float = 0.1  # Low temperature for consistent classification
     max_retries: int = 2
+    use_discovery: bool = True  # Enable theme discovery mode
+    discovery_sample_size: int = 50  # Reviews to sample for discovery
+    min_discovery_confidence: float = 0.6  # Minimum mapping confidence
+    max_discovered_themes: int = 4  # Maximum discovered themes to use
 
 
 class GeminiThemeClassifier:
@@ -64,6 +69,7 @@ class GeminiThemeClassifier:
         self,
         api_key: str | None = None,
         config: ThemeClassifierConfig | None = None,
+        discovered_themes: List[DiscoveredTheme] | None = None,
     ) -> None:
         self.config = config or ThemeClassifierConfig()
         api_key = api_key or os.getenv("GEMINI_API_KEY")
@@ -89,14 +95,45 @@ class GeminiThemeClassifier:
                 continue
         else:
             raise RuntimeError(f"Could not initialize any Gemini model. Tried candidates: {candidates}")
-        self.themes_list = self._build_themes_list()
-        self.theme_ids_str = ", ".join(get_all_theme_ids())
+        
+        # Handle discovered themes
+        self.discovered_themes = discovered_themes or []
+        self.use_discovered = (
+            self.config.use_discovery
+            and self.discovered_themes
+            and len(self.discovered_themes) > 0
+        )
+        
+        if self.use_discovered:
+            # Limit to max_discovered_themes
+            self.discovered_themes = self.discovered_themes[:self.config.max_discovered_themes]
+            LOGGER.info(
+                "Using %s discovered themes for classification",
+                len(self.discovered_themes)
+            )
+            self.themes_list = self._build_discovered_themes_list()
+            self.theme_ids_str = ", ".join(t.theme_id for t in self.discovered_themes)
+        else:
+            LOGGER.info("Using predefined themes for classification")
+            self.themes_list = self._build_themes_list()
+            self.theme_ids_str = ", ".join(get_all_theme_ids())
 
     def _build_themes_list(self) -> str:
-        """Build formatted themes list for prompt."""
+        """Build formatted themes list for prompt (predefined themes)."""
         lines = []
         for idx, (theme_id, theme) in enumerate(FIXED_THEMES.items(), start=1):
             lines.append(f"{idx}. {theme.name} ({theme_id}) – {theme.description}")
+        return "\n".join(lines)
+
+    def _build_discovered_themes_list(self) -> str:
+        """Build formatted themes list for prompt (discovered themes)."""
+        lines = []
+        for idx, theme in enumerate(self.discovered_themes, start=1):
+            keywords_str = ", ".join(theme.keywords[:3]) if theme.keywords else "N/A"
+            lines.append(
+                f"{idx}. {theme.theme_name} ({theme.theme_id}) – {theme.description} "
+                f"[Keywords: {keywords_str}]"
+            )
         return "\n".join(lines)
 
     def classify_reviews(
@@ -123,7 +160,13 @@ class GeminiThemeClassifier:
     def _classify_batch(self, reviews: List[ReviewModel]) -> List[ReviewClassification]:
         """Classify a single batch of reviews."""
         reviews_text = self._format_reviews_for_prompt(reviews)
+        max_themes = (
+            min(len(self.discovered_themes), self.config.max_discovered_themes)
+            if self.use_discovered
+            else len(FIXED_THEMES)
+        )
         prompt = CLASSIFICATION_PROMPT_TEMPLATE.format(
+            max_themes=max_themes,
             themes_list=self.themes_list,
             theme_ids=self.theme_ids_str,
             reviews_batch=reviews_text,
@@ -193,7 +236,30 @@ class GeminiThemeClassifier:
 
             theme_id_raw = item.get("chosen_theme", "").lower().strip()
             theme_id = self._validate_theme_id(theme_id_raw)
-            theme = get_theme_by_id(theme_id)
+            
+            # Get theme definition (discovered or predefined)
+            if self.use_discovered:
+                discovered = next(
+                    (t for t in self.discovered_themes if t.theme_id.lower() == theme_id),
+                    None
+                )
+                if discovered:
+                    # Use discovered theme if not mapped, otherwise use predefined
+                    if discovered.mapped_to_predefined:
+                        theme = get_theme_by_id(discovered.mapped_to_predefined)
+                    else:
+                        # Create a temporary theme definition from discovered theme
+                        from .theme_config import ThemeDefinition
+                        theme = ThemeDefinition(
+                            id=discovered.theme_id,
+                            name=discovered.theme_name,
+                            description=discovered.description
+                        )
+                else:
+                    theme = get_theme_by_id(theme_id)
+            else:
+                theme = get_theme_by_id(theme_id)
+            
             reason = item.get("short_reason", "No reason provided")
 
             classifications.append(
@@ -225,10 +291,41 @@ class GeminiThemeClassifier:
     def _validate_theme_id(self, theme_id: str) -> str:
         """Validate and normalize theme ID, with fallback to default."""
         theme_id = theme_id.lower().strip()
+        
+        if self.use_discovered:
+            # Check if it's a discovered theme
+            discovered = next(
+                (t for t in self.discovered_themes if t.theme_id.lower() == theme_id),
+                None
+            )
+            if discovered:
+                # If mapped to predefined, return predefined theme_id
+                if discovered.mapped_to_predefined:
+                    LOGGER.debug(
+                        "Mapped discovered theme '%s' to predefined '%s'",
+                        theme_id, discovered.mapped_to_predefined
+                    )
+                    return discovered.mapped_to_predefined
+                # Use discovered theme_id even if unmapped (it's a valid discovered theme)
+                LOGGER.debug(
+                    "Using discovered theme '%s' (unmapped, confidence: %.2f)",
+                    theme_id, discovered.confidence
+                )
+                return theme_id
+            
+            # Try fuzzy matching with discovered themes
+            for discovered_theme in self.discovered_themes:
+                if theme_id in discovered_theme.theme_id or discovered_theme.theme_id in theme_id:
+                    if discovered_theme.mapped_to_predefined:
+                        return discovered_theme.mapped_to_predefined
+                    # Return discovered theme_id even if unmapped
+                    return discovered_theme.theme_id
+        
+        # Fallback to predefined themes
         if theme_id in FIXED_THEMES:
             return theme_id
 
-        # Try fuzzy matching
+        # Try fuzzy matching with predefined themes
         for valid_id in FIXED_THEMES.keys():
             if valid_id in theme_id or theme_id in valid_id:
                 LOGGER.debug("Fuzzy matched theme_id '%s' to '%s'", theme_id, valid_id)
