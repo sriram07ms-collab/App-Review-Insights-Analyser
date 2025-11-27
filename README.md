@@ -102,6 +102,62 @@ python main.py ^
 
 ---
 
+### 4. Deploying via GitHub Actions (Mondays 09:00 local)
+
+1. **Create workflow**
+   - Add `.github/workflows/weekly-run.yml`:
+     ```yaml
+     name: Weekly App Review Pipeline
+
+     on:
+       schedule:
+         - cron: '0 3 * * 1'    # 03:00 UTC ≈ 09:00 IST (adjust for your timezone)
+       workflow_dispatch:
+
+     jobs:
+       weekly:
+         runs-on: ubuntu-latest
+         steps:
+           - uses: actions/checkout@v4
+           - uses: actions/setup-python@v5
+             with:
+               python-version: '3.10'
+           - name: Install dependencies
+             run: |
+               python -m venv .venv
+               source .venv/bin/activate
+               pip install -r requirements.txt
+           - name: Run pipeline
+             env:
+               GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+               EMAIL_TRANSPORT: gmail
+               EMAIL_SINGLE_LATEST: "true"
+               REVIEW_LOOKBACK_DAYS: "56"
+               PLAY_STORE_APP_ID: com.nextbillion.groww
+               # Add SMTP/Gmail secrets as needed
+             run: |
+               source .venv/bin/activate
+               python main.py --cron-tag github-actions --email-single-latest
+     ```
+
+2. **Set secrets**
+   - Repo → Settings → Secrets and variables → Actions.
+   - Add all sensitive envs (Gemini API key, Gmail/SMTP creds, etc.).
+   - Store multiline JSON (e.g., Gmail credentials) as JSON strings or Base64.
+
+3. **Test workflow**
+   - In the Actions tab, manually “Run workflow” to confirm the job succeeds and only one email is sent.
+
+4. **Monitor weekly runs**
+   - After merging to `main`, GitHub triggers the job every Monday.
+   - Review the Actions logs for Gemini quota hits or delivery errors; tune `REVIEW_LOOKBACK_DAYS` or batch sizes if needed.
+
+5. **Maintain secrets & artifacts**
+   - Rotate GitHub secrets whenever credentials change.
+   - Keep `data/raw` and `data/processed` out of git; upload artifacts if you need snapshots of outputs.
+
+---
+
 ### 4. Sample Outputs
 
 #### Latest Weekly Pulse Note

@@ -1,0 +1,41 @@
+name: Weekly App Review Pipeline
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # 03:00 UTC ≈ 09:00 IST
+  workflow_dispatch:
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EMAIL_TRANSPORT: gmail
+          EMAIL_SINGLE_LATEST: "true"
+          REVIEW_LOOKBACK_DAYS: "56"
+          PLAY_STORE_APP_ID: com.nextbillion.groww
+          # Add Gmail/SMTP secrets as needed, e.g.:
+          # GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          # GMAIL_CREDENTIALS_JSON: ${{ secrets.GMAIL_CREDENTIALS_JSON }}
+          # GMAIL_TOKEN_JSON: ${{ secrets.GMAIL_TOKEN_JSON }}
+        run: |
+          source .venv/bin/activate
+          python main.py --cron-tag github-actions --email-single-latest
+
