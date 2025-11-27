@@ -45,6 +45,9 @@ class WeeklyPulsePipeline:
             return notes
 
         for week_file in week_files:
+            if self.config.skip_existing_notes and self._note_exists(week_file):
+                LOGGER.info("Skipping %s because weekly pulse already exists.", week_file.name)
+                continue
             note = self._process_week_file(week_file)
             if note:
                 notes.append(note)
@@ -86,8 +89,7 @@ class WeeklyPulsePipeline:
         return note
 
     def _save_note(self, week_file: Path, note: WeeklyPulseNote) -> Path:
-        output_filename = week_file.stem.replace("week_", "pulse_") + ".json"
-        output_path = self.config.output_dir / output_filename
+        output_path = self._note_json_path(week_file)
         with output_path.open("w", encoding="utf-8") as fh:
             json.dump(note.as_dict(), fh, ensure_ascii=False, indent=2)
         markdown = render_markdown(note)
@@ -96,6 +98,15 @@ class WeeklyPulsePipeline:
             fh.write(markdown)
         LOGGER.info("Saved weekly pulse to %s (JSON) and %s (Markdown)", output_path, markdown_path)
         return output_path
+
+    def _note_json_path(self, week_file: Path) -> Path:
+        output_filename = week_file.stem.replace("week_", "pulse_") + ".json"
+        return self.config.output_dir / output_filename
+
+    def _note_exists(self, week_file: Path) -> bool:
+        json_path = self._note_json_path(week_file)
+        markdown_path = json_path.with_suffix(".md")
+        return json_path.exists() and markdown_path.exists()
 
     def _filter_insights(self, insights: List[ThemeInsight]) -> List[ThemeInsight]:
         filtered: List[ThemeInsight] = []
