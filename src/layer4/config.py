@@ -49,3 +49,29 @@ class Layer4Config:
     gmail_credentials_path: Path = field(default_factory=lambda: Path(os.getenv("GMAIL_CREDENTIALS_PATH", "config/gmail_credentials.json")))
     gmail_token_path: Path = field(default_factory=lambda: Path(os.getenv("GMAIL_TOKEN_PATH", "config/gmail_token.json")))
 
+    def __post_init__(self) -> None:
+        self.gmail_credentials_path = self._materialize_secret(
+            inline_value=os.getenv("GMAIL_CREDENTIALS_JSON"),
+            path=self.gmail_credentials_path,
+            default_filename="gmail_credentials.json",
+        )
+        self.gmail_token_path = self._materialize_secret(
+            inline_value=os.getenv("GMAIL_TOKEN_JSON"),
+            path=self.gmail_token_path,
+            default_filename="gmail_token.json",
+        )
+
+    @staticmethod
+    def _materialize_secret(inline_value: str | None, path: Path, default_filename: str) -> Path:
+        """
+        If an inline JSON secret is provided (e.g., via GitHub Actions secrets),
+        write it to disk so Google client libraries can read it from a file path.
+        """
+        if inline_value:
+            target_dir = path.parent if path else Path("config")
+            target_dir.mkdir(parents=True, exist_ok=True)
+            target_path = target_dir / (path.name or default_filename)
+            target_path.write_text(inline_value, encoding="utf-8")
+            return target_path
+        return path
+

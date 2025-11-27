@@ -143,7 +143,9 @@ python main.py ^
 2. **Set secrets**
    - Repo → Settings → Secrets and variables → Actions.
    - Add all sensitive envs (Gemini API key, Gmail/SMTP creds, etc.).
-   - Store multiline JSON (e.g., Gmail credentials) as JSON strings or Base64.
+   - For Gmail transport you can either:
+     - Provide file paths via `GMAIL_CREDENTIALS_PATH` / `GMAIL_TOKEN_PATH`, or
+     - Store the raw JSON as secrets `GMAIL_CREDENTIALS_JSON` / `GMAIL_TOKEN_JSON` (the workflow writes them to disk automatically).
 
 3. **Test workflow**
    - In the Actions tab, manually “Run workflow” to confirm the job succeeds and only one email is sent.
