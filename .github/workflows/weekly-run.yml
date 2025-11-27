@@ -30,6 +30,7 @@ jobs:
           EMAIL_TRANSPORT: gmail
           EMAIL_SINGLE_LATEST: "true"
           EMAIL_DRY_RUN: "false"
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           REVIEW_LOOKBACK_DAYS: "28"
           PLAY_STORE_APP_ID: com.nextbillion.groww
           LAYER3_FORCE_RECENT_WEEKS: "2"
