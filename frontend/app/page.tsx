@@ -12,18 +12,26 @@ export default function Dashboard() {
   const [pulses, setPulses] = useState<WeeklyPulseNote[]>([]);
   const [aggregation, setAggregation] = useState<ThemeAggregation | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function loadData() {
       try {
+        console.log('Loading dashboard data...');
         const [pulsesData, aggregationData] = await Promise.all([
           fetchAllPulses(),
           fetchThemeAggregation(),
         ]);
+        console.log('Loaded pulses:', pulsesData.length);
+        console.log('Loaded aggregation:', aggregationData ? 'yes' : 'no');
         setPulses(pulsesData);
         setAggregation(aggregationData);
+        if (pulsesData.length === 0 && !aggregationData) {
+          setError('No data available. Please run the pipeline to generate data.');
+        }
       } catch (error) {
         console.error('Error loading data:', error);
+        setError('Failed to load data. Please check the browser console for details.');
       } finally {
         setLoading(false);
       }
@@ -39,6 +47,20 @@ export default function Dashboard() {
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-500 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading dashboard...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="space-y-8">
+        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+          <h2 className="text-lg font-semibold text-yellow-800 mb-2">Data Loading Issue</h2>
+          <p className="text-yellow-700">{error}</p>
+          <p className="text-sm text-yellow-600 mt-2">
+            Check browser console (F12) for detailed error messages.
+          </p>
         </div>
       </div>
     );
@@ -70,48 +92,50 @@ export default function Dashboard() {
         )}
 
         {/* Top Themes */}
-        <div className="lg:col-span-2">
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-semibold text-gray-900">Top Themes This Week</h2>
-              <span className="text-sm text-gray-500">By review count</span>
-            </div>
-            <div className="space-y-4">
-              {aggregation?.top_themes.slice(0, 5).map((theme, index) => (
-                <div key={theme.theme_id} className="flex items-center justify-between group">
-                  <div className="flex items-center gap-4 flex-1">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 text-gray-600 font-semibold text-sm">
-                      {index + 1}
-                    </div>
-                    <div 
-                      className="w-3 h-3 rounded-full"
-                      style={{ backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280' }}
-                    />
-                    <span className="font-medium text-gray-900 flex-1">
-                      {theme.theme_id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-64 bg-gray-100 rounded-full h-3 overflow-hidden">
-                      <div
-                        className="h-full rounded-full transition-all duration-500"
-                        style={{
-                          width: `${(theme.count / (aggregation?.top_themes[0]?.count || 1)) * 100}%`,
-                          backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280',
-                        }}
+        {aggregation && aggregation.top_themes.length > 0 && (
+          <div className="lg:col-span-2">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-xl font-semibold text-gray-900">Top Themes This Week</h2>
+                <span className="text-sm text-gray-500">By review count</span>
+              </div>
+              <div className="space-y-4">
+                {aggregation.top_themes.slice(0, 5).map((theme, index) => (
+                  <div key={theme.theme_id} className="flex items-center justify-between group">
+                    <div className="flex items-center gap-4 flex-1">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 text-gray-600 font-semibold text-sm">
+                        {index + 1}
+                      </div>
+                      <div 
+                        className="w-3 h-3 rounded-full"
+                        style={{ backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280' }}
                       />
+                      <span className="font-medium text-gray-900 flex-1">
+                        {theme.theme_id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                      </span>
                     </div>
-                    <span className="text-gray-900 font-bold text-lg w-16 text-right">{theme.count}</span>
+                    <div className="flex items-center gap-4">
+                      <div className="w-64 bg-gray-100 rounded-full h-3 overflow-hidden">
+                        <div
+                          className="h-full rounded-full transition-all duration-500"
+                          style={{
+                            width: `${(theme.count / (aggregation?.top_themes[0]?.count || 1)) * 100}%`,
+                            backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280',
+                          }}
+                        />
+                      </div>
+                      <span className="text-gray-900 font-bold text-lg w-16 text-right">{theme.count}</span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
 
       {/* Latest Weekly Pulse */}
-      {latestPulse && (
+      {latestPulse ? (
         <div>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900">Latest Weekly Pulse</h2>
@@ -123,6 +147,10 @@ export default function Dashboard() {
             </a>
           </div>
           <WeeklyPulseCard pulse={latestPulse} />
+        </div>
+      ) : (
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 text-center">
+          <p className="text-gray-500">No pulse data available. Run the pipeline to generate weekly pulses.</p>
         </div>
       )}
     </div>

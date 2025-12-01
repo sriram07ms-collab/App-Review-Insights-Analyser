@@ -76,6 +76,11 @@ jobs:
           cd frontend
           npm run build
 
+      - name: Verify build output
+        run: |
+          ls -la frontend/out/ | head -20
+          ls -la frontend/out/data/processed/weekly_pulse/ | head -10
+
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -86,5 +91,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/out
-          force_orphan: true  # Force orphan branch (clean history)
-          keep_files: false   # Don't keep existing files
+          force_orphan: false  # Keep history
+          keep_files: false    # Clean deployment
