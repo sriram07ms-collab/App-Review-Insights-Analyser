@@ -1110,63 +1110,62 @@
     ],
     "candidate_quotes": []
   },
-  "12f29f1f3f0671a75d1a77d7762783b511d65e984fce02621f4325f89d3ddbca": {
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
+  "3bd2194ecc122e51c0d66704a753c1bb0f7ee3b2d7473f9b2307bc0b136aa055": {
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
     "key_points": [
-      "Many users report highly unsatisfactory customer support, describing it as very bad, pathetic, or useless.",
-      "Customers frequently experience long wait times and unresponsiveness when attempting to contact customer service via chat or phone.",
-      "Support interactions are often deemed unhelpful, with agents unable to resolve specific issues such as generating professional account statements or addressing KYC verification problems."
+      "Users report frequent technical glitches, including app freezing and unresponsiveness during critical actions like exiting trades.",
+      "Inaccuracies and inconsistencies are observed in displayed financial data, such as profit/loss, investment history, and account balances.",
+      "Significant issues are noted with order functionality, specifically concerning GTT orders, margin display, and the inability to execute or modify trades.",
+      "UI display problems include unclear option chain views and missing OI data, impacting user experience."
     ],
     "candidate_quotes": [
-      "the custmer support team very bad no one response when u got a problem",
-      "customer support is pathetic and useless don't use this app",
-      "very careless service and very poor response"
+      "many problems are there in this app.. some time refreshing some time not exicute",
+      "bhut hi bekar application hai Exit karne par exit nhi hota hang ho jata hai",
+      "not able to see my open positions nor am I able to close my orders"
     ]
   },
-  "f23fbfe22483cb3d87b4a2cdfef5523b7b60051fc47bd236566dc449a616c983": {
+  "e6f5c6800d77497162f72c555b967dba4f22c9ad4a3057d7037513255d22c313": {
     "theme_id": "payments",
     "theme_name": "Payments",
     "key_points": [
-      "Users report issues with unauthorized deductions and significant delays (up to 3 months) in receiving refunds for rejected mutual fund transactions.",
-      "Problems with fund withdrawals are reported, leading to negative user experiences.",
-      "Liquid fund redemptions are not always processed within the expected 24-hour timeframe, impacting access to emergency funds.",
-      "Customers have encountered discrepancies or issues with their account money balance."
+      "Users desire more flexible withdrawal options, including the ability to withdraw funds any day, any time.",
+      "Some users have reported experiencing occasional problems and a 'worst experience' with the withdrawal process.",
+      "Feedback indicates that liquid funds are not always redeemable within 24 hours, impacting access to emergency funds."
     ],
     "candidate_quotes": [
-      "Paisa kat liya customer help nahin karta hai... refund nahin mila 3 Mahina ho chuka hai",
+      "need to update the interface ...and the withdrawal system... so that we can withdraw any day any time.",
       "Some times withdrawal problems worst experience",
       "liquid fund not redeem in 24 hr emergency fund"
     ]
   },
-  "2b35f2df6515e9650ae020b2a28daad94d000c5bb9638fa34e853a1d624b2842": {
+  "98a6fb3a3c00833d333555a5a0eb76be24e3c39c9e4050f1d60313264199e09f": {
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
     "key_points": [
       "Users frequently report technical errors and glitches within the application.",
-      "Specific features, such as the option chain, are noted to open improperly or work intermittently.",
-      "Issues include inaccurate or delayed display of live values, share prices, and profit/loss calculations.",
-      "The inability to display live values is a recurring problem for some users."
+      "Specific features, such as option chains and trending lines, are noted for not functioning or displaying correctly.",
+      "Issues with real-time data display and discrepancies in share price or profit/loss calculations are observed.",
+      "The problem of live values not being shown is described as a frequent occurrence."
     ],
     "candidate_quotes": [
       "Too much glitch, option chain not open properly sometime working sometimes not working.",
-      "something went wrong, live values cannot be shown, you are doing this frequently",
-      "trending lining not good performence errror"
+      "this application is not working properly",
+      "something went wrong, live values cannot be shown, you are doing this frequently"
     ]
   },
-  "57352278f2e8e246642d44eac169ffcd6a06ec396f75dce094f6690d4312d15f": {
-    "theme_id": "trading_features",
-    "theme_name": "Trading Features",
+  "a5f8b28ae3fb583631d0ee7865c0d7cc396e23b5b4455706f77b77d2b0e21170": {
+    "theme_id": "app_suitability",
+    "theme_name": "App Suitability",
     "key_points": [
-      "Users are requesting specific analytical tools, such as stochastics indicators, to be added to charts.",
-      "There is a demand for a commodity alert feature within the platform.",
-      "Some Nifty indexes (e.g., smallcap 100, PSE, microcap 250) are not consistently displayed in the app's indices section.",
-      "Users express a need for a feature to view and manage multiple family accounts without repeated logouts."
+      "The application is perceived as suitable for new users beginning their investment portfolios.",
+      "Users find the app's interface to be simpler compared to other similar applications.",
+      "The platform is positively recognized as a good broker."
     ],
     "candidate_quotes": [
-      "please provide commodity Alert feature",
-      "pleas aad stoctics indicator in Grow charts which is very usefull",
-      "Can we have an option to view family accounts, I keep logging out from one account to check the other?"
+      "The right app to get started with your portfolio!",
+      "The interface is much simpler than other apps",
+      "super hero app"
     ]
   }
 }
