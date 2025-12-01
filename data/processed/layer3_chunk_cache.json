@@ -1110,90 +1110,63 @@
     ],
     "candidate_quotes": []
   },
-  "ef819e744c17798bf474d37747ad8f712ef92f83c81b975b527afc3292b4f539": {
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
+  "12f29f1f3f0671a75d1a77d7762783b511d65e984fce02621f4325f89d3ddbca": {
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
     "key_points": [
-      "Users report frequent technical glitches, including issues with order execution, application freezes, and refreshing problems.",
-      "Inconsistencies and inaccuracies are noted in financial data displayed across different tabs, such as profit/loss, investment history, and account balances.",
-      "Problems with specific UI elements, like the F&O option chain view, where Open Interest (OI) and price data are not clearly displayed or are missing entirely.",
-      "Some users experience specific error messages preventing them from performing actions within the app."
+      "Many users report highly unsatisfactory customer support, describing it as very bad, pathetic, or useless.",
+      "Customers frequently experience long wait times and unresponsiveness when attempting to contact customer service via chat or phone.",
+      "Support interactions are often deemed unhelpful, with agents unable to resolve specific issues such as generating professional account statements or addressing KYC verification problems."
     ],
     "candidate_quotes": [
-      "many technical glitches",
-      "Doesn't exit when trying to exit, hangs.",
-      "data displayed related to stocks are inconsistent across different tabs"
+      "the custmer support team very bad no one response when u got a problem",
+      "customer support is pathetic and useless don't use this app",
+      "very careless service and very poor response"
     ]
   },
-  "82fa60b03dad82faba5297d0305906752f26932e287a08c01ad68fb387c828d0": {
+  "f23fbfe22483cb3d87b4a2cdfef5523b7b60051fc47bd236566dc449a616c983": {
     "theme_id": "payments",
     "theme_name": "Payments",
     "key_points": [
-      "Users report funds being deducted or mutual funds rejected without timely refunds.",
-      "Problems with fund withdrawals are experienced by some users, leading to a negative experience.",
-      "Liquid funds are not consistently redeemed within 24 hours, impacting access to emergency funds.",
-      "Customer support is perceived as unhelpful in resolving issues related to payment deductions and refunds."
+      "Users report issues with unauthorized deductions and significant delays (up to 3 months) in receiving refunds for rejected mutual fund transactions.",
+      "Problems with fund withdrawals are reported, leading to negative user experiences.",
+      "Liquid fund redemptions are not always processed within the expected 24-hour timeframe, impacting access to emergency funds.",
+      "Customers have encountered discrepancies or issues with their account money balance."
     ],
     "candidate_quotes": [
-      "Paisa kat liya customer help nahin karta hai Mera 3 mutual fund rejected ho gaya hai abhi tak refund nahin mila 3 Mahina ho chuka hai",
+      "Paisa kat liya customer help nahin karta hai... refund nahin mila 3 Mahina ho chuka hai",
       "Some times withdrawal problems worst experience",
       "liquid fund not redeem in 24 hr emergency fund"
     ]
   },
-  "08f6f7fa0d809727cbfc3d6be83a0360c10b54a34e9f5f3d5244ecb3269f3e0a": {
-    "theme_id": "trading_features",
-    "theme_name": "Trading Features",
-    "key_points": [
-      "Users frequently request Stop Loss (SL) and Target setting options, particularly for equity intraday trading.",
-      "Issues with GTT orders are reported, including problems with margin display, setting targets, and order execution failures.",
-      "There is a demand for enhanced charting tools and indicators that provide detailed information, such as specific candle pattern explanations.",
-      "Requests include features like Open Interest (OI) percentage in FNO segments and alerts for higher/lower NAV.",
-      "Suggestions for improved order functionality include value-based buying to replace confusing quantity-based methods."
-    ],
-    "candidate_quotes": [
-      "Please add SL & TARGET set in chart for equity intraday trading in mobile app...",
-      "fix your Gtt orders, app not showing required margine while modifying a existing order and add value based buying, quantity based buying is slow and confusing.",
-      "chart Me Aur Sudhar Karna Chahiye Groww Charts Feature Bakwas Hai Indicator Me Aisa Indicator Hona Chahiye Har Ek Candle Ke Bare Me Jankari De Ki O Cadle Kounsi hai Doji Morubuzu,Bulish Inglfing Ect."
-    ]
-  },
-  "7301d89cb00ba943fe98c9aa8e00281942c16bf9e684dd52092f537064506056": {
+  "2b35f2df6515e9650ae020b2a28daad94d000c5bb9638fa34e853a1d624b2842": {
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
     "key_points": [
-      "Users report frequent technical errors and general glitches within the application.",
-      "Specific features, such as the option chain, are noted to function inconsistently or not open properly.",
-      "There are recurring issues with the accurate and real-time display of live values, including share prices and profit/loss calculations.",
-      "The application occasionally fails to show live market data, with users experiencing 'something went wrong' messages."
+      "Users frequently report technical errors and glitches within the application.",
+      "Specific features, such as the option chain, are noted to open improperly or work intermittently.",
+      "Issues include inaccurate or delayed display of live values, share prices, and profit/loss calculations.",
+      "The inability to display live values is a recurring problem for some users."
     ],
     "candidate_quotes": [
       "Too much glitch, option chain not open properly sometime working sometimes not working.",
-      "this application is not working properly... showing inconsistent share values and profit/loss.",
-      "something went wrong, live values cannot be shown, you are doing this frequently."
+      "something went wrong, live values cannot be shown, you are doing this frequently",
+      "trending lining not good performence errror"
     ]
   },
   "57352278f2e8e246642d44eac169ffcd6a06ec396f75dce094f6690d4312d15f": {
     "theme_id": "trading_features",
     "theme_name": "Trading Features",
     "key_points": [
-      "Users are requesting a commodity alert feature.",
-      "The Stochastics indicator is desired in the charting tools.",
-      "Several Nifty indexes (e.g., smallcap 100, PSE, microcap 250) are not visible in the app's indices section.",
-      "Information regarding top Mutual Fund investments in stocks was previously missing but has since been added."
+      "Users are requesting specific analytical tools, such as stochastics indicators, to be added to charts.",
+      "There is a demand for a commodity alert feature within the platform.",
+      "Some Nifty indexes (e.g., smallcap 100, PSE, microcap 250) are not consistently displayed in the app's indices section.",
+      "Users express a need for a feature to view and manage multiple family accounts without repeated logouts."
     ],
     "candidate_quotes": [
       "please provide commodity Alert feature",
       "pleas aad stoctics indicator in Grow charts which is very usefull",
-      "Why do all Indexes like Nifty smallcap 100, Nifty PSE, and Nifty microcap 250 are not shown in the app under indices section?"
+      "Can we have an option to view family accounts, I keep logging out from one account to check the other?"
     ]
-  },
-  "fc170a40d51311bd0479608d86bd5815b9b4f51a60fd19badbde1c925276e814": {
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "key_points": [
-      "The provided reviews do not offer specific feedback concerning customer support services.",
-      "General sentiment from the feedback indicates a positive view of the overall application.",
-      "No direct comments or experiences, positive or negative, related to customer support were mentioned."
-    ],
-    "candidate_quotes": []
   }
 }
