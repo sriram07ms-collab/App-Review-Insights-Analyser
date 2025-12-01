@@ -1,0 +1,31 @@
+{
+  "week_start": "2025-11-17",
+  "week_end": "2025-11-23",
+  "title": "Weekly Product Pulse: November 17-23, 2025",
+  "overview": "This week's pulse highlights user frustration with persistent technical glitches, notably impacting app stability and data accuracy. Payment-related issues, including delayed refunds and withdrawal problems, remain a significant concern. Additionally, users are actively requesting enhanced trading features like Stop Loss/Target orders and improved charting tools to elevate their experience.",
+  "themes": [
+    {
+      "name": "Glitches & Bugs",
+      "summary": "Users are highly frustrated by persistent technical issues, impacting app stability and data accuracy across various functionalities."
+    },
+    {
+      "name": "Payments",
+      "summary": "Significant dissatisfaction stems from unresolved payment issues, including delayed refunds, withdrawal problems, and perceived unhelpful customer support."
+    },
+    {
+      "name": "Trading Features",
+      "summary": "There is a strong demand for advanced trading functionalities and improvements to existing order types and charting tools."
+    }
+  ],
+  "quotes": [
+    "Glitches & Bugs: Doesn't exit when trying to exit, hangs.",
+    "Payments: Paisa kat liya customer help nahin karta hai Mera 3 mutual fund rejected ho gaya hai abhi tak refund nahin mila 3 Mahina ho chuka hai",
+    "Trading Features: Please add SL & TARGET set in chart for equity intraday trading in mobile app..."
+  ],
+  "actions": [
+    "Prioritize investigation and resolution of critical technical glitches, especially those affecting data consistency and application freezes.",
+    "Review and streamline the payment and refund process to ensure timely resolution of financial discrepancies and improve communication.",
+    "Evaluate and plan for enhancements to core trading features, including SL/Target orders and more detailed charting tools."
+  ],
+  "word_count": 206
+}

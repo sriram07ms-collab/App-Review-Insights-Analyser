@@ -1,0 +1,146 @@
+{
+  "suggested_at": "2025-12-01T18:08:43.238619+00:00",
+  "theme_count": 28,
+  "themes": [
+    {
+      "theme_id": "app_features",
+      "theme_name": "App Features",
+      "description": "This theme covers requests for new features, improvements to existing functionalities, or suggestions related to the app's capabilities and data offerings."
+    },
+    {
+      "theme_id": "account_issues",
+      "theme_name": "Account Issues",
+      "description": "This theme covers problems related to account opening, verification, activation, or other general account management difficulties."
+    },
+    {
+      "theme_id": "fraud_allegations",
+      "theme_name": "Fraud Allegations",
+      "description": "This theme covers reviews alleging fraudulent activities, scams, or unethical practices by the platform or its representatives."
+    },
+    {
+      "theme_id": "app_experience",
+      "theme_name": "App Experience",
+      "description": "Overall user satisfaction, ease of use, and general positive feedback about the application."
+    },
+    {
+      "theme_id": "feature_requests",
+      "theme_name": "Feature Requests",
+      "description": "Suggestions for new features, enhancements, or modifications to existing app functionalities."
+    },
+    {
+      "theme_id": "user_experience",
+      "theme_name": "User Experience",
+      "description": "This theme covers complaints about the difficulty, complexity, or lack of smoothness in performing specific actions or navigating the application."
+    },
+    {
+      "theme_id": "account_management",
+      "theme_name": "Account Management",
+      "description": "This theme covers issues related to account setup, verification, data collection, and general account administration."
+    },
+    {
+      "theme_id": "nri_services",
+      "theme_name": "NRI Services",
+      "description": "This theme covers requests or feedback related to services, features, or support specifically for Non-Resident Indian (NRI) users."
+    },
+    {
+      "theme_id": "feature_request",
+      "theme_name": "Feature Request",
+      "description": "This theme covers suggestions for new features, improvements to existing functionalities, or enhancements to the user interface."
+    },
+    {
+      "theme_id": "trading_features",
+      "theme_name": "Trading Features",
+      "description": "This theme includes suggestions for new trading functionalities, improvements to existing trading tools, and requests for specific investment options."
+    },
+    {
+      "theme_id": "trust_legitimacy",
+      "theme_name": "Trust & Legitimacy",
+      "description": "Concerns about the app's authenticity, trustworthiness, or claims of being fake, including issues where funds are perceived to be held unfairly or without proper justification."
+    },
+    {
+      "theme_id": "account_information",
+      "theme_name": "Account Information",
+      "description": "Covers requests for specific account details, statements, or historical data."
+    },
+    {
+      "theme_id": "promotions_offers",
+      "theme_name": "Promotions & Offers",
+      "description": "This theme includes feedback and suggestions related to promotional campaigns, loyalty programs, discounts, and special offers for customers."
+    },
+    {
+      "theme_id": "investment_options",
+      "theme_name": "Investment Options",
+      "description": "This theme covers user inquiries and feedback regarding the availability, variety, and clarity of different investment products and services offered on the platform."
+    },
+    {
+      "theme_id": "app_design",
+      "theme_name": "App Design",
+      "description": "This theme covers feedback related to the visual aesthetics, user interface (UI), and overall design language of the application."
+    },
+    {
+      "theme_id": "product_offerings",
+      "theme_name": "Product Offerings",
+      "description": "This theme covers feedback related to the availability and range of financial products, instruments, or services offered on the platform."
+    },
+    {
+      "theme_id": "positive_feedback",
+      "theme_name": "Positive Feedback",
+      "description": "Reviews expressing satisfaction, appreciation, or general positive sentiment about the application or service."
+    },
+    {
+      "theme_id": "external_interference",
+      "theme_name": "External Interference",
+      "description": "Reviews describing how the app interferes with other applications or user activities outside of its direct usage."
+    },
+    {
+      "theme_id": "investment_returns",
+      "theme_name": "Investment Returns",
+      "description": "Issues related to the receipt of dividends, interest, or other expected returns from investments."
+    },
+    {
+      "theme_id": "app_usability",
+      "theme_name": "App Usability",
+      "description": "Complaints or feedback regarding the design, ease of use, or overall user experience of existing features within the application."
+    },
+    {
+      "theme_id": "user_interface",
+      "theme_name": "User Interface",
+      "description": "This theme covers complaints related to the app's design, layout, navigation, and overall user experience, including issues with screen flow and default views."
+    },
+    {
+      "theme_id": "information_accuracy",
+      "theme_name": "Information Accuracy",
+      "description": "This theme covers issues related to incorrect, misleading, or missing information provided within the application."
+    },
+    {
+      "theme_id": "security_concerns",
+      "theme_name": "Security Concerns",
+      "description": "This theme covers issues related to data privacy, unauthorized access, security vulnerabilities, and suspicious app behavior."
+    },
+    {
+      "theme_id": "fraud_trust_issues",
+      "theme_name": "Fraud & Trust Issues",
+      "description": "This theme covers accusations of fraudulent activities, unethical practices, and general loss of trust in the service or platform."
+    },
+    {
+      "theme_id": "missing_features",
+      "theme_name": "Missing Features",
+      "description": "Reviews about features that are absent from the application or platform, limiting user functionality."
+    },
+    {
+      "theme_id": "document_issues",
+      "theme_name": "Document Issues",
+      "description": "Concerns regarding the quality, format, or availability of statements, reports, or other official documents."
+    },
+    {
+      "theme_id": "account_features",
+      "theme_name": "Account Features",
+      "description": "Issues or limitations related to account management features like nominee addition, profile updates, or account settings."
+    },
+    {
+      "theme_id": "account_verification",
+      "theme_name": "Account Verification",
+      "description": "Problems with KYC, identity verification, or other account setup and compliance processes."
+    }
+  ]
+}

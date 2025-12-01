@@ -1,0 +1,31 @@
+{
+  "week_start": "2025-11-10",
+  "week_end": "2025-11-16",
+  "title": "Weekly Product Pulse: November 10-16, 2025",
+  "overview": "This week's pulse highlights critical user feedback across three key areas. While ease of use is appreciated, significant issues with application stability, UI regressions, and customer support responsiveness are negatively impacting the overall user experience and require urgent attention.",
+  "themes": [
+    {
+      "name": "UI/UX",
+      "summary": "User feedback is mixed, praising ease of use for beginners, but highlighting critical gaps in data display and a significant regression in F&O investment tracking UI."
+    },
+    {
+      "name": "Slow, Glitches",
+      "summary": "The application frequently suffers from severe glitches, lag, and freezing, leading to data inaccuracies and significant disruption for users, especially during critical activities."
+    },
+    {
+      "name": "Customer Support",
+      "summary": "Users report substantial and prolonged delays in issue resolution, compounded by poor responsiveness and ineffective communication from the support team, particularly for financial and account activation problems."
+    }
+  ],
+  "quotes": [
+    "UI/UX: Bring back old style of invested amount in F&O. Unable to see how much I invested in F&O, untill I calculate manualy.",
+    "Slow, Glitches: Chart turns white & hang, one of the biggest irritating problem. u need to clear cache, to solve this. I clean cache 20-25 times in a day.",
+    "Customer Support: An amount of ₹15,000 was withheld... no proper resolution or communication from the support team."
+  ],
+  "actions": [
+    "UI/UX: Prioritize restoring the previous F&O investment detail UI and evaluate charting functionality enhancements.",
+    "Slow, Glitches: Conduct a thorough investigation into frequent app lag, freezes, and data inaccuracies, focusing on intraday trading impact.",
+    "Customer Support: Implement a strategy to reduce resolution times for critical issues like KYC and fund processing, improving communication transparency."
+  ],
+  "word_count": 237
+}

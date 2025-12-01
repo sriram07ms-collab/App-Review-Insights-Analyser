@@ -1,0 +1,63 @@
+{
+  "discovered_at": "2025-11-27T07:01:21.330518+00:00",
+  "theme_count": 4,
+  "themes": [
+    {
+      "theme_id": "technical_glitches",
+      "theme_name": "Technical Glitches & Losses",
+      "description": "Users frequently report app crashes, lags, freezing, and order execution failures, often leading to significant financial losses due to these technical problems.",
+      "keywords": [
+        "glitch",
+        "hang",
+        "lag",
+        "order rejected",
+        "lost money"
+      ],
+      "mapped_to_predefined": "glitches",
+      "confidence": 0.65
+    },
+    {
+      "theme_id": "high_charges",
+      "theme_name": "High Charges & Brokerage",
+      "description": "Many users complain about excessively high brokerage, commission, and other hidden charges, especially for small investments or specific transactions.",
+      "keywords": [
+        "charges",
+        "fees",
+        "commission",
+        "brokerage",
+        "greedy"
+      ],
+      "mapped_to_predefined": "fees_financial_concerns",
+      "confidence": 0.65
+    },
+    {
+      "theme_id": "poor_customer_support",
+      "theme_name": "Unresponsive Customer Support",
+      "description": "Users express frustration over unresponsive customer service, lack of replies, automated responses, and difficulty resolving account or technical issues.",
+      "keywords": [
+        "customer support",
+        "no reply",
+        "unresponsive",
+        "customer care",
+        "bad service"
+      ],
+      "mapped_to_predefined": "customer_support",
+      "confidence": 1.0
+    },
+    {
+      "theme_id": "features_ui_ux",
+      "theme_name": "App Features & UI/UX",
+      "description": "This theme covers complaints about missing essential features, outdated user interface design, poor chart functionality, and general usability issues.",
+      "keywords": [
+        "UI",
+        "UX",
+        "features",
+        "chart",
+        "design",
+        "missing option"
+      ],
+      "mapped_to_predefined": "ui_ux",
+      "confidence": 0.65
+    }
+  ]
+}

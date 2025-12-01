@@ -1,0 +1,27 @@
+{
+  "week_start": "2025-11-24",
+  "week_end": "2025-11-30",
+  "title": "Weekly Product Pulse: Nov 24 - Nov 30",
+  "overview": "This week's pulse highlights critical user frustrations with application stability, particularly concerning live data and core feature functionality. Users continue to request enhancements for trading tools and broader market index coverage, indicating opportunities for feature expansion alongside necessary bug fixes.",
+  "themes": [
+    {
+      "name": "Glitches & Bugs",
+      "summary": "User sentiment is highly negative, with frequent reports of application instability, inconsistent data display, and core features like option chains failing to function reliably."
+    },
+    {
+      "name": "Trading Features",
+      "summary": "Users are actively requesting new features, including a commodity alert and the Stochastics indicator, alongside expanded visibility for Nifty indexes, showcasing demand for enhanced trading capabilities."
+    }
+  ],
+  "quotes": [
+    "Too much glitch, option chain not open properly sometime working sometimes not working.",
+    "this application is not working properly... showing inconsistent share values and profit/loss.",
+    "please provide commodity Alert feature"
+  ],
+  "actions": [
+    "Initiate a deep-dive investigation into recurring application glitches, focusing on live data accuracy and option chain stability.",
+    "Prioritize the evaluation and development of high-demand trading features such as the commodity alert and Stochastics indicator.",
+    "Implement enhanced real-time monitoring for data inconsistencies and 'something went wrong' errors to proactively address core functionality issues."
+  ],
+  "word_count": 172
+}
