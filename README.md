@@ -232,3 +232,5 @@ These examples show what a typical weekly output looks like end‑to‑end. The 
   ```
 
 In a real run, the exported CSV will contain many more rows and complete (non‑redacted) text, but follows this same column structure.
+📄 License
+This project is for educational/skill demonstration purposes.
