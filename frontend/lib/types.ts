@@ -37,6 +37,20 @@ export interface ReviewClassification {
   confidence?: number;
 }
 
+export interface ThemeReviewDetail {
+  review_id: string;
+  theme_id: string;
+  theme_name: string;
+  reason?: string;
+  text: string;
+  rating: number;
+  date: string;
+  author: string;
+  title?: string;
+  week_start_date?: string;
+  week_end_date?: string;
+}
+
 export const THEME_COLORS: Record<string, string> = {
   customer_support: '#3b82f6',
   payments: '#10b981',

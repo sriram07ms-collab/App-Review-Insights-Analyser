@@ -1,4 +1,4 @@
-import type { WeeklyPulseNote, ThemeAggregation } from './types';
+import type { WeeklyPulseNote, ThemeAggregation, ThemeReviewDetail } from './types';
 
 // Base path for GitHub Pages (matches next.config.ts basePath)
 // This will be /Milestone-2 for project sites
@@ -104,5 +104,26 @@ export async function fetchThemeAggregation(): Promise<ThemeAggregation | null> 
   } catch (error) {
     console.error('Error fetching theme aggregation:', error);
     return null;
+  }
+}
+
+export async function fetchThemeReviewDetails(): Promise<ThemeReviewDetail[]> {
+  try {
+    const url = `${BASE_PATH}/data/processed/theme_review_details.json`;
+    console.log('Fetching theme review details from:', url);
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      console.warn(
+        `Theme review details not found: ${response.status} ${response.statusText}`,
+      );
+      return [];
+    }
+
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.error('Error fetching theme review details:', error);
+    return [];
   }
 }

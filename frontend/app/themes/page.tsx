@@ -2,26 +2,34 @@
 
 import { useEffect, useState } from 'react';
 import ThemeCard from '@/components/ThemeCard';
-import { fetchThemeAggregation } from '@/lib/data-loader';
-import type { ThemeAggregation } from '@/lib/types';
+import { fetchThemeAggregation, fetchThemeReviewDetails } from '@/lib/data-loader';
+import type { ThemeAggregation, ThemeReviewDetail } from '@/lib/types';
 import { formatThemeName } from '@/lib/utils';
 import { Download } from 'lucide-react';
 
 export default function ThemesPage() {
   const [aggregation, setAggregation] = useState<ThemeAggregation | null>(null);
   const [loading, setLoading] = useState(true);
+  const [reviewDetails, setReviewDetails] = useState<ThemeReviewDetail[]>([]);
+  const [reviewsLoading, setReviewsLoading] = useState<boolean>(false);
 
   useEffect(() => {
     async function loadData() {
       try {
-        const data = await fetchThemeAggregation();
-        setAggregation(data);
+        const [agg, reviews] = await Promise.all([
+          fetchThemeAggregation(),
+          fetchThemeReviewDetails(),
+        ]);
+        setAggregation(agg);
+        setReviewDetails(reviews);
       } catch (error) {
         console.error('Error loading themes:', error);
       } finally {
         setLoading(false);
+        setReviewsLoading(false);
       }
     }
+    setReviewsLoading(true);
     loadData();
   }, []);
 
@@ -132,21 +140,98 @@ export default function ThemesPage() {
     }
   };
 
+  const handleExportReviewsCsv = () => {
+    if (!reviewDetails || reviewDetails.length === 0) {
+      console.warn('No detailed review data to export');
+      return;
+    }
+
+    try {
+      const headers = [
+        'theme_id',
+        'theme_name',
+        'review_id',
+        'rating',
+        'date',
+        'author',
+        'title',
+        'week_start_date',
+        'week_end_date',
+        'review_text',
+        'reason',
+      ];
+
+      const rows = reviewDetails.map((r) => {
+        const rawValues = [
+          r.theme_id,
+          r.theme_name,
+          r.review_id,
+          r.rating,
+          r.date,
+          r.author,
+          r.title ?? '',
+          r.week_start_date ?? '',
+          r.week_end_date ?? '',
+          r.text ?? '',
+          r.reason ?? '',
+        ];
+
+        const escaped = rawValues.map((value) => {
+          const str = String(value ?? '');
+          if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+            return `"${str.replace(/"/g, '""')}"`;
+          }
+          return str;
+        });
+
+        return escaped.join(',');
+      });
+
+      const csvContent = [headers.join(','), ...rows].join('\n');
+      const blob = new Blob([csvContent], {
+        type: 'text/csv;charset=utf-8;',
+      });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'theme_reviews_detailed.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error exporting detailed theme reviews to CSV:', error);
+    }
+  };
+
   return (
     <div className="space-y-6">
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Theme Explorer</h1>
-          <p className="text-gray-500 mt-1">Explore themes with trends and statistics</p>
+          <p className="text-gray-500 mt-1">
+            Explore themes with trends and export raw user reviews
+          </p>
         </div>
-        <button
-          type="button"
-          onClick={handleExportCsv}
-          className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
-        >
-          <Download className="w-4 h-4" />
-          Download CSV (Excel)
-        </button>
+        <div className="flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={handleExportCsv}
+            className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
+          >
+            <Download className="w-4 h-4" />
+            Summary CSV
+          </button>
+          <button
+            type="button"
+            onClick={handleExportReviewsCsv}
+            disabled={reviewsLoading}
+            className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+          >
+            <Download className="w-4 h-4" />
+            {reviewsLoading ? 'Preparing reviews…' : 'Reviews CSV (Excel)'}
+          </button>
+        </div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

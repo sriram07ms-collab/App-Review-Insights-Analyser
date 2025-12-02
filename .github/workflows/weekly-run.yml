@@ -49,6 +49,8 @@ jobs:
         run: |
           source .venv/bin/activate
           python main.py --cron-tag github-actions --email-single-latest
+          # Build merged theme-review details for frontend exports
+          python scripts/build_theme_review_details.py
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
