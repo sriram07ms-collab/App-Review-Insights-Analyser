@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import ThemeCard from '@/components/ThemeCard';
-import { fetchThemeAggregation, fetchAllPulses } from '@/lib/data-loader';
+import { fetchThemeAggregation } from '@/lib/data-loader';
 import type { ThemeAggregation } from '@/lib/types';
+import { formatThemeName } from '@/lib/utils';
+import { Download } from 'lucide-react';
 
 export default function ThemesPage() {
   const [aggregation, setAggregation] = useState<ThemeAggregation | null>(null);
@@ -61,11 +63,90 @@ export default function ThemesPage() {
     return ((lastCount - prevCount) / prevCount) * 100;
   };
 
+  const handleExportCsv = () => {
+    if (!aggregation) return;
+
+    try {
+      const headers = [
+        'theme_id',
+        'theme_name',
+        'overall_count',
+        'latest_week_count',
+        'previous_week_count',
+        'trend_percent',
+      ];
+
+      const rows = aggregation.top_themes.map((theme) => {
+        const themeId = theme.theme_id;
+        const themeName = formatThemeName(themeId);
+
+        const overallCount = aggregation.overall_counts?.[themeId] ?? theme.count ?? 0;
+
+        let latestWeekCount = 0;
+        let previousWeekCount = 0;
+        let trendPercent: number | '' = '';
+
+        if (aggregation.weekly_counts.length >= 2) {
+          const last = aggregation.weekly_counts[aggregation.weekly_counts.length - 1];
+          const prev = aggregation.weekly_counts[aggregation.weekly_counts.length - 2];
+          latestWeekCount = last.theme_counts[themeId] || 0;
+          previousWeekCount = prev.theme_counts[themeId] || 0;
+
+          if (previousWeekCount > 0) {
+            trendPercent = Number((((latestWeekCount - previousWeekCount) / previousWeekCount) * 100).toFixed(1));
+          }
+        }
+
+        const rawValues = [
+          themeId,
+          themeName,
+          overallCount,
+          latestWeekCount,
+          previousWeekCount,
+          trendPercent,
+        ];
+
+        const escapedValues = rawValues.map((value) => {
+          const str = String(value ?? '');
+          if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+            return `"${str.replace(/"/g, '""')}"`;
+          }
+          return str;
+        });
+
+        return escapedValues.join(',');
+      });
+
+      const csvContent = [headers.join(','), ...rows].join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'theme_explorer_export.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error exporting theme data to CSV:', error);
+    }
+  };
+
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900">Theme Explorer</h1>
-        <p className="text-gray-500 mt-1">Explore themes with trends and statistics</p>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900">Theme Explorer</h1>
+          <p className="text-gray-500 mt-1">Explore themes with trends and statistics</p>
+        </div>
+        <button
+          type="button"
+          onClick={handleExportCsv}
+          className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
+        >
+          <Download className="w-4 h-4" />
+          Download CSV (Excel)
+        </button>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
