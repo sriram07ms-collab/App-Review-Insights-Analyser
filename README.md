@@ -30,7 +30,8 @@ App Review Insights Analyzer turns recent public Play Store reviews into a weekl
 5. **Frontend Dashboard**  
    - Modern Next.js dashboard for visualizing weekly pulses, themes, and action items.  
    - Uses static export (`next export`) and is deployed to **GitHub Pages** automatically by `.github/workflows/weekly-run.yml`.  
-   - Reads JSON data from `frontend/public/data/processed/**` so the dashboard is fully static and fast.
+   - Reads JSON data from `frontend/public/data/processed/**` so the dashboard is fully static and fast.  
+   - **Live Dashboard**: [https://sriram07ms-collab.github.io/App-Review-Insights-Analyser/](https://sriram07ms-collab.github.io/App-Review-Insights-Analyser/)
 
 ---
 
@@ -97,7 +98,7 @@ The project is configured for automatic deployment to GitHub Pages via `.github/
   - Runs the full Python pipeline (Layers 1–4) and sends the latest weekly pulse email.  
   - Generates `theme_review_details.json` (merged themes + raw review text) for CSV exports.  
   - Builds the Next.js frontend with static export and deploys `frontend/out` to GitHub Pages.  
-- **Dashboard URL**: `https://<username>.github.io/<repo-name>/`
+- **Dashboard URL**: [https://sriram07ms-collab.github.io/App-Review-Insights-Analyser/](https://sriram07ms-collab.github.io/App-Review-Insights-Analyser/)
 
 **Note:** The weekly email generation continues to behave as before—**only the most recent weekly pulse (7 days)** is emailed, regardless of the 14‑day scrape window used for dashboard/trend data.
 
