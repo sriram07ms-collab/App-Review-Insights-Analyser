@@ -106,7 +106,7 @@ The project is configured for automatic deployment to GitHub Pages via `.github/
 ### 5. Project Structure
 
 ```
-Milestone-2/
+App-Review-Insights-Analyser/
 ├── .github/
 │   └── workflows/
 │       └── weekly-run.yml      # Integrated pipeline + frontend deploy

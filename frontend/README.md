@@ -31,16 +31,16 @@ A modern Next.js frontend for visualizing weekly pulse notes, theme analysis, an
    **Option A: Copy data (recommended for production)**
    ```bash
    # Windows PowerShell
-   Copy-Item -Path "..\Milestone-2\data\processed" -Destination "public\data\processed" -Recurse -Force
+   Copy-Item -Path "..\App-Review-Insights-Analyser\data\processed" -Destination "public\data\processed" -Recurse -Force
    
    # Linux/Mac
-   cp -r ../Milestone-2/data/processed ./public/data/processed
+   cp -r ../App-Review-Insights-Analyser/data/processed ./public/data/processed
    ```
    
    **Option B: Use environment variable**
    Create `.env.local`:
    ```
-   DATA_PATH=C:\Users\SM095616\Milestone-2\data\processed
+   DATA_PATH=C:\Users\SM095616\App-Review-Insights-Analyser\data\processed
    ```
 
 3. **Run development server:**
@@ -93,7 +93,7 @@ After running the main pipeline, copy the updated data:
 
 ```bash
 # Windows PowerShell
-Copy-Item -Path "..\Milestone-2\data\processed" -Destination "public\data\processed" -Recurse -Force
+Copy-Item -Path "..\App-Review-Insights-Analyser\data\processed" -Destination "public\data\processed" -Recurse -Force
 
 # Or create a sync script (sync-data.ps1)
 ```

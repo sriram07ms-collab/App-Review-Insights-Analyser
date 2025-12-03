@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 // For GitHub Pages project sites, we need basePath
-// Repository name: Milestone-2
-// GitHub Pages URL: https://sriram07ms-collab.github.io/Milestone-2/
-const basePath = '/Milestone-2';
+// Repository name: App-Review-Insights-Analyser
+// GitHub Pages URL: https://sriram07ms-collab.github.io/App-Review-Insights-Analyser/
+const basePath = '/App-Review-Insights-Analyser';
 
 const nextConfig: NextConfig = {
   output: 'export',  // Enable static export for GitHub Pages

@@ -1,7 +1,7 @@
 # PowerShell script to sync data from main project
 # Run this after the pipeline generates new data
 
-$sourcePath = "..\Milestone-2\data\processed"
+$sourcePath = "..\App-Review-Insights-Analyser\data\processed"
 $destPath = "public\data\processed"
 
 Write-Host "Syncing data from $sourcePath to $destPath..." -ForegroundColor Cyan

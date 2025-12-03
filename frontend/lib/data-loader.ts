@@ -1,8 +1,8 @@
 import type { WeeklyPulseNote, ThemeAggregation, ThemeReviewDetail } from './types';
 
 // Base path for GitHub Pages (matches next.config.ts basePath)
-// This will be /Milestone-2 for project sites
-const BASE_PATH = '/Milestone-2';
+// This will be /App-Review-Insights-Analyser for project sites
+const BASE_PATH = '/App-Review-Insights-Analyser';
 
 // Client-side data fetching functions (for static export)
 export async function fetchAllPulses(): Promise<WeeklyPulseNote[]> {
