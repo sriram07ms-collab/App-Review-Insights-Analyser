@@ -8,21 +8,28 @@ interface OverviewCardsProps {
   latestPulse: WeeklyPulseNote | null;
 }
 
+// Helper to calculate average rating from review data if available
+function calculateAvgRating(aggregation: ThemeAggregation | null): number {
+  // This is a placeholder - in a real scenario, you'd calculate from actual review ratings
+  // For now, return a default value
+  return 3.2;
+}
+
 export default function OverviewCards({ aggregation, latestPulse }: OverviewCardsProps) {
   const totalReviews = aggregation?.overall_counts
     ? Object.values(aggregation.overall_counts).reduce((a, b) => a + b, 0)
     : 0;
 
-  const thisWeekReviews = latestPulse
-    ? aggregation?.weekly_counts[aggregation.weekly_counts.length - 1]?.total_reviews || 0
+  const thisWeekReviews = aggregation?.weekly_counts.length > 0
+    ? aggregation.weekly_counts[aggregation.weekly_counts.length - 1]?.total_reviews || 0
     : 0;
 
   const topTheme = aggregation?.top_themes[0];
   const topThemeName = topTheme ? topTheme.theme_id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'N/A';
   const topThemeCount = topTheme?.count || 0;
 
-  // Calculate average rating (mock - you'd need to load review data)
-  const avgRating = 3.2;
+  // Calculate average rating
+  const avgRating = calculateAvgRating(aggregation);
 
   const cards = [
     {
@@ -65,41 +72,40 @@ export default function OverviewCards({ aggregation, latestPulse }: OverviewCard
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       {cards.map((card, index) => {
         const Icon = card.icon;
         return (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-sm border border-gray-200 p-7 hover:shadow-lg hover:border-gray-300 transition-all duration-200"
+            className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 hover:shadow-md transition-all duration-200"
           >
             <div className="flex items-start justify-between">
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-gray-600 mb-3 uppercase tracking-wide">{card.title}</p>
+                <p className="text-xs font-medium text-gray-600 mb-2">{card.title}</p>
                 <div className="flex items-baseline gap-2">
                   {card.subtitle ? (
                     <div>
-                      <p className="text-3xl font-bold text-gray-900 leading-tight">{card.value}</p>
-                      <p className="text-sm text-gray-500 mt-2 font-medium">{card.subtitle}</p>
+                      <p className="text-2xl font-bold text-gray-900">{card.value}</p>
+                      <p className="text-xs text-gray-500 mt-1">{card.subtitle}</p>
                     </div>
                   ) : (
-                    <p className="text-4xl font-bold text-gray-900 leading-tight">{card.value}</p>
+                    <p className="text-3xl font-bold text-gray-900">{card.value}</p>
                   )}
                 </div>
                 {card.trend && (
-                  <div className={`flex items-center gap-1.5 mt-4 ${card.trendUp ? 'text-green-600' : 'text-red-600'}`}>
+                  <div className={`flex items-center gap-1 mt-3 ${card.trendUp ? 'text-green-600' : 'text-red-600'}`}>
                     {card.trendUp ? (
-                      <TrendingUp className="w-4 h-4" />
+                      <TrendingUp className="w-3 h-3" />
                     ) : (
-                      <TrendingDown className="w-4 h-4" />
+                      <TrendingDown className="w-3 h-3" />
                     )}
-                    <span className="text-sm font-semibold">{card.trend}</span>
-                    <span className="text-xs text-gray-500">vs last week</span>
+                    <span className="text-xs font-medium">{card.trend}</span>
                   </div>
                 )}
               </div>
-              <div className={`${card.bgColor} p-4 rounded-xl flex-shrink-0`}>
-                <Icon className={`w-7 h-7 ${card.textColor}`} />
+              <div className={`${card.bgColor} p-3 rounded-lg flex-shrink-0`}>
+                <Icon className={`w-5 h-5 ${card.textColor}`} />
               </div>
             </div>
           </div>

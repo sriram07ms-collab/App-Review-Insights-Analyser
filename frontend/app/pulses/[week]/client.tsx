@@ -45,7 +45,7 @@ export default function PulseDetailClient({ week }: { week: string }) {
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-500 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading pulse...</p>
+          <p className="text-gray-600">Loading product pulse...</p>
           <p className="text-sm text-gray-400 mt-2">Week: {week || 'unknown'}</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function PulseDetailClient({ week }: { week: string }) {
           className="inline-flex items-center gap-2 text-green-500 hover:text-green-600 font-medium transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to all pulses
+          Back to Product Pulse
         </Link>
         <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
           <h2 className="text-lg font-semibold text-yellow-800 mb-2">Error Loading Pulse</h2>
@@ -81,7 +81,7 @@ export default function PulseDetailClient({ week }: { week: string }) {
           className="inline-flex items-center gap-2 text-green-500 hover:text-green-600 font-medium transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to all pulses
+          Back to Product Pulse
         </Link>
         <div className="bg-white p-12 rounded-xl shadow-sm border border-gray-200 text-center">
           <p className="text-gray-500 text-lg">Pulse not found</p>

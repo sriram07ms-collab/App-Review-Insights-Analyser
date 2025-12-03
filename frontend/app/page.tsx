@@ -3,14 +3,14 @@
 import { useEffect, useState } from 'react';
 import OverviewCards from '@/components/OverviewCards';
 import ThemeTrendChart from '@/components/ThemeTrendChart';
-import WeeklyPulseCard from '@/components/WeeklyPulseCard';
+import SentimentTrendChart from '@/components/SentimentTrendChart';
 import { THEME_COLORS } from '@/lib/types';
-import { fetchAllPulses, fetchThemeAggregation } from '@/lib/data-loader';
-import type { WeeklyPulseNote, ThemeAggregation } from '@/lib/types';
+import { fetchThemeAggregation, fetchThemeReviewDetails } from '@/lib/data-loader';
+import type { ThemeAggregation, ThemeReviewDetail } from '@/lib/types';
 
 export default function Dashboard() {
-  const [pulses, setPulses] = useState<WeeklyPulseNote[]>([]);
   const [aggregation, setAggregation] = useState<ThemeAggregation | null>(null);
+  const [reviewDetails, setReviewDetails] = useState<ThemeReviewDetail[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -18,15 +18,15 @@ export default function Dashboard() {
     async function loadData() {
       try {
         console.log('Loading dashboard data...');
-        const [pulsesData, aggregationData] = await Promise.all([
-          fetchAllPulses(),
+        const [aggregationData, reviewData] = await Promise.all([
           fetchThemeAggregation(),
+          fetchThemeReviewDetails(),
         ]);
-        console.log('Loaded pulses:', pulsesData.length);
         console.log('Loaded aggregation:', aggregationData ? 'yes' : 'no');
-        setPulses(pulsesData);
+        console.log('Loaded review details:', reviewData.length);
         setAggregation(aggregationData);
-        if (pulsesData.length === 0 && !aggregationData) {
+        setReviewDetails(reviewData);
+        if (!aggregationData && reviewData.length === 0) {
           setError('No data available. Please run the pipeline to generate data.');
         }
       } catch (error) {
@@ -38,8 +38,6 @@ export default function Dashboard() {
     }
     loadData();
   }, []);
-
-  const latestPulse = pulses.length > 0 ? pulses[0] : null;
 
   if (loading) {
     return (
@@ -67,110 +65,53 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       {/* Page Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Dashboard</h1>
-          <p className="text-gray-600 mt-2 text-lg">Overview of app review insights and trends</p>
-        </div>
-        <div className="text-sm text-gray-500 bg-gray-50 px-4 py-2 rounded-lg">
-          Last updated: {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-        </div>
+      <div>
+        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+        <p className="text-gray-600 mt-1">Overview of app review insights and trends</p>
       </div>
       
       {/* Overview Cards */}
-      <OverviewCards aggregation={aggregation} latestPulse={latestPulse} />
+      <OverviewCards aggregation={aggregation} latestPulse={null} />
 
-      {/* Theme Trends Chart */}
-      {aggregation && aggregation.weekly_counts.length > 0 && (
-        <ThemeTrendChart data={aggregation.weekly_counts} />
-      )}
-
-      {/* Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Top Themes */}
-        {aggregation && aggregation.top_themes.length > 0 && (
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900">Top Themes This Week</h2>
-                  <p className="text-sm text-gray-500 mt-1.5">By review count</p>
-                </div>
-              </div>
-              <div className="space-y-5">
-                {aggregation.top_themes.slice(0, 5).map((theme, index) => (
-                  <div key={theme.theme_id} className="flex items-center justify-between group hover:bg-gray-50 -mx-2 px-2 py-3 rounded-lg transition-colors">
-                    <div className="flex items-center gap-4 flex-1 min-w-0">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 text-gray-700 font-bold text-sm flex-shrink-0">
-                        {index + 1}
-                      </div>
-                      <div 
-                        className="w-4 h-4 rounded-full flex-shrink-0"
-                        style={{ backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280' }}
-                      />
-                      <span className="font-semibold text-gray-900 flex-1 truncate">
-                        {theme.theme_id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-5 flex-shrink-0">
-                      <div className="w-48 bg-gray-100 rounded-full h-2.5 overflow-hidden">
-                        <div
-                          className="h-full rounded-full transition-all duration-500"
-                          style={{
-                            width: `${(theme.count / (aggregation?.top_themes[0]?.count || 1)) * 100}%`,
-                            backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280',
-                          }}
-                        />
-                      </div>
-                      <span className="text-gray-900 font-bold text-xl w-14 text-right">{theme.count}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+      {/* Charts Section */}
+      <div className="space-y-6">
+        {/* Theme Trends Chart */}
+        {aggregation && aggregation.weekly_counts.length > 0 && (
+          <ThemeTrendChart data={aggregation.weekly_counts} />
         )}
 
-        {/* Quick Stats Sidebar */}
-        {aggregation && (
-          <div className="space-y-6">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-100 p-6">
-              <h3 className="text-sm font-semibold text-green-800 mb-4">Quick Stats</h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-xs text-green-700 mb-1">Total Themes</p>
-                  <p className="text-2xl font-bold text-green-900">{aggregation.top_themes.length}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-green-700 mb-1">Weeks Analyzed</p>
-                  <p className="text-2xl font-bold text-green-900">{aggregation.weekly_counts.length}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Sentiment Trends Chart */}
+        {reviewDetails.length > 0 && (
+          <SentimentTrendChart data={reviewDetails} />
         )}
       </div>
 
-      {/* Latest Weekly Pulse */}
-      {latestPulse ? (
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">Latest Weekly Pulse</h2>
-            <a 
-              href="/pulses" 
-              className="text-sm text-green-600 hover:text-green-700 font-semibold transition-colors flex items-center gap-1"
-            >
-              View all pulses
-              <span>→</span>
-            </a>
+      {/* Top Themes */}
+      {aggregation && aggregation.top_themes.length > 0 && (
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+          <div className="mb-6">
+            <h2 className="text-xl font-bold text-gray-900">Top Themes</h2>
+            <p className="text-sm text-gray-500 mt-1">By review count</p>
           </div>
-          <WeeklyPulseCard pulse={latestPulse} />
-        </div>
-      ) : (
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-12 text-center">
-          <p className="text-gray-500 text-lg">No pulse data available. Run the pipeline to generate weekly pulses.</p>
+          <div className="space-y-4">
+            {aggregation.top_themes.slice(0, 5).map((theme, index) => (
+              <div key={theme.theme_id} className="flex items-center justify-between py-2">
+                <div className="flex items-center gap-3 flex-1 min-w-0">
+                  <span className="text-gray-500 font-medium w-6">{index + 1}.</span>
+                  <div 
+                    className="w-3 h-3 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: THEME_COLORS[theme.theme_id] || '#6b7280' }}
+                  />
+                  <span className="font-medium text-gray-900 flex-1 truncate">
+                    {theme.theme_id.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                  </span>
+                </div>
+                <span className="text-gray-900 font-bold text-lg ml-4">{theme.count}</span>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

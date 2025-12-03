@@ -50,7 +50,7 @@ export default function RootLayout({
                     className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-green-500 transition-colors"
                   >
                     <Calendar className="w-4 h-4" />
-                    Pulses
+                    Product Pulse
                   </Link>
                   <Link 
                     href="/themes" 
