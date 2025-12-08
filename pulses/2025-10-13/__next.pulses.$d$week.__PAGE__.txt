@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[70693,["/App-Review-Insights-Analyser/_next/static/chunks/796e69ae18b2784c.js","/App-Review-Insights-Analyser/_next/static/chunks/0a8177cfa52f6e31.js","/App-Review-Insights-Analyser/_next/static/chunks/741eb4597f79c249.js"],"default"]
+2:I[70693,["/App-Review-Insights-Analyser/_next/static/chunks/5704690b095de494.js","/App-Review-Insights-Analyser/_next/static/chunks/79fff06e806d91b3.js","/App-Review-Insights-Analyser/_next/static/chunks/1da0e2bacb10ffa1.js"],"default"]
 3:I[97367,["/App-Review-Insights-Analyser/_next/static/chunks/ff1a16fafef87110.js","/App-Review-Insights-Analyser/_next/static/chunks/64c0a5e3a0354479.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"MPyOq0xUl1q-6LqvCUlaG","rsc":["$","$1","c",{"children":[["$","$L2",null,{"week":"2025-10-13"}],[["$","script","script-0",{"src":"/App-Review-Insights-Analyser/_next/static/chunks/0a8177cfa52f6e31.js","async":true}],["$","script","script-1",{"src":"/App-Review-Insights-Analyser/_next/static/chunks/741eb4597f79c249.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"hs27nf7Z7QDXgZI4F4P_z","rsc":["$","$1","c",{"children":[["$","$L2",null,{"week":"2025-10-13"}],[["$","script","script-0",{"src":"/App-Review-Insights-Analyser/_next/static/chunks/79fff06e806d91b3.js","async":true}],["$","script","script-1",{"src":"/App-Review-Insights-Analyser/_next/static/chunks/1da0e2bacb10ffa1.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null

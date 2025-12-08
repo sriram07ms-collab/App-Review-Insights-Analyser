@@ -37,20 +37,17 @@
       "week_start_date": "2025-11-10",
       "week_end_date": "2025-11-16",
       "theme_counts": {
-        "general_positive_feedback": 4,
-        "trading_features": 7,
+        "unclassified": 11,
+        "trading_features": 6,
         "customer_support": 4,
-        "new_feature_request": 1,
-        "slow": 4,
-        "app_appreciation": 2,
         "glitches": 5,
-        "fees": 7,
         "payments": 7,
-        "unclassified": 2,
-        "ad_experience": 1,
-        "app_value": 3,
+        "slow": 4,
+        "fees": 7,
+        "platform_trust": 1,
         "app_features": 1,
-        "app_usability": 1,
+        "dividend_issues": 1,
+        "missing_features": 2,
         "general_experience": 1
       },
       "total_reviews": 50
@@ -62,17 +59,19 @@
         "general_experience": 4,
         "feature_requests": 2,
         "glitches": 8,
-        "feature_request": 1,
-        "unclassified": 14,
-        "employer_feedback": 1,
-        "fees": 7,
-        "user_interface_experience": 1,
-        "customer_support": 7,
-        "payments": 5,
+        "product_features": 1,
+        "general_positive_feedback": 4,
+        "employer_review": 1,
+        "fees": 8,
+        "unclassified": 9,
+        "app_usability": 1,
+        "customer_support": 6,
+        "payments": 6,
         "slow": 3,
         "trading_features": 4,
-        "information_accuracy": 1,
-        "security_concerns": 2,
+        "app_content_accuracy": 1,
+        "security_concerns": 1,
+        "trust_and_ethics": 1,
         "investment_guidance": 1
       },
       "total_reviews": 61
@@ -81,10 +80,11 @@
       "week_start_date": "2025-11-24",
       "week_end_date": "2025-11-30",
       "theme_counts": {
-        "glitches": 4,
+        "account_discrepancies": 1,
         "unclassified": 23,
         "payments": 11,
         "fees": 10,
+        "glitches": 3,
         "customer_support": 2,
         "slow": 1
       },
@@ -105,57 +105,57 @@
     }
   ],
   "overall_counts": {
-    "customer_support": 22,
-    "payments": 40,
-    "glitches": 36,
-    "unclassified": 63,
-    "general_positive_feedback": 4,
-    "trading_features": 11,
-    "new_feature_request": 1,
+    "customer_support": 21,
+    "payments": 41,
+    "glitches": 35,
+    "unclassified": 67,
+    "trading_features": 10,
     "slow": 11,
-    "app_appreciation": 2,
-    "fees": 29,
-    "ad_experience": 1,
-    "app_value": 3,
+    "fees": 30,
+    "platform_trust": 1,
     "app_features": 1,
-    "app_usability": 1,
+    "dividend_issues": 1,
+    "missing_features": 2,
     "general_experience": 5,
     "feature_requests": 2,
-    "feature_request": 1,
-    "employer_feedback": 1,
-    "user_interface_experience": 1,
-    "information_accuracy": 1,
-    "security_concerns": 2,
-    "investment_guidance": 1
+    "product_features": 1,
+    "general_positive_feedback": 4,
+    "employer_review": 1,
+    "app_usability": 1,
+    "app_content_accuracy": 1,
+    "security_concerns": 1,
+    "trust_and_ethics": 1,
+    "investment_guidance": 1,
+    "account_discrepancies": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 63
+      "count": 67
     },
     {
       "theme_id": "payments",
-      "count": 40
+      "count": 41
     },
     {
       "theme_id": "glitches",
-      "count": 36
+      "count": 35
     },
     {
       "theme_id": "fees",
-      "count": 29
+      "count": 30
     },
     {
       "theme_id": "customer_support",
-      "count": 22
-    },
-    {
-      "theme_id": "trading_features",
-      "count": 11
+      "count": 21
     },
     {
       "theme_id": "slow",
       "count": 11
+    },
+    {
+      "theme_id": "trading_features",
+      "count": 10
     },
     {
       "theme_id": "general_experience",
@@ -166,11 +166,7 @@
       "count": 4
     },
     {
-      "theme_id": "app_value",
-      "count": 3
-    },
-    {
-      "theme_id": "app_appreciation",
+      "theme_id": "missing_features",
       "count": 2
     },
     {
@@ -178,15 +174,7 @@
       "count": 2
     },
     {
-      "theme_id": "security_concerns",
-      "count": 2
-    },
-    {
-      "theme_id": "new_feature_request",
-      "count": 1
-    },
-    {
-      "theme_id": "ad_experience",
+      "theme_id": "platform_trust",
       "count": 1
     },
     {
@@ -194,27 +182,39 @@
       "count": 1
     },
     {
+      "theme_id": "dividend_issues",
+      "count": 1
+    },
+    {
+      "theme_id": "product_features",
+      "count": 1
+    },
+    {
+      "theme_id": "employer_review",
+      "count": 1
+    },
+    {
       "theme_id": "app_usability",
       "count": 1
     },
     {
-      "theme_id": "feature_request",
+      "theme_id": "app_content_accuracy",
       "count": 1
     },
     {
-      "theme_id": "employer_feedback",
+      "theme_id": "security_concerns",
       "count": 1
     },
     {
-      "theme_id": "user_interface_experience",
-      "count": 1
-    },
-    {
-      "theme_id": "information_accuracy",
+      "theme_id": "trust_and_ethics",
       "count": 1
     },
     {
       "theme_id": "investment_guidance",
+      "count": 1
+    },
+    {
+      "theme_id": "account_discrepancies",
       "count": 1
     }
   ]
