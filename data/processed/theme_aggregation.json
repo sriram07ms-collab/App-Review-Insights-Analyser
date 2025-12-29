@@ -29,7 +29,7 @@
       "week_end_date": "2025-09-21",
       "theme_counts": {
         "glitches": 1,
-        "payments": 1
+        "investment_performance": 1
       },
       "total_reviews": 2
     },
@@ -42,49 +42,22 @@
       "total_reviews": 1
     },
     {
-      "week_start_date": "2025-10-13",
-      "week_end_date": "2025-10-19",
-      "theme_counts": {
-        "security_concerns": 1
-      },
-      "total_reviews": 1
-    },
-    {
-      "week_start_date": "2025-11-24",
-      "week_end_date": "2025-11-30",
-      "theme_counts": {
-        "payments": 6,
-        "trading_features": 4,
-        "unclassified": 13,
-        "investment_features": 3,
-        "fees": 11,
-        "feature_requests": 1,
-        "security_concerns": 1,
-        "customer_support": 3,
-        "glitches": 4,
-        "account_activation": 2,
-        "missing_features": 1,
-        "bank_linking_issues": 1,
-        "investment_outcomes": 1
-      },
-      "total_reviews": 51
-    },
-    {
       "week_start_date": "2025-12-01",
       "week_end_date": "2025-12-07",
       "theme_counts": {
-        "glitches": 32,
-        "payments": 7,
-        "usability_experience": 3,
-        "feature_requests": 1,
-        "unclassified": 13,
-        "trading_features": 1,
-        "fees": 5,
-        "app_usability": 1,
-        "slow": 2,
-        "fund_safety": 1,
-        "customer_support": 5,
-        "fraudulent_activity": 2
+        "glitches": 34,
+        "fees": 7,
+        "trading_features": 5,
+        "payments": 2,
+        "positive_feedback": 1,
+        "unclassified": 9,
+        "feature_requests": 2,
+        "app_usability": 3,
+        "slow": 3,
+        "investment_risk": 1,
+        "customer_support": 2,
+        "trading_manipulation": 1,
+        "missing_features": 3
       },
       "total_reviews": 73
     },
@@ -92,14 +65,33 @@
       "week_start_date": "2025-12-08",
       "week_end_date": "2025-12-14",
       "theme_counts": {
-        "payments": 17,
-        "unclassified": 35,
-        "fees": 4,
+        "slow": 4,
+        "new_features": 1,
+        "unclassified": 7,
+        "glitches": 7,
+        "fees": 6,
+        "general_feedback": 4,
+        "feature_requests": 2,
         "customer_support": 7,
-        "slow": 2,
-        "glitches": 5
+        "user_experience_feedback": 4,
+        "trading_features": 5,
+        "payments": 3,
+        "portfolio_management": 1,
+        "user_interface": 2,
+        "trade_execution": 1,
+        "app_features": 1,
+        "account_management": 1,
+        "missing_features": 1,
+        "positive_feedback": 1,
+        "feature_request": 2,
+        "investment_options": 1,
+        "user_experience": 1,
+        "investment_performance": 1,
+        "product_features": 2,
+        "app_experience": 3,
+        "program_access": 1
       },
-      "total_reviews": 70
+      "total_reviews": 69
     },
     {
       "week_start_date": "2025-12-15",
@@ -113,99 +105,162 @@
         "fees": 4
       },
       "total_reviews": 59
+    },
+    {
+      "week_start_date": "2025-12-22",
+      "week_end_date": "2025-12-28",
+      "theme_counts": {
+        "unclassified": 22,
+        "payments": 13,
+        "fees": 6,
+        "glitches": 5,
+        "customer_support": 8,
+        "feature_request": 1
+      },
+      "total_reviews": 55
     }
   ],
   "overall_counts": {
-    "glitches": 49,
-    "unclassified": 92,
-    "payments": 46,
-    "customer_support": 19,
-    "security_concerns": 2,
-    "trading_features": 5,
-    "investment_features": 3,
-    "fees": 24,
-    "feature_requests": 2,
-    "account_activation": 2,
-    "missing_features": 1,
-    "bank_linking_issues": 1,
-    "investment_outcomes": 1,
-    "usability_experience": 3,
-    "app_usability": 1,
-    "slow": 6,
-    "fund_safety": 1,
-    "fraudulent_activity": 2
+    "glitches": 54,
+    "unclassified": 69,
+    "investment_performance": 2,
+    "customer_support": 21,
+    "fees": 23,
+    "trading_features": 10,
+    "payments": 33,
+    "positive_feedback": 2,
+    "feature_requests": 4,
+    "app_usability": 3,
+    "slow": 9,
+    "investment_risk": 1,
+    "trading_manipulation": 1,
+    "missing_features": 4,
+    "new_features": 1,
+    "general_feedback": 4,
+    "user_experience_feedback": 4,
+    "portfolio_management": 1,
+    "user_interface": 2,
+    "trade_execution": 1,
+    "app_features": 1,
+    "account_management": 1,
+    "feature_request": 3,
+    "investment_options": 1,
+    "user_experience": 1,
+    "product_features": 2,
+    "app_experience": 3,
+    "program_access": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 92
+      "count": 69
     },
     {
       "theme_id": "glitches",
-      "count": 49
+      "count": 54
     },
     {
       "theme_id": "payments",
-      "count": 46
+      "count": 33
     },
     {
       "theme_id": "fees",
-      "count": 24
+      "count": 23
     },
     {
       "theme_id": "customer_support",
-      "count": 19
-    },
-    {
-      "theme_id": "slow",
-      "count": 6
+      "count": 21
     },
     {
       "theme_id": "trading_features",
-      "count": 5
+      "count": 10
     },
     {
-      "theme_id": "investment_features",
-      "count": 3
-    },
-    {
-      "theme_id": "usability_experience",
-      "count": 3
-    },
-    {
-      "theme_id": "security_concerns",
-      "count": 2
+      "theme_id": "slow",
+      "count": 9
     },
     {
       "theme_id": "feature_requests",
-      "count": 2
-    },
-    {
-      "theme_id": "account_activation",
-      "count": 2
-    },
-    {
-      "theme_id": "fraudulent_activity",
-      "count": 2
+      "count": 4
     },
     {
       "theme_id": "missing_features",
-      "count": 1
+      "count": 4
     },
     {
-      "theme_id": "bank_linking_issues",
-      "count": 1
+      "theme_id": "general_feedback",
+      "count": 4
     },
     {
-      "theme_id": "investment_outcomes",
-      "count": 1
+      "theme_id": "user_experience_feedback",
+      "count": 4
     },
     {
       "theme_id": "app_usability",
+      "count": 3
+    },
+    {
+      "theme_id": "feature_request",
+      "count": 3
+    },
+    {
+      "theme_id": "app_experience",
+      "count": 3
+    },
+    {
+      "theme_id": "investment_performance",
+      "count": 2
+    },
+    {
+      "theme_id": "positive_feedback",
+      "count": 2
+    },
+    {
+      "theme_id": "user_interface",
+      "count": 2
+    },
+    {
+      "theme_id": "product_features",
+      "count": 2
+    },
+    {
+      "theme_id": "investment_risk",
       "count": 1
     },
     {
-      "theme_id": "fund_safety",
+      "theme_id": "trading_manipulation",
+      "count": 1
+    },
+    {
+      "theme_id": "new_features",
+      "count": 1
+    },
+    {
+      "theme_id": "portfolio_management",
+      "count": 1
+    },
+    {
+      "theme_id": "trade_execution",
+      "count": 1
+    },
+    {
+      "theme_id": "app_features",
+      "count": 1
+    },
+    {
+      "theme_id": "account_management",
+      "count": 1
+    },
+    {
+      "theme_id": "investment_options",
+      "count": 1
+    },
+    {
+      "theme_id": "user_experience",
+      "count": 1
+    },
+    {
+      "theme_id": "program_access",
       "count": 1
     }
   ]
