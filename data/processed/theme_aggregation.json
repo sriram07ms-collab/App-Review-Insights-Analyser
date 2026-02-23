@@ -4,7 +4,7 @@
       "week_start_date": "2025-06-23",
       "week_end_date": "2025-06-29",
       "theme_counts": {
-        "payments": 1
+        "feature_requests": 1
       },
       "total_reviews": 1
     },
@@ -12,7 +12,7 @@
       "week_start_date": "2025-09-08",
       "week_end_date": "2025-09-14",
       "theme_counts": {
-        "payments": 1
+        "trading_experience": 1
       },
       "total_reviews": 1
     },
@@ -20,7 +20,7 @@
       "week_start_date": "2025-10-13",
       "week_end_date": "2025-10-19",
       "theme_counts": {
-        "customer_support": 1
+        "glitches": 1
       },
       "total_reviews": 1
     },
@@ -28,53 +28,31 @@
       "week_start_date": "2025-11-10",
       "week_end_date": "2025-11-16",
       "theme_counts": {
-        "unclassified": 1
+        "feature_requests": 1
       },
       "total_reviews": 1
-    },
-    {
-      "week_start_date": "2026-01-19",
-      "week_end_date": "2026-01-25",
-      "theme_counts": {
-        "app_usability": 3,
-        "trading_features": 6,
-        "language_support": 1,
-        "glitches": 9,
-        "unclassified": 13,
-        "app_usage_inquiry": 1,
-        "customer_support": 7,
-        "fees": 12,
-        "payments": 4,
-        "slow": 4,
-        "account_management": 1,
-        "user_interface": 2,
-        "missing_features": 1,
-        "app_management": 1
-      },
-      "total_reviews": 65
     },
     {
       "week_start_date": "2026-01-26",
       "week_end_date": "2026-02-01",
       "theme_counts": {
-        "unclassified": 16,
-        "glitches": 9,
+        "unclassified": 8,
+        "glitches": 15,
         "customer_support": 8,
-        "user_experience": 4,
-        "overall_satisfaction": 1,
-        "slow": 5,
+        "user_experience": 5,
+        "slow": 4,
+        "security_concerns": 2,
         "trust_security": 1,
-        "fraud_concerns": 1,
-        "payments": 2,
-        "fees": 10,
+        "payments": 1,
+        "fees": 11,
         "reporting_statements": 1,
-        "trading_features": 6,
-        "app_usability": 2,
-        "security_concerns": 1,
-        "ui_ux_design": 1,
-        "missing_features": 2,
-        "account_management": 1,
-        "app_features": 1
+        "feature_requests": 2,
+        "app_features": 2,
+        "app_usability": 4,
+        "ui_ux": 1,
+        "trading_features": 4,
+        "account_issues": 1,
+        "portfolio_management": 2
       },
       "total_reviews": 72
     },
@@ -82,12 +60,25 @@
       "week_start_date": "2026-02-02",
       "week_end_date": "2026-02-08",
       "theme_counts": {
-        "payments": 8,
-        "unclassified": 30,
-        "slow": 4,
-        "customer_support": 14,
-        "fees": 4,
-        "glitches": 5
+        "glitches": 16,
+        "app_experience": 6,
+        "feature_requests": 2,
+        "app_usability": 4,
+        "customer_support": 11,
+        "payments": 3,
+        "account_management": 2,
+        "trading_experience": 2,
+        "product_offerings": 1,
+        "fees": 6,
+        "user_experience": 1,
+        "portfolio_tracking": 1,
+        "unclassified": 4,
+        "reporting_features": 1,
+        "general_experience": 1,
+        "slow": 1,
+        "app_features": 1,
+        "trading_features": 1,
+        "account_onboarding": 1
       },
       "total_reviews": 65
     },
@@ -95,111 +86,127 @@
       "week_start_date": "2026-02-09",
       "week_end_date": "2026-02-15",
       "theme_counts": {
-        "unclassified": 33,
-        "payments": 12,
+        "slow": 4,
+        "unclassified": 28,
+        "trading_features": 1,
+        "account_features": 1,
+        "payments": 11,
         "customer_support": 4,
         "fees": 6,
-        "glitches": 5,
-        "slow": 3
+        "glitches": 7,
+        "feature_requests": 1
       },
       "total_reviews": 63
+    },
+    {
+      "week_start_date": "2026-02-16",
+      "week_end_date": "2026-02-22",
+      "theme_counts": {
+        "payments": 12,
+        "unclassified": 30,
+        "slow": 3,
+        "fees": 11,
+        "glitches": 4,
+        "customer_support": 1
+      },
+      "total_reviews": 61
     }
   ],
   "overall_counts": {
-    "payments": 28,
-    "customer_support": 34,
-    "unclassified": 93,
-    "app_usability": 5,
-    "trading_features": 12,
-    "language_support": 1,
-    "glitches": 28,
-    "app_usage_inquiry": 1,
-    "fees": 32,
-    "slow": 16,
-    "account_management": 2,
-    "user_interface": 2,
-    "missing_features": 3,
-    "app_management": 1,
-    "user_experience": 4,
-    "overall_satisfaction": 1,
+    "feature_requests": 7,
+    "trading_experience": 3,
+    "glitches": 43,
+    "unclassified": 70,
+    "customer_support": 24,
+    "user_experience": 6,
+    "slow": 12,
+    "security_concerns": 2,
     "trust_security": 1,
-    "fraud_concerns": 1,
+    "payments": 27,
+    "fees": 34,
     "reporting_statements": 1,
-    "security_concerns": 1,
-    "ui_ux_design": 1,
-    "app_features": 1
+    "app_features": 3,
+    "app_usability": 8,
+    "ui_ux": 1,
+    "trading_features": 6,
+    "account_issues": 1,
+    "portfolio_management": 2,
+    "app_experience": 6,
+    "account_management": 2,
+    "product_offerings": 1,
+    "portfolio_tracking": 1,
+    "reporting_features": 1,
+    "general_experience": 1,
+    "account_onboarding": 1,
+    "account_features": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 93
-    },
-    {
-      "theme_id": "customer_support",
-      "count": 34
-    },
-    {
-      "theme_id": "fees",
-      "count": 32
-    },
-    {
-      "theme_id": "payments",
-      "count": 28
+      "count": 70
     },
     {
       "theme_id": "glitches",
-      "count": 28
+      "count": 43
+    },
+    {
+      "theme_id": "fees",
+      "count": 34
+    },
+    {
+      "theme_id": "payments",
+      "count": 27
+    },
+    {
+      "theme_id": "customer_support",
+      "count": 24
     },
     {
       "theme_id": "slow",
-      "count": 16
-    },
-    {
-      "theme_id": "trading_features",
       "count": 12
     },
     {
       "theme_id": "app_usability",
-      "count": 5
+      "count": 8
+    },
+    {
+      "theme_id": "feature_requests",
+      "count": 7
     },
     {
       "theme_id": "user_experience",
-      "count": 4
+      "count": 6
     },
     {
-      "theme_id": "missing_features",
+      "theme_id": "trading_features",
+      "count": 6
+    },
+    {
+      "theme_id": "app_experience",
+      "count": 6
+    },
+    {
+      "theme_id": "trading_experience",
       "count": 3
+    },
+    {
+      "theme_id": "app_features",
+      "count": 3
+    },
+    {
+      "theme_id": "security_concerns",
+      "count": 2
+    },
+    {
+      "theme_id": "portfolio_management",
+      "count": 2
     },
     {
       "theme_id": "account_management",
       "count": 2
     },
     {
-      "theme_id": "user_interface",
-      "count": 2
-    },
-    {
-      "theme_id": "language_support",
-      "count": 1
-    },
-    {
-      "theme_id": "app_usage_inquiry",
-      "count": 1
-    },
-    {
-      "theme_id": "app_management",
-      "count": 1
-    },
-    {
-      "theme_id": "overall_satisfaction",
-      "count": 1
-    },
-    {
       "theme_id": "trust_security",
-      "count": 1
-    },
-    {
-      "theme_id": "fraud_concerns",
       "count": 1
     },
     {
@@ -207,15 +214,35 @@
       "count": 1
     },
     {
-      "theme_id": "security_concerns",
+      "theme_id": "ui_ux",
       "count": 1
     },
     {
-      "theme_id": "ui_ux_design",
+      "theme_id": "account_issues",
       "count": 1
     },
     {
-      "theme_id": "app_features",
+      "theme_id": "product_offerings",
+      "count": 1
+    },
+    {
+      "theme_id": "portfolio_tracking",
+      "count": 1
+    },
+    {
+      "theme_id": "reporting_features",
+      "count": 1
+    },
+    {
+      "theme_id": "general_experience",
+      "count": 1
+    },
+    {
+      "theme_id": "account_onboarding",
+      "count": 1
+    },
+    {
+      "theme_id": "account_features",
       "count": 1
     }
   ]
