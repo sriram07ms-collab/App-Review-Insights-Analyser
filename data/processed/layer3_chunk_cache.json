@@ -1110,50 +1110,20 @@
     ],
     "candidate_quotes": []
   },
-  "e9069d3de0dfa55ace0945876d024f0fccc0a803b27c20aacf59c80625c1d42e": {
+  "4d1b6377fd169f536aa36998c3e3052158d160974a343fca27c27695ab5b7eb2": {
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
     "key_points": [
-      "Users report persistent login errors, including messages about expired onboarding journeys.",
-      "Issues with refreshing external funds are common, leading to blank screens when attempting to access linked services.",
-      "Technical problems frequently occur during active trades, potentially resulting in capital loss.",
-      "Interface synchronization issues are noted on larger devices, displaying incorrect, phone-compatible dimensions.",
-      "Trading features such as chart performance are affected by lag, and stop-loss orders are reported not to execute reliably."
+      "Users report issues with trading execution, including premature selling and inaccurate buy prices.",
+      "Critical functionalities such as UPI section loading, login, and account verification are experiencing errors.",
+      "Chart analysis features frequently encounter bugs like missing historical data, vanishing candles, and truncated displays.",
+      "External portfolio tracking functionality is reported as consistently stuck 'in Progress' for several weeks.",
+      "Recent updates have introduced UI glitches, such as truncated indices and unintended order execution from the option chain."
     ],
     "candidate_quotes": [
-      "I getting error while logging into this app from last 4 days. Your onboarding journey has expired.",
-      "I am unable to refresh my external funds, it asks to go to mf Central but clicking on it leads to a blank screen.",
-      "most time I am facing technical issues when already on a trade i face more capital loss with this issue"
-    ]
-  },
-  "f98039b907be62d810b310d1cbfef94b2cf19b5b34c3de7077a95fac7a3cdeea": {
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "key_points": [
-      "Users frequently report that charges are excessively high.",
-      "There is a perception that charges have increased and are higher than those of competitors.",
-      "Specific concerns are raised regarding charges on intraday and options trading.",
-      "Frustration is expressed over the application of taxes or charges even when users incur losses."
-    ],
-    "candidate_quotes": [
-      "very high charges",
-      "loss hone ke bavajud tax kon katata hai yarrr 🥺🥺",
-      "intraday are scam....💯"
-    ]
-  },
-  "449e3a30dc9db901ccf39de1fa545851bd32904a9638453005cfeb43e5d51bc3": {
-    "theme_id": "app_design_ui",
-    "theme_name": "App Design & UI",
-    "key_points": [
-      "The new app design is widely perceived as a downgrade from the previous version by users.",
-      "Users prefer to see market trends displayed with both absolute numbers and percentage changes, which the new interface reportedly makes less accessible or clear.",
-      "Specific elements such as the index interface, dashboard screen layout, and top bar have received criticism, with requests to revert to older designs.",
-      "The overall user experience (UX) is reported to be degrading, leading to user dissatisfaction and potential churn."
-    ],
-    "candidate_quotes": [
-      "the new app design is really a downgrade from previous one.",
-      "recent update like change format of index interface is very bad ... ugly",
-      "The UX is degrading day by day. It used to have a good UX but now its gone would be switching to a different app soon."
+      "One Of The Worst Apps For Trading Before Reaching SL Price Automatically Sell Position.",
+      "UPI section is not loading... it can't resolve help me 😔",
+      "chart error happened very often... specific day's total candle will venice"
     ]
   }
 }
