@@ -1109,21 +1109,5 @@
       "One review distinctly conveyed a very negative general experience with the application."
     ],
     "candidate_quotes": []
-  },
-  "4d1b6377fd169f536aa36998c3e3052158d160974a343fca27c27695ab5b7eb2": {
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "key_points": [
-      "Users report issues with trading execution, including premature selling and inaccurate buy prices.",
-      "Critical functionalities such as UPI section loading, login, and account verification are experiencing errors.",
-      "Chart analysis features frequently encounter bugs like missing historical data, vanishing candles, and truncated displays.",
-      "External portfolio tracking functionality is reported as consistently stuck 'in Progress' for several weeks.",
-      "Recent updates have introduced UI glitches, such as truncated indices and unintended order execution from the option chain."
-    ],
-    "candidate_quotes": [
-      "One Of The Worst Apps For Trading Before Reaching SL Price Automatically Sell Position.",
-      "UPI section is not loading... it can't resolve help me 😔",
-      "chart error happened very often... specific day's total candle will venice"
-    ]
   }
 }
