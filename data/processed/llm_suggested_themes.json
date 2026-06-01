@@ -1,96 +1,36 @@
 {
-  "suggested_at": "2026-05-25T09:17:28.808055+00:00",
-  "theme_count": 18,
+  "suggested_at": "2026-06-01T10:59:33.511496+00:00",
+  "theme_count": 6,
   "themes": [
+    {
+      "theme_id": "general_appreciation",
+      "theme_name": "General Appreciation",
+      "description": "Reviews expressing overall positive sentiment, satisfaction, or general praise for the application without focusing on specific features or issues."
+    },
+    {
+      "theme_id": "feature_request",
+      "theme_name": "Feature Request",
+      "description": "Reviews suggesting new functionalities, enhancements, or modifications to existing features within the application."
+    },
+    {
+      "theme_id": "investment_management",
+      "theme_name": "Investment Management",
+      "description": "This theme covers complaints related to how the platform manages investments, user control over funds, and specific investment product policies."
+    },
     {
       "theme_id": "trading_features",
       "theme_name": "Trading Features",
-      "description": "This theme covers requests for new trading tools, charting functionalities, order placement methods, and other enhancements to the core trading experience."
-    },
-    {
-      "theme_id": "data_privacy",
-      "theme_name": "Data Privacy",
-      "description": "This theme covers concerns related to data collection, app tracking, privacy policies, and transparency regarding user data."
-    },
-    {
-      "theme_id": "account_creation",
-      "theme_name": "Account Creation",
-      "description": "This theme covers issues encountered during the account setup, registration, or ID creation process."
-    },
-    {
-      "theme_id": "platform_trust",
-      "theme_name": "Platform Trust",
-      "description": "Reviews questioning the trustworthiness, reliability, or overall value proposition of the investment platform and its advice."
-    },
-    {
-      "theme_id": "advertising_experience",
-      "theme_name": "Advertising Experience",
-      "description": "Feedback related to the frequency, relevance, or intrusiveness of advertisements."
-    },
-    {
-      "theme_id": "ad_complaints",
-      "theme_name": "Ad Complaints",
-      "description": "Complaints related to the frequency, relevance, or nature of advertisements associated with the platform."
-    },
-    {
-      "theme_id": "app_quality",
-      "theme_name": "App Quality",
-      "description": "Covers general satisfaction with the app's overall quality, design, and the functionality of specific features like charts."
+      "description": "This theme includes feedback, requests, or complaints about specific trading functionalities, order types, and tools available on the platform."
     },
     {
       "theme_id": "app_features",
       "theme_name": "App Features",
-      "description": "Covers issues related to the functionality, design, or availability of specific features within the application, such as charts, watchlists, or analytical tools."
+      "description": "Requests or feedback related to the functionality, design, or availability of features within the application."
     },
     {
-      "theme_id": "app_management",
-      "theme_name": "App Management",
-      "description": "Addresses issues related to app installation, uninstallation, persistent notifications, or unwanted app behavior on the device."
-    },
-    {
-      "theme_id": "app_experience",
-      "theme_name": "App Experience",
-      "description": "Overall user satisfaction, general positive or negative feedback about the application's core functionality and usefulness."
-    },
-    {
-      "theme_id": "missing_features",
-      "theme_name": "Missing Features",
-      "description": "Complaints about absent or inadequate features, lack of customization options, or limitations in functionality."
-    },
-    {
-      "theme_id": "ui_ux_suggestions",
-      "theme_name": "UI/UX Suggestions",
-      "description": "Suggestions for improving the user interface or overall user experience of the application."
-    },
-    {
-      "theme_id": "product_advice",
-      "theme_name": "Product Advice",
-      "description": "Reviews offering advice or warnings about specific financial products or features."
-    },
-    {
-      "theme_id": "feature_requests",
-      "theme_name": "Feature Requests",
-      "description": "Suggestions for new features or enhancements to existing functionalities within the application."
-    },
-    {
-      "theme_id": "ui_ux_issues",
-      "theme_name": "UI/UX Issues",
-      "description": "This theme covers complaints related to the application's user interface, user experience, design patterns, and navigation. It includes issues like confusing layouts or deceptive design."
-    },
-    {
-      "theme_id": "financial_compliance",
-      "theme_name": "Financial Compliance",
-      "description": "This theme covers issues related to adherence to financial regulations (e.g., SEBI rules), transparency in charges, and proper handling of funds including settlement and withdrawal timelines."
-    },
-    {
-      "theme_id": "investment_control",
-      "theme_name": "Investment Control",
-      "description": "Concerns related to user control over investments, fund accessibility, or the operational model of investment products."
-    },
-    {
-      "theme_id": "account_security",
-      "theme_name": "Account Security",
-      "description": "Reviews related to account access issues, security vulnerabilities, authentication methods, and unauthorized access concerns."
+      "theme_id": "data_accuracy",
+      "theme_name": "Data Accuracy",
+      "description": "This theme covers issues related to the accuracy, timeliness, and correct presentation of financial data, charts, and stock information on the platform."
     }
   ]
 }
