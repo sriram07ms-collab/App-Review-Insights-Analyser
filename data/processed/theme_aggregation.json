@@ -17,125 +17,136 @@
       "total_reviews": 1
     },
     {
-      "week_start_date": "2026-05-04",
-      "week_end_date": "2026-05-10",
-      "theme_counts": {
-        "payments": 11,
-        "unclassified": 17,
-        "general_appreciation": 5,
-        "feature_request": 2,
-        "glitches": 8,
-        "investment_management": 1,
-        "trading_features": 2,
-        "customer_support": 5,
-        "app_features": 2,
-        "fees": 9,
-        "data_accuracy": 1,
-        "slow": 2
-      },
-      "total_reviews": 65
-    },
-    {
       "week_start_date": "2026-05-11",
       "week_end_date": "2026-05-17",
       "theme_counts": {
-        "unclassified": 27,
-        "payments": 18,
-        "fees": 9,
-        "glitches": 6,
+        "user_experience": 3,
+        "unclassified": 20,
+        "glitches": 7,
+        "trading_features": 3,
+        "fees": 10,
+        "portfolio_management": 1,
+        "trading_products": 1,
+        "feature_requests": 1,
+        "localization_content": 1,
+        "trading_integrity": 2,
+        "payments": 11,
         "slow": 1,
-        "customer_support": 5
+        "customer_support": 4
       },
-      "total_reviews": 66
+      "total_reviews": 65
     },
     {
       "week_start_date": "2026-05-18",
       "week_end_date": "2026-05-24",
       "theme_counts": {
-        "payments": 10,
-        "unclassified": 23,
-        "glitches": 6,
-        "customer_support": 9,
+        "payments": 9,
+        "unclassified": 30,
+        "customer_support": 7,
         "fees": 4,
-        "slow": 3
+        "slow": 3,
+        "glitches": 1
       },
-      "total_reviews": 55
+      "total_reviews": 54
     },
     {
       "week_start_date": "2026-05-25",
       "week_end_date": "2026-05-31",
       "theme_counts": {
         "glitches": 9,
-        "payments": 11,
+        "payments": 10,
         "customer_support": 4,
         "unclassified": 31,
         "slow": 2,
-        "fees": 2
+        "fees": 2,
+        "product_features": 1
       },
       "total_reviews": 59
+    },
+    {
+      "week_start_date": "2026-06-01",
+      "week_end_date": "2026-06-07",
+      "theme_counts": {
+        "unclassified": 31,
+        "payments": 22,
+        "customer_support": 5,
+        "glitches": 10,
+        "fees": 3
+      },
+      "total_reviews": 71
     }
   ],
   "overall_counts": {
-    "unclassified": 99,
-    "customer_support": 24,
-    "payments": 50,
-    "general_appreciation": 5,
-    "feature_request": 2,
-    "glitches": 29,
-    "investment_management": 1,
-    "trading_features": 2,
-    "app_features": 2,
-    "fees": 24,
-    "data_accuracy": 1,
-    "slow": 8
+    "unclassified": 113,
+    "customer_support": 21,
+    "user_experience": 3,
+    "glitches": 27,
+    "trading_features": 3,
+    "fees": 19,
+    "portfolio_management": 1,
+    "trading_products": 1,
+    "feature_requests": 1,
+    "localization_content": 1,
+    "trading_integrity": 2,
+    "payments": 52,
+    "slow": 6,
+    "product_features": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 99
+      "count": 113
     },
     {
       "theme_id": "payments",
-      "count": 50
+      "count": 52
     },
     {
       "theme_id": "glitches",
-      "count": 29
+      "count": 27
     },
     {
       "theme_id": "customer_support",
-      "count": 24
+      "count": 21
     },
     {
       "theme_id": "fees",
-      "count": 24
+      "count": 19
     },
     {
       "theme_id": "slow",
-      "count": 8
+      "count": 6
     },
     {
-      "theme_id": "general_appreciation",
-      "count": 5
-    },
-    {
-      "theme_id": "feature_request",
-      "count": 2
+      "theme_id": "user_experience",
+      "count": 3
     },
     {
       "theme_id": "trading_features",
+      "count": 3
+    },
+    {
+      "theme_id": "trading_integrity",
       "count": 2
     },
     {
-      "theme_id": "app_features",
-      "count": 2
-    },
-    {
-      "theme_id": "investment_management",
+      "theme_id": "portfolio_management",
       "count": 1
     },
     {
-      "theme_id": "data_accuracy",
+      "theme_id": "trading_products",
+      "count": 1
+    },
+    {
+      "theme_id": "feature_requests",
+      "count": 1
+    },
+    {
+      "theme_id": "localization_content",
+      "count": 1
+    },
+    {
+      "theme_id": "product_features",
       "count": 1
     }
   ]

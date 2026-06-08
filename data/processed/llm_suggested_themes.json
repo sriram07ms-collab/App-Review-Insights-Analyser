@@ -1,36 +1,46 @@
 {
-  "suggested_at": "2026-06-01T10:59:33.511496+00:00",
-  "theme_count": 6,
+  "suggested_at": "2026-06-08T10:04:30.873091+00:00",
+  "theme_count": 8,
   "themes": [
     {
-      "theme_id": "general_appreciation",
-      "theme_name": "General Appreciation",
-      "description": "Reviews expressing overall positive sentiment, satisfaction, or general praise for the application without focusing on specific features or issues."
-    },
-    {
-      "theme_id": "feature_request",
-      "theme_name": "Feature Request",
-      "description": "Reviews suggesting new functionalities, enhancements, or modifications to existing features within the application."
-    },
-    {
-      "theme_id": "investment_management",
-      "theme_name": "Investment Management",
-      "description": "This theme covers complaints related to how the platform manages investments, user control over funds, and specific investment product policies."
+      "theme_id": "user_experience",
+      "theme_name": "User Experience",
+      "description": "Covers feedback on app design, ease of use, navigation, and overall user interface satisfaction."
     },
     {
       "theme_id": "trading_features",
       "theme_name": "Trading Features",
-      "description": "This theme includes feedback, requests, or complaints about specific trading functionalities, order types, and tools available on the platform."
+      "description": "Relates to requests or feedback on specific trading functionalities, investment tools, and market insights."
     },
     {
-      "theme_id": "app_features",
-      "theme_name": "App Features",
-      "description": "Requests or feedback related to the functionality, design, or availability of features within the application."
+      "theme_id": "portfolio_management",
+      "theme_name": "Portfolio Management",
+      "description": "Reviews related to tracking investments, portfolio performance, and tools for managing assets."
     },
     {
-      "theme_id": "data_accuracy",
-      "theme_name": "Data Accuracy",
-      "description": "This theme covers issues related to the accuracy, timeliness, and correct presentation of financial data, charts, and stock information on the platform."
+      "theme_id": "trading_products",
+      "theme_name": "Trading Products",
+      "description": "Reviews concerning specific trading instruments, products, or services offered by the platform, including their performance or functionality."
+    },
+    {
+      "theme_id": "feature_requests",
+      "theme_name": "Feature Requests",
+      "description": "This theme covers user suggestions for new features, enhancements to existing functionalities, or general product improvements."
+    },
+    {
+      "theme_id": "localization_content",
+      "theme_name": "Localization & Content",
+      "description": "This theme covers requests related to language support, content translation, or the availability of information in different languages."
+    },
+    {
+      "theme_id": "trading_integrity",
+      "theme_name": "Trading Integrity",
+      "description": "Concerns about fair trade execution, profit/loss display accuracy, and potential manipulation within the trading platform."
+    },
+    {
+      "theme_id": "product_features",
+      "theme_name": "Product Features",
+      "description": "Requests or feedback related to new features, existing product capabilities, or integration with other services."
     }
   ]
 }

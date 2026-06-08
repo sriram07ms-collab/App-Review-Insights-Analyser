@@ -1109,20 +1109,5 @@
       "One review distinctly conveyed a very negative general experience with the application."
     ],
     "candidate_quotes": []
-  },
-  "ad4dd5d06bddaf3c05b128182eadfe7bfabfc5220fa9de339c62851d031d567e": {
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "key_points": [
-      "Users reported issues with data accuracy and visualization, including instances of incorrect 52-week high values and charts displaying irrelevant information.",
-      "Functional problems were observed in charting, such as charts not updating live and the unavailability of Open Interest (OI) in the option chain following updates.",
-      "Feedback highlighted opportunities for UI/UX enhancements, specifically regarding the lack of a direct mutual fund redemption option and requests for more advanced charting tools.",
-      "Despite some negative experiences with glitches and usability, many users expressed overall satisfaction, commending the application's security and ease of use."
-    ],
-    "candidate_quotes": [
-      "New update version has so many glitches....no one chart clearly visualized....I open one chart and it shows another.",
-      "There is no redemption option against the MF... not user friendly to use this app.",
-      "How is a stock showing its 52-week high at 322 price when it was 770? This is how this application works."
-    ]
   }
 }
