@@ -1,46 +1,21 @@
 {
-  "suggested_at": "2026-06-08T10:04:30.873091+00:00",
-  "theme_count": 8,
+  "suggested_at": "2026-06-15T11:47:21.077274+00:00",
+  "theme_count": 3,
   "themes": [
     {
-      "theme_id": "user_experience",
-      "theme_name": "User Experience",
-      "description": "Covers feedback on app design, ease of use, navigation, and overall user interface satisfaction."
+      "theme_id": "investment_outcomes",
+      "theme_name": "Investment Outcomes",
+      "description": "This theme covers reviews related to the financial results of investments or trades, including profits, losses, or overall investment performance."
+    },
+    {
+      "theme_id": "investment_losses",
+      "theme_name": "Investment Losses",
+      "description": "This theme covers reviews related to financial losses incurred from investments or trading activities. It includes complaints about losing money on the platform."
     },
     {
       "theme_id": "trading_features",
       "theme_name": "Trading Features",
-      "description": "Relates to requests or feedback on specific trading functionalities, investment tools, and market insights."
-    },
-    {
-      "theme_id": "portfolio_management",
-      "theme_name": "Portfolio Management",
-      "description": "Reviews related to tracking investments, portfolio performance, and tools for managing assets."
-    },
-    {
-      "theme_id": "trading_products",
-      "theme_name": "Trading Products",
-      "description": "Reviews concerning specific trading instruments, products, or services offered by the platform, including their performance or functionality."
-    },
-    {
-      "theme_id": "feature_requests",
-      "theme_name": "Feature Requests",
-      "description": "This theme covers user suggestions for new features, enhancements to existing functionalities, or general product improvements."
-    },
-    {
-      "theme_id": "localization_content",
-      "theme_name": "Localization & Content",
-      "description": "This theme covers requests related to language support, content translation, or the availability of information in different languages."
-    },
-    {
-      "theme_id": "trading_integrity",
-      "theme_name": "Trading Integrity",
-      "description": "Concerns about fair trade execution, profit/loss display accuracy, and potential manipulation within the trading platform."
-    },
-    {
-      "theme_id": "product_features",
-      "theme_name": "Product Features",
-      "description": "Requests or feedback related to new features, existing product capabilities, or integration with other services."
+      "description": "This theme covers feedback related to the availability, functionality, and quality of trading features and tools within the platform. It includes requests for new features or complaints about missing ones."
     }
   ]
 }
