@@ -9,52 +9,55 @@
       "total_reviews": 1
     },
     {
-      "week_start_date": "2025-08-11",
-      "week_end_date": "2025-08-17",
+      "week_start_date": "2025-10-27",
+      "week_end_date": "2025-11-02",
       "theme_counts": {
-        "unclassified": 1
+        "fees": 1
       },
       "total_reviews": 1
-    },
-    {
-      "week_start_date": "2026-05-18",
-      "week_end_date": "2026-05-24",
-      "theme_counts": {
-        "investment_losses": 1,
-        "unclassified": 29,
-        "trading_features": 1,
-        "payments": 8,
-        "customer_support": 7,
-        "fees": 4,
-        "slow": 3,
-        "glitches": 1
-      },
-      "total_reviews": 54
     },
     {
       "week_start_date": "2026-05-25",
       "week_end_date": "2026-05-31",
       "theme_counts": {
-        "glitches": 9,
-        "payments": 11,
-        "customer_support": 6,
-        "unclassified": 30,
+        "glitches": 14,
+        "app_features": 1,
+        "customer_support": 4,
+        "general_appreciation": 3,
+        "app_usability": 2,
+        "account_settings": 1,
+        "unclassified": 11,
+        "product_service": 1,
+        "fees": 5,
+        "product_features": 1,
+        "positive_feedback": 3,
+        "payments": 3,
+        "trading_features": 2,
+        "trading_experience": 1,
         "slow": 3,
-        "fees": 2
+        "trading_interface": 1,
+        "ui_ux_feedback": 1,
+        "user_guidance": 1,
+        "bank_integration": 2
       },
-      "total_reviews": 61
+      "total_reviews": 60
     },
     {
       "week_start_date": "2026-06-01",
       "week_end_date": "2026-06-07",
       "theme_counts": {
-        "unclassified": 29,
-        "payments": 24,
+        "unclassified": 23,
+        "payments": 20,
+        "data_accuracy": 1,
+        "user_interface": 1,
         "customer_support": 6,
-        "glitches": 10,
-        "fees": 3
+        "fees": 4,
+        "trading_features": 2,
+        "account_issues": 1,
+        "glitches": 12,
+        "app_installation": 1
       },
-      "total_reviews": 72
+      "total_reviews": 71
     },
     {
       "week_start_date": "2026-06-08",
@@ -68,49 +71,137 @@
         "glitches": 2
       },
       "total_reviews": 60
+    },
+    {
+      "week_start_date": "2026-06-15",
+      "week_end_date": "2026-06-21",
+      "theme_counts": {
+        "unclassified": 24,
+        "customer_support": 6,
+        "payments": 16,
+        "fees": 6,
+        "glitches": 3,
+        "slow": 2
+      },
+      "total_reviews": 57
     }
   ],
   "overall_counts": {
-    "customer_support": 23,
-    "unclassified": 122,
-    "investment_losses": 1,
-    "trading_features": 1,
-    "payments": 58,
-    "fees": 13,
-    "slow": 9,
-    "glitches": 22
+    "customer_support": 20,
+    "fees": 20,
+    "glitches": 31,
+    "app_features": 1,
+    "general_appreciation": 3,
+    "app_usability": 2,
+    "account_settings": 1,
+    "unclassified": 91,
+    "product_service": 1,
+    "product_features": 1,
+    "positive_feedback": 3,
+    "payments": 54,
+    "trading_features": 4,
+    "trading_experience": 1,
+    "slow": 8,
+    "trading_interface": 1,
+    "ui_ux_feedback": 1,
+    "user_guidance": 1,
+    "bank_integration": 2,
+    "data_accuracy": 1,
+    "user_interface": 1,
+    "account_issues": 1,
+    "app_installation": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 122
+      "count": 91
     },
     {
       "theme_id": "payments",
-      "count": 58
-    },
-    {
-      "theme_id": "customer_support",
-      "count": 23
+      "count": 54
     },
     {
       "theme_id": "glitches",
-      "count": 22
+      "count": 31
+    },
+    {
+      "theme_id": "customer_support",
+      "count": 20
     },
     {
       "theme_id": "fees",
-      "count": 13
+      "count": 20
     },
     {
       "theme_id": "slow",
-      "count": 9
-    },
-    {
-      "theme_id": "investment_losses",
-      "count": 1
+      "count": 8
     },
     {
       "theme_id": "trading_features",
+      "count": 4
+    },
+    {
+      "theme_id": "general_appreciation",
+      "count": 3
+    },
+    {
+      "theme_id": "positive_feedback",
+      "count": 3
+    },
+    {
+      "theme_id": "app_usability",
+      "count": 2
+    },
+    {
+      "theme_id": "bank_integration",
+      "count": 2
+    },
+    {
+      "theme_id": "app_features",
+      "count": 1
+    },
+    {
+      "theme_id": "account_settings",
+      "count": 1
+    },
+    {
+      "theme_id": "product_service",
+      "count": 1
+    },
+    {
+      "theme_id": "product_features",
+      "count": 1
+    },
+    {
+      "theme_id": "trading_experience",
+      "count": 1
+    },
+    {
+      "theme_id": "trading_interface",
+      "count": 1
+    },
+    {
+      "theme_id": "ui_ux_feedback",
+      "count": 1
+    },
+    {
+      "theme_id": "user_guidance",
+      "count": 1
+    },
+    {
+      "theme_id": "data_accuracy",
+      "count": 1
+    },
+    {
+      "theme_id": "user_interface",
+      "count": 1
+    },
+    {
+      "theme_id": "account_issues",
+      "count": 1
+    },
+    {
+      "theme_id": "app_installation",
       "count": 1
     }
   ]
