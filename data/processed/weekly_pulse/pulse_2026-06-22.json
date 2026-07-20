@@ -1,0 +1,31 @@
+{
+  "week_start": "2026-06-22",
+  "week_end": "2026-06-28",
+  "title": "Weekly Product Pulse: 2026-06-22 to 2026-06-28",
+  "overview": "This week's product pulse highlights recurring user concerns regarding application stability, slow performance, and perceived high fees. Key issues include data discrepancies, execution delays, and dissatisfaction with brokerage and hidden charges, collectively impacting the overall trading experience for users during this period.",
+  "themes": [
+    {
+      "name": "Glitches & Bugs",
+      "summary": "Users frequently report critical app glitches, including data discrepancies, instability, and 'something went wrong' errors, leading to significant user frustration."
+    },
+    {
+      "name": "Slow Performance",
+      "summary": "Multiple reports indicate unsatisfactory app performance, with notable delays in real-time data display and order execution affecting trading efficiency, particularly for F&O."
+    },
+    {
+      "name": "Fees & Charges",
+      "summary": "Customer feedback consistently points to dissatisfaction with elevated brokerage and MTF fees, alongside concerns about perceived 'hidden charges' affecting overall trading costs."
+    }
+  ],
+  "quotes": [
+    "Glitches & Bugs: It shows something else and something else happens, late response, closing in profit results in loss.",
+    "Slow Performance: there is delay in showing the exact time share value.. specially in F&O...",
+    "Fees & Charges: Too many hidden charges..per trade they charge around 100+ rupees"
+  ],
+  "actions": [
+    "Investigate reported data discrepancies, 'something went wrong' errors, and app crashes to enhance application stability and rebuild user trust.",
+    "Prioritize improving real-time data updates and order processing speed, especially for F&O, to address persistent slow performance issues.",
+    "Review and clarify brokerage and fee structures, focusing on transparency and competitiveness, to mitigate concerns regarding high and hidden charges."
+  ],
+  "word_count": 210
+}

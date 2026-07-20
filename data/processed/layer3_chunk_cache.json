@@ -1109,5 +1109,50 @@
       "One review distinctly conveyed a very negative general experience with the application."
     ],
     "candidate_quotes": []
+  },
+  "e72d6a97dfe527046e18716055367dc6ca3dc18ec3089ea69c33baec7b07db35": {
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "key_points": [
+      "Users report discrepancies where displayed information differs from actual outcomes, such as profit being recorded as loss.",
+      "The application exhibits slow response times and lag, requiring multiple attempts for critical actions like selling.",
+      "Post-update, some users experience app instability, including crashes and 'something went wrong' error messages.",
+      "Inaccurate financial calculations and missing display elements, like stock data or specific options, are noted."
+    ],
+    "candidate_quotes": [
+      "It shows something else and something else happens, late response, closing in profit results in loss.",
+      "removed all stocks display",
+      "the app is not working...it shows oops! something went wrong."
+    ]
+  },
+  "8762765db08b94b394b88be0d969b12f60d0a5d53648aacd1b34c5ac1f8dd9c6": {
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "key_points": [
+      "Users reported slowness in price acceptance by brokerages.",
+      "Delays were noted in displaying exact, real-time share values, particularly for F&O.",
+      "Order punching within the app is described as being late.",
+      "The overall app experience is negatively affected by performance issues."
+    ],
+    "candidate_quotes": [
+      "every brokerage not accept this sale price very slow",
+      "wasting time only.. worst app experience",
+      "there is delay in showing the exact time share value.. specially in F&O..."
+    ]
+  },
+  "4bcfbe0d71218b37e26bf3db80705b57bf037fcacd0efea6b49ff0342b5dbb87": {
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "key_points": [
+      "Customers frequently report high brokerage and platform fees.",
+      "Specific concerns include elevated MTF (Margin Trading Facility) charges and overall trading costs compared to competitor platforms.",
+      "Some users express frustration over perceived 'hidden charges' and excessive per-trade costs.",
+      "Instances are noted where taxes are applied to trades, even in scenarios of loss."
+    ],
+    "candidate_quotes": [
+      "broker charges is vare high",
+      "Too many hidden charges..per trade they charge around 100+ rupees",
+      "brokerage charge too much."
+    ]
   }
 }
