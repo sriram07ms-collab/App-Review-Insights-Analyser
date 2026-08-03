@@ -1,57 +1,27 @@
 {
   "weekly_counts": [
     {
-      "week_start_date": "2025-10-06",
-      "week_end_date": "2025-10-12",
-      "theme_counts": {
-        "feature_requests": 1
-      },
-      "total_reviews": 1
-    },
-    {
       "week_start_date": "2025-11-24",
       "week_end_date": "2025-11-30",
       "theme_counts": {
-        "payments": 1
+        "glitches": 1
       },
       "total_reviews": 1
-    },
-    {
-      "week_start_date": "2026-06-29",
-      "week_end_date": "2026-07-05",
-      "theme_counts": {
-        "customer_support": 7,
-        "fees": 11,
-        "glitches": 12,
-        "payments": 3,
-        "user_experience": 2,
-        "unclassified": 1,
-        "trading_features": 2,
-        "trading_suitability": 1,
-        "security_workflow": 1,
-        "slow": 2,
-        "account_issues": 1,
-        "feature_usability": 1,
-        "chart_data_limitations": 1,
-        "feature_requests": 2
-      },
-      "total_reviews": 47
     },
     {
       "week_start_date": "2026-07-06",
       "week_end_date": "2026-07-12",
       "theme_counts": {
-        "glitches": 16,
-        "payments": 13,
-        "app_features": 1,
-        "usability": 1,
+        "app_features": 2,
+        "glitches": 20,
+        "customer_support": 11,
+        "app_experience": 3,
         "fees": 5,
-        "customer_support": 10,
-        "product_risk_features": 1,
+        "feature_risk": 1,
+        "payments": 5,
         "feature_requests": 2,
         "slow": 1,
-        "trading_features": 3,
-        "update_feedback": 1,
+        "trading_features": 4,
         "account_management": 1,
         "app_usability": 1
       },
@@ -61,18 +31,20 @@
       "week_start_date": "2026-07-13",
       "week_end_date": "2026-07-19",
       "theme_counts": {
-        "payments": 6,
-        "unclassified": 16,
-        "feature_requests": 1,
+        "glitches": 20,
+        "trading_features": 3,
+        "payments": 7,
         "customer_support": 4,
-        "glitches": 12,
-        "general_app_experience": 1,
-        "fees": 4,
-        "trading_features": 4,
-        "slow": 5,
-        "user_experience": 1,
+        "app_usability": 1,
+        "fees": 6,
+        "slow": 8,
+        "financial_loss": 1,
+        "ipo_experience": 1,
+        "usability": 1,
         "referral_program": 1,
-        "investment_options": 1
+        "trading_execution": 1,
+        "product_features": 1,
+        "app_features": 1
       },
       "total_reviews": 56
     },
@@ -80,66 +52,82 @@
       "week_start_date": "2026-07-20",
       "week_end_date": "2026-07-26",
       "theme_counts": {
+        "glitches": 19,
+        "fees": 8,
+        "payments": 22,
+        "new_feature_requests": 1,
+        "app_access": 1,
+        "product_availability": 1,
         "customer_support": 4,
-        "unclassified": 27,
-        "fees": 4,
-        "payments": 14,
-        "glitches": 5,
-        "slow": 4,
-        "trading_features": 2
+        "slow": 4
       },
       "total_reviews": 60
+    },
+    {
+      "week_start_date": "2026-07-27",
+      "week_end_date": "2026-08-02",
+      "theme_counts": {
+        "glitches": 25,
+        "fees": 8,
+        "customer_support": 8,
+        "payments": 7,
+        "trading_features": 4,
+        "platform_reliability": 1,
+        "account_management": 1,
+        "slow": 3,
+        "investment_performance": 1,
+        "feature_requests": 4,
+        "investment_outcomes": 1
+      },
+      "total_reviews": 63
     }
   ],
   "overall_counts": {
+    "glitches": 85,
+    "app_features": 3,
+    "customer_support": 27,
+    "app_experience": 3,
+    "fees": 27,
+    "feature_risk": 1,
+    "payments": 41,
     "feature_requests": 6,
-    "payments": 37,
-    "customer_support": 25,
-    "fees": 24,
-    "glitches": 45,
-    "user_experience": 3,
-    "unclassified": 44,
+    "slow": 16,
     "trading_features": 11,
-    "trading_suitability": 1,
-    "security_workflow": 1,
-    "slow": 12,
-    "account_issues": 1,
-    "feature_usability": 1,
-    "chart_data_limitations": 1,
-    "app_features": 1,
+    "account_management": 2,
+    "app_usability": 2,
+    "financial_loss": 1,
+    "ipo_experience": 1,
     "usability": 1,
-    "product_risk_features": 1,
-    "update_feedback": 1,
-    "account_management": 1,
-    "app_usability": 1,
-    "general_app_experience": 1,
     "referral_program": 1,
-    "investment_options": 1
+    "trading_execution": 1,
+    "product_features": 1,
+    "new_feature_requests": 1,
+    "app_access": 1,
+    "product_availability": 1,
+    "platform_reliability": 1,
+    "investment_performance": 1,
+    "investment_outcomes": 1
   },
   "top_themes": [
     {
       "theme_id": "glitches",
-      "count": 45
-    },
-    {
-      "theme_id": "unclassified",
-      "count": 44
+      "count": 85
     },
     {
       "theme_id": "payments",
-      "count": 37
+      "count": 41
     },
     {
       "theme_id": "customer_support",
-      "count": 25
+      "count": 27
     },
     {
       "theme_id": "fees",
-      "count": 24
+      "count": 27
     },
     {
       "theme_id": "slow",
-      "count": 12
+      "count": 16
     },
     {
       "theme_id": "trading_features",
@@ -150,31 +138,31 @@
       "count": 6
     },
     {
-      "theme_id": "user_experience",
+      "theme_id": "app_features",
       "count": 3
     },
     {
-      "theme_id": "trading_suitability",
+      "theme_id": "app_experience",
+      "count": 3
+    },
+    {
+      "theme_id": "account_management",
+      "count": 2
+    },
+    {
+      "theme_id": "app_usability",
+      "count": 2
+    },
+    {
+      "theme_id": "feature_risk",
       "count": 1
     },
     {
-      "theme_id": "security_workflow",
+      "theme_id": "financial_loss",
       "count": 1
     },
     {
-      "theme_id": "account_issues",
-      "count": 1
-    },
-    {
-      "theme_id": "feature_usability",
-      "count": 1
-    },
-    {
-      "theme_id": "chart_data_limitations",
-      "count": 1
-    },
-    {
-      "theme_id": "app_features",
+      "theme_id": "ipo_experience",
       "count": 1
     },
     {
@@ -182,31 +170,39 @@
       "count": 1
     },
     {
-      "theme_id": "product_risk_features",
-      "count": 1
-    },
-    {
-      "theme_id": "update_feedback",
-      "count": 1
-    },
-    {
-      "theme_id": "account_management",
-      "count": 1
-    },
-    {
-      "theme_id": "app_usability",
-      "count": 1
-    },
-    {
-      "theme_id": "general_app_experience",
-      "count": 1
-    },
-    {
       "theme_id": "referral_program",
       "count": 1
     },
     {
-      "theme_id": "investment_options",
+      "theme_id": "trading_execution",
+      "count": 1
+    },
+    {
+      "theme_id": "product_features",
+      "count": 1
+    },
+    {
+      "theme_id": "new_feature_requests",
+      "count": 1
+    },
+    {
+      "theme_id": "app_access",
+      "count": 1
+    },
+    {
+      "theme_id": "product_availability",
+      "count": 1
+    },
+    {
+      "theme_id": "platform_reliability",
+      "count": 1
+    },
+    {
+      "theme_id": "investment_performance",
+      "count": 1
+    },
+    {
+      "theme_id": "investment_outcomes",
       "count": 1
     }
   ]
