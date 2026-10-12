@@ -4,7 +4,15 @@
       "week_start_date": "2025-06-30",
       "week_end_date": "2025-07-06",
       "theme_counts": {
-        "unclassified": 1
+        "payments": 1
+      },
+      "total_reviews": 1
+    },
+    {
+      "week_start_date": "2025-09-15",
+      "week_end_date": "2025-09-21",
+      "theme_counts": {
+        "payments": 1
       },
       "total_reviews": 1
     },
@@ -20,48 +28,33 @@
       "week_start_date": "2025-11-10",
       "week_end_date": "2025-11-16",
       "theme_counts": {
-        "glitches": 1
+        "slow": 1
       },
       "total_reviews": 1
-    },
-    {
-      "week_start_date": "2026-09-07",
-      "week_end_date": "2026-09-13",
-      "theme_counts": {
-        "unclassified": 20,
-        "glitches": 6,
-        "payments": 3,
-        "usability_ux": 1,
-        "fees": 6,
-        "account_setup": 1,
-        "usability_issues": 2,
-        "product_policy": 1,
-        "customer_support": 4,
-        "slow": 1,
-        "feature_requests": 4,
-        "ui_ux_feedback": 1,
-        "ui_ux_design": 2,
-        "product_offering": 1
-      },
-      "total_reviews": 53
     },
     {
       "week_start_date": "2026-09-14",
       "week_end_date": "2026-09-20",
       "theme_counts": {
-        "unclassified": 18,
-        "educational_support": 1,
-        "app_features": 2,
-        "customer_support": 4,
-        "trading_policies_risks": 1,
-        "trading_features": 1,
-        "fees": 9,
-        "payments": 8,
+        "app_usability": 4,
+        "trading_education": 1,
+        "feature_usability": 1,
+        "customer_support": 5,
+        "feature_request": 1,
+        "industry_criticism": 1,
+        "unclassified": 11,
+        "trading_policies": 1,
+        "app_features": 1,
+        "fees": 10,
+        "payments": 5,
         "glitches": 5,
         "slow": 3,
-        "platform_fraud": 1,
+        "fraud_scam": 1,
         "feature_requests": 1,
-        "app_usability": 2
+        "fund_management": 1,
+        "fund_availability": 1,
+        "trading_features": 2,
+        "app_updates": 1
       },
       "total_reviews": 56
     },
@@ -69,12 +62,25 @@
       "week_start_date": "2026-09-21",
       "week_end_date": "2026-09-27",
       "theme_counts": {
+        "feature_suggestions": 1,
+        "unclassified": 11,
+        "usability_experience": 1,
         "customer_support": 4,
-        "unclassified": 37,
-        "payments": 11,
-        "glitches": 6,
-        "fees": 6,
-        "slow": 1
+        "payments": 4,
+        "fees": 8,
+        "overall_experience": 5,
+        "trading_features": 3,
+        "onboarding_process": 1,
+        "glitches": 11,
+        "account_access_features": 1,
+        "slow": 5,
+        "ui_usability": 1,
+        "user_interface": 1,
+        "app_updates": 1,
+        "feature_requests": 4,
+        "account_verification": 1,
+        "investment_opportunities": 1,
+        "language_support": 1
       },
       "total_reviews": 65
     },
@@ -82,66 +88,94 @@
       "week_start_date": "2026-09-28",
       "week_end_date": "2026-10-04",
       "theme_counts": {
-        "unclassified": 28,
-        "app_usability": 7,
+        "unclassified": 25,
+        "user_experience": 2,
         "slow": 1,
+        "glitches": 10,
         "customer_support": 4,
-        "payments": 9,
-        "glitches": 5,
-        "fees": 1
+        "trading_features": 1,
+        "investment_options": 1,
+        "app_access": 1,
+        "fees": 2,
+        "payments": 8
       },
       "total_reviews": 55
+    },
+    {
+      "week_start_date": "2026-10-05",
+      "week_end_date": "2026-10-11",
+      "theme_counts": {
+        "unclassified": 26,
+        "customer_support": 5,
+        "glitches": 7,
+        "payments": 11,
+        "fees": 5,
+        "slow": 2
+      },
+      "total_reviews": 56
     }
   ],
   "overall_counts": {
-    "unclassified": 105,
-    "glitches": 23,
-    "payments": 31,
-    "usability_ux": 1,
-    "fees": 22,
-    "account_setup": 1,
-    "usability_issues": 2,
-    "product_policy": 1,
-    "customer_support": 16,
-    "slow": 6,
+    "payments": 30,
+    "unclassified": 74,
+    "slow": 12,
+    "app_usability": 4,
+    "trading_education": 1,
+    "feature_usability": 1,
+    "customer_support": 18,
+    "feature_request": 1,
+    "industry_criticism": 1,
+    "trading_policies": 1,
+    "app_features": 1,
+    "fees": 25,
+    "glitches": 33,
+    "fraud_scam": 1,
     "feature_requests": 5,
-    "ui_ux_feedback": 1,
-    "ui_ux_design": 2,
-    "product_offering": 1,
-    "educational_support": 1,
-    "app_features": 2,
-    "trading_policies_risks": 1,
-    "trading_features": 1,
-    "platform_fraud": 1,
-    "app_usability": 9
+    "fund_management": 1,
+    "fund_availability": 1,
+    "trading_features": 6,
+    "app_updates": 2,
+    "feature_suggestions": 1,
+    "usability_experience": 1,
+    "overall_experience": 5,
+    "onboarding_process": 1,
+    "account_access_features": 1,
+    "ui_usability": 1,
+    "user_interface": 1,
+    "account_verification": 1,
+    "investment_opportunities": 1,
+    "language_support": 1,
+    "user_experience": 2,
+    "investment_options": 1,
+    "app_access": 1
   },
   "top_themes": [
     {
       "theme_id": "unclassified",
-      "count": 105
-    },
-    {
-      "theme_id": "payments",
-      "count": 31
+      "count": 74
     },
     {
       "theme_id": "glitches",
-      "count": 23
+      "count": 33
+    },
+    {
+      "theme_id": "payments",
+      "count": 30
     },
     {
       "theme_id": "fees",
-      "count": 22
+      "count": 25
     },
     {
       "theme_id": "customer_support",
-      "count": 16
-    },
-    {
-      "theme_id": "app_usability",
-      "count": 9
+      "count": 18
     },
     {
       "theme_id": "slow",
+      "count": 12
+    },
+    {
+      "theme_id": "trading_features",
       "count": 6
     },
     {
@@ -149,51 +183,99 @@
       "count": 5
     },
     {
-      "theme_id": "usability_issues",
+      "theme_id": "overall_experience",
+      "count": 5
+    },
+    {
+      "theme_id": "app_usability",
+      "count": 4
+    },
+    {
+      "theme_id": "app_updates",
       "count": 2
     },
     {
-      "theme_id": "ui_ux_design",
+      "theme_id": "user_experience",
       "count": 2
+    },
+    {
+      "theme_id": "trading_education",
+      "count": 1
+    },
+    {
+      "theme_id": "feature_usability",
+      "count": 1
+    },
+    {
+      "theme_id": "feature_request",
+      "count": 1
+    },
+    {
+      "theme_id": "industry_criticism",
+      "count": 1
+    },
+    {
+      "theme_id": "trading_policies",
+      "count": 1
     },
     {
       "theme_id": "app_features",
-      "count": 2
-    },
-    {
-      "theme_id": "usability_ux",
       "count": 1
     },
     {
-      "theme_id": "account_setup",
+      "theme_id": "fraud_scam",
       "count": 1
     },
     {
-      "theme_id": "product_policy",
+      "theme_id": "fund_management",
       "count": 1
     },
     {
-      "theme_id": "ui_ux_feedback",
+      "theme_id": "fund_availability",
       "count": 1
     },
     {
-      "theme_id": "product_offering",
+      "theme_id": "feature_suggestions",
       "count": 1
     },
     {
-      "theme_id": "educational_support",
+      "theme_id": "usability_experience",
       "count": 1
     },
     {
-      "theme_id": "trading_policies_risks",
+      "theme_id": "onboarding_process",
       "count": 1
     },
     {
-      "theme_id": "trading_features",
+      "theme_id": "account_access_features",
       "count": 1
     },
     {
-      "theme_id": "platform_fraud",
+      "theme_id": "ui_usability",
+      "count": 1
+    },
+    {
+      "theme_id": "user_interface",
+      "count": 1
+    },
+    {
+      "theme_id": "account_verification",
+      "count": 1
+    },
+    {
+      "theme_id": "investment_opportunities",
+      "count": 1
+    },
+    {
+      "theme_id": "language_support",
+      "count": 1
+    },
+    {
+      "theme_id": "investment_options",
+      "count": 1
+    },
+    {
+      "theme_id": "app_access",
       "count": 1
     }
   ]
