@@ -1109,5 +1109,48 @@
       "One review distinctly conveyed a very negative general experience with the application."
     ],
     "candidate_quotes": []
+  },
+  "3fdfa197de84bb99622b77958c95948d2c574c71a4a7516b70e4458960c35957": {
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "key_points": [
+      "Many users express general satisfaction, with a high number of positive reviews and ratings.",
+      "The app is frequently described as easy to use and smooth by satisfied users.",
+      "A segment of feedback includes strong negative sentiment, though often without specific details.",
+      "One user reported a decline in app quality, noting a reduction in available features, specifically mutual fund ratio visibility."
+    ],
+    "candidate_quotes": [
+      "Easy to use",
+      "ek dam bekar Aap hai",
+      "This app is becoming from good to poor grade."
+    ]
+  },
+  "e31a58948c30b5fe5e158a2cae34f600e2cc0c560e2b1c0c4ab3e24cf44b771f": {
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "key_points": [
+      "A significant portion of the feedback provided is unintelligible or consists of special characters.",
+      "One review offers positive feedback, highlighting the consolidation of features.",
+      "Despite unclear textual content, the majority of reviews are associated with low ratings (1 or 2 stars).",
+      "One review contains the phrase 'sign up' amidst otherwise garbled text."
+    ],
+    "candidate_quotes": [
+      "everything in one place"
+    ]
+  },
+  "ac5f2d624ac10b25f2ad5bf85d8aa26768bc3abcef961af3064392a8d1ec5553": {
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "key_points": [
+      "There are instances of positive feedback regarding customer support, describing it as 'full support' and 'very helpful'.",
+      "A significant number of users express dissatisfaction, citing 'pathetic' or 'very bad' support experiences.",
+      "Common issues include unresponsiveness, lack of resolution for problems (e.g., nominee issues, withdrawal difficulties), and complaint tickets being closed without a solution.",
+      "Users frequently report needing to repeatedly contact support for basic information, such as understanding their own transactions and account activity."
+    ],
+    "candidate_quotes": [
+      "pathetic customer support",
+      "no resolution provided... 4 complaint tickets closed without resolution.",
+      "repeatedly contact support just to understand my own transactions"
+    ]
   }
 }
