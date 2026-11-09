@@ -1,447 +1,111 @@
 [
   {
-    "review_id": "d0572c47-7135-4636-b615-77ec8f590135",
-    "theme_id": "trading_features",
-    "theme_name": "Trading Features",
-    "reason": "The review explicitly states a specific trading feature is missing from the platform."
-  },
-  {
-    "review_id": "fc467c0a-2912-448b-af61-ea670103cbc4",
-    "theme_id": "account_issues",
-    "theme_name": "Account Issues",
-    "reason": "The review describes issues with a frozen account, delayed verification, and inability to withdraw funds, which are all related to account management."
-  },
-  {
-    "review_id": "eb4b94b9-4c83-44c9-a808-24c229e4a12a",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "Heuristic assignment (LLM classification failed)"
-  },
-  {
-    "review_id": "c7366127-546a-4c5d-bf3c-5e21474cc95e",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about the app's stock inclusion and does not fit any specific problem-oriented theme."
-  },
-  {
-    "review_id": "2eb3adbb-91d7-45cc-b320-7447bf59ea98",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about the app's user-friendliness and does not fit any specific problem-oriented theme."
-  },
-  {
-    "review_id": "ccb93f61-af6e-49f9-a444-2a8d66d7a8c4",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about the app for trading and does not fit any specific problem-oriented theme."
-  },
-  {
-    "review_id": "a057fab4-e4e3-4e6a-aaae-97a9b35f44b2",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review explicitly complains about heavy charges per trade, which directly relates to financial transparency and deductions."
-  },
-  {
-    "review_id": "ed71047f-b753-4e1f-826a-e9e6dd95930d",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a vague negative comment without specific details, making it impossible to confidently map to a defined theme."
-  },
-  {
-    "review_id": "2115c366-cf23-437c-8029-beef24693b3e",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about the app and does not fit any specific problem-oriented theme."
-  },
-  {
-    "review_id": "0931366b-c95f-4dc4-a720-17280293f85d",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "The review describes unauthorized changes to SIPs, auto-swiping funds, and unapproved redemptions, which relate to transaction reliability and fund management."
-  },
-  {
-    "review_id": "9f4c514d-d1b9-4ec5-bae0-4968bb5b1d35",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review explicitly mentions and requests a reduction in brokerage charges."
-  },
-  {
-    "review_id": "0e1456eb-54ac-4e3a-9983-4d7e6c6351a8",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review complains about poor service, untrained team, difficulty in resolving queries, and a long-standing ticket issue."
-  },
-  {
-    "review_id": "12958d76-ce06-4e90-9378-72d0df05de59",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about the app's ease of use and helpfulness, not fitting a specific problem theme."
-  },
-  {
-    "review_id": "5b9d9570-ba0a-49ce-be4a-a04393bbfa95",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review describes a specific feature (uploading birth certificate for minor account) that is not working, indicating a functional defect."
-  },
-  {
-    "review_id": "0303d016-1f11-4d58-8411-494e5bd7c80d",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review contains unintelligible text and cannot be confidently mapped to any specific theme."
-  },
-  {
-    "review_id": "ab3caea3-4b65-4c61-87d3-27c3ba739416",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review mentions brokerage and requests a reduction, directly relating to charges."
-  },
-  {
-    "review_id": "aa941c9e-aed9-407a-ba40-5ae7e5043c3d",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review complains about profits being taken and describes the app as 'scamming' through various deductions, indicating issues with financial transparency and charges."
-  },
-  {
-    "review_id": "6d8ff56f-31d0-4e43-baaa-0b82e52c6ebe",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is too short and lacks specific details to confidently map it to any defined theme."
-  },
-  {
-    "review_id": "5081692b-f89a-4f8a-a56b-909d6a6f1921",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is positive but too general, lacking specific details to confidently map it to any defined theme."
-  },
-  {
-    "review_id": "77199c5d-1b21-4f83-beff-02d9e9aa63e1",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review states 'service is very bad' which is too vague and does not provide enough specific information to classify it under a predefined theme."
-  },
-  {
-    "review_id": "3ec38412-5718-498d-a6d0-f7c33107f11c",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review explicitly mentions 'poor customer support' and interaction with the 'technical support team'."
-  },
-  {
-    "review_id": "89a582d2-7e5a-43b3-abde-cd5b72650294",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is positive about an 'Investment Plan' but does not provide specific details related to the app's functionality, performance, or support to fit a predefined theme."
-  },
-  {
-    "review_id": "2464140e-4e20-4ddb-8328-4bf7f45eb063",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review directly complains about 'technical errors' in the app, which falls under functional defects."
-  },
-  {
-    "review_id": "a81ee5e9-66e7-4e0c-91b1-c05e6c487049",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review describes issues with orders executing automatically and stop-loss orders not working correctly, indicating functional defects and order placement errors."
-  },
-  {
-    "review_id": "7131aeb1-c2b4-46c9-90fd-8cfdbc45f307",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment without specific details that fit any defined theme."
-  },
-  {
-    "review_id": "f367b543-3068-4516-90c0-7032af9e8ee9",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "The review mentions slower updates for withdrawal and deposit processes, which falls under transaction reliability and settlement delays."
-  },
-  {
-    "review_id": "df5d36f3-7471-4b60-b393-25d64c78f185",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "The review describes a failure of an instant withdrawal option and a delay in crediting the amount, directly relating to transaction reliability."
-  },
-  {
-    "review_id": "b9e25c32-4dfc-407c-b0a2-b65050cdabc0",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review explicitly mentions a 'glitch that automatically removes all drawings from the chart', indicating a functional defect."
-  },
-  {
-    "review_id": "d624439c-8817-4ed8-b82a-838a68e7f867",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review directly complains about 'Brokerage charge is very very high', which is a concern about financial charges."
-  },
-  {
-    "review_id": "403bd226-d0ac-46ba-b0e2-46f640ca7a47",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review contains only a name and no relevant feedback that fits any defined theme."
-  },
-  {
-    "review_id": "a116158f-eba4-4346-95a3-2146fd07a19e",
-    "theme_id": "trading_features",
-    "theme_name": "Trading Features",
-    "reason": "The review discusses a specific trading functionality related to averaging the value of buying stocks, which doesn't fit existing themes."
-  },
-  {
-    "review_id": "d4a8fb59-a27c-4d5c-b19a-2032d05d823c",
-    "theme_id": "slow",
-    "theme_name": "Slow Performance",
-    "reason": "The review states that the app runs slowly and hangs after an update, indicating general performance complaints."
-  },
-  {
-    "review_id": "cee39051-4c66-4554-a6ee-8ea4c53f030c",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment and does not fit into any specific problem-oriented theme."
-  },
-  {
-    "review_id": "396ca654-94ef-49cc-803a-b35370b9d425",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review describes the app and web hanging, especially during order placement, which indicates a functional defect."
-  },
-  {
-    "review_id": "2a4a1a02-4fb8-4d4f-a726-f2e3def44acb",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review states the app is not opening and incorrectly reports internet issues, indicating a functional defect or bug."
-  },
-  {
-    "review_id": "ac2e4335-8dad-4b6a-b877-09b8db0256ce",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The review explicitly complains about high delivery charges and insane charges, which falls under fees and financial transparency."
-  },
-  {
-    "review_id": "7b204ca7-4f90-4f4a-b51a-8014b895a523",
-    "theme_id": "account_management",
-    "theme_name": "Account Management",
-    "reason": "The review describes an inability to connect a family member's demat account, which is an issue related to account management features."
-  },
-  {
-    "review_id": "328072f2-51f0-4152-a58e-a53364f3dde5",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "The review explicitly mentions a 'withdrawal problem,' which is a core concern of the payments theme."
-  },
-  {
-    "review_id": "0dab6750-1531-45a7-9e6f-4a68a867cf12",
-    "theme_id": "feature_requests",
-    "theme_name": "Feature Requests",
-    "reason": "The review is a clear request for new features like historical data, news menus, and stock lists, which falls outside existing problem themes."
-  },
-  {
-    "review_id": "e30bf152-a99f-46aa-957d-ab0c832558f6",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Default assignment (classification failed)"
-  },
-  {
-    "review_id": "3cd1347a-3e69-421a-9d24-b8763ef77506",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review describes a positive initial experience, which can relate to smooth account setup or overall user interaction quality."
-  },
-  {
-    "review_id": "7bc76186-be84-4211-ac8e-182bd55f9bf2",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review describes an automatic selection issue, which is a functional defect within the application."
-  },
-  {
-    "review_id": "f9fe0a56-5906-4794-8f84-1895175816d8",
-    "theme_id": "feature_requests",
-    "theme_name": "Feature Requests",
-    "reason": "The user is requesting new features and expressing dissatisfaction with the lack of innovation in updates."
-  },
-  {
-    "review_id": "8612238b-31ee-4597-9be4-655d2304b70c",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review reports a technical error message 'no healthy upstream', indicating a functional defect."
-  },
-  {
-    "review_id": "373fc2bd-ca09-4487-b63b-85b1a678955d",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review describes an error 'no healthy upstream' after an update, which is a functional defect."
-  },
-  {
-    "review_id": "e6afdabd-5336-47bd-985c-a5302b699cdb",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review explicitly mentions a 'glitch' where stop-loss orders are not placed, which is a critical order placement error."
-  },
-  {
-    "review_id": "4824d950-2c87-483b-9be1-0610a735225d",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review points to an issue with indicative price display and time zone differences, indicating incorrect data or functional defect."
-  },
-  {
-    "review_id": "76036e6e-3217-45a4-af50-70fbec25ebb9",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review expresses doubt about the P/L portfolio, suggesting incorrect balances or data display."
-  },
-  {
-    "review_id": "b63fac32-3de4-4de4-8e5c-1685df8f45c7",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The user is experiencing errors during buying and selling, indicating functional defects within the app."
-  },
-  {
-    "review_id": "1b92781f-1e2b-48b3-bfaf-2ee3941328be",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The user complains about high charges for F/O trading compared to competitors."
-  },
-  {
-    "review_id": "e5f1973e-7563-47fa-9e3f-bec30266b12c",
-    "theme_id": "app_updates",
-    "theme_name": "App Updates & Changes",
-    "reason": "The user is frustrated with frequent app updates that disrupt their usage and potentially alter the interface too often."
-  },
-  {
-    "review_id": "e3fec108-a0d8-4703-9e24-b66de1e60062",
-    "theme_id": "feature_requests",
-    "theme_name": "Feature Requests",
-    "reason": "The user is suggesting an enhancement to the basket order feature by adding a target profit option."
-  },
-  {
-    "review_id": "af5e8f4c-2669-4d58-ae61-7f314329ae0c",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The user reports that candlestick charts are not displaying for US stocks, indicating a functional defect."
-  },
-  {
-    "review_id": "56fc7d98-861c-439c-b496-d57dd2ae5a6c",
-    "theme_id": "app_updates",
-    "theme_name": "App Updates & Changes",
-    "reason": "The user expresses frustration with the frequent app updates that seem to offer minimal new features and only address bugs."
-  },
-  {
-    "review_id": "8ecd7212-9b85-4235-8799-befe61d4eb4b",
-    "theme_id": "feature_requests",
-    "theme_name": "Feature Requests",
-    "reason": "The user is requesting improvements to the overall quality and functionality of the charts."
-  },
-  {
-    "review_id": "a7c102f6-ba62-4257-be9a-0c1a7a782bea",
-    "theme_id": "fees",
-    "theme_name": "Fees & Charges",
-    "reason": "The user complains about the high brokerage fees."
-  },
-  {
     "review_id": "d5532d37-4fb4-4ee3-acd5-90236d5db38e",
-    "theme_id": "general_positive_feedback",
-    "theme_name": "General Positive Feedback",
-    "reason": "The review expresses general happiness and positive sentiment without detailing a specific aspect of the service."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review is a generic positive statement without specific details that fit any defined theme."
   },
   {
     "review_id": "eacd66fd-8c6d-4ed7-ac11-19df63991864",
-    "theme_id": "product_usability",
-    "theme_name": "Product Usability",
-    "reason": "The review praises the product's ease of use and reliability, indicating a positive user experience."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review provides general positive feedback on usability and reliability, which does not align with any specific predefined theme."
   },
   {
     "review_id": "8ed315d6-8a59-4914-ab1d-70c46012c2ea",
-    "theme_id": "general_positive_feedback",
-    "theme_name": "General Positive Feedback",
-    "reason": "The review expresses general positive sentiment without detailing a specific aspect of the service."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review contains generic positive feedback without specific details relevant to any predefined theme."
   },
   {
     "review_id": "52e169ad-5064-433d-ab02-0ed47252ca3d",
-    "theme_id": "general_positive_feedback",
-    "theme_name": "General Positive Feedback",
-    "reason": "The review expresses general positive sentiment about the app's development without detailing a specific feature or issue."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review offers general positive sentiment about the app's growth, which does not fit any specific predefined theme."
   },
   {
     "review_id": "6660f9e6-4850-4c74-91cd-0024455614d2",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review expresses general disinterest, which could stem from an unsatisfactory initial interaction or perceived lack of value in the service."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review expresses disinterest without providing any specific reasons or issues that could be mapped to a predefined theme."
   },
   {
     "review_id": "40ec369e-799e-4a16-bae9-b33a4aac07ab",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review explicitly mentions issues with customer support responsiveness and long waiting times."
+    "reason": "The review explicitly mentions long wait times and lack of response from the customer support team."
   },
   {
     "review_id": "e1e50cd5-aa35-42bf-b237-eeb568c61932",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review directly complains about high delivery charges, which falls under financial transparency and costs."
+    "reason": "The review directly complains about high delivery charges, which falls under the fees and charges theme."
   },
   {
     "review_id": "760890e8-44d2-4f04-be62-2867ee25f8ef",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review complains about long waiting times and lack of personnel in customer care, indicating a customer support issue."
+    "reason": "The review highlights long waiting times for customer care, indicating an issue with support responsiveness."
   },
   {
     "review_id": "1d092a09-8c8f-46be-8cb5-8a7d1282edb4",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review complains about unauthorized deductions or charges that cleared the account balance."
+    "reason": "The review complains about money being taken from the account, clearing out the balance, which aligns with concerns about deductions and financial transparency."
   },
   {
     "review_id": "93d0097b-06a3-4f78-aa38-e519ae10ba4d",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review expresses a general positive sentiment about the platform's capabilities, implying a smooth and empowering user experience."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review is too generic and lacks specific details to be confidently mapped to any defined theme."
   },
   {
     "review_id": "46b6f473-d50f-4775-9016-84da9a9cea75",
-    "theme_id": "account_onboarding",
-    "theme_name": "Account Onboarding Issues",
-    "reason": "The primary issue described is a failure in the account verification or application process due to a name mismatch."
+    "theme_id": "account_issues",
+    "theme_name": "Account Issues",
+    "reason": "The review describes an issue with name verification during application and a lack of customer support options to resolve it, indicating a problem with account setup."
   },
   {
     "review_id": "2aa0e8de-f7b3-49ba-9093-307ce75ee428",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review indicates a feature or process is incomplete, suggesting a functional defect or broken feature."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review is too vague and lacks specific details to be confidently mapped to any defined theme."
   },
   {
     "review_id": "a7da6886-2203-45d4-85fc-130f1a4135b4",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review explicitly complains about the extremely poor quality of customer support."
+    "reason": "The review explicitly states 'Extremely poor customer support,' directly aligning with the customer support theme."
   },
   {
     "review_id": "648f4c8a-fabb-4322-9cb0-34597801f443",
-    "theme_id": "feature_requests",
-    "theme_name": "Feature Requests",
-    "reason": "The review is a suggestion for a new feature rather than a complaint about an existing problem."
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The review requests a new feature, a customisable stock screener, which relates to the app's trading and investment functionalities."
   },
   {
     "review_id": "977ac19c-b8a7-4709-aef3-4c0c059210e9",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review primarily complains about excessive and hidden service charges, with a secondary complaint about customer service."
+    "reason": "The review explicitly complains about 'too much service charges' and 'hidden charges,' directly aligning with the fees and charges theme, and also mentions poor customer service."
   },
   {
     "review_id": "0199cbbe-87c5-47f0-9863-76e151846448",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review explicitly criticizes the poor quality of customer services."
+    "reason": "The review explicitly criticizes the 'customer services' as being 'worst,' aligning directly with the customer support theme."
   },
   {
     "review_id": "c3b40417-74b0-4f1c-94da-26f9197a7504",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review expresses frustration with customer support regarding account closure and general help."
+    "reason": "The review complains about the lack of help from customer support regarding account closure."
   },
   {
     "review_id": "3ea3056c-c2d3-4ab9-b106-4670f1e6b932",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review explicitly states that the company's people do not know how to treat customers, indicating poor customer service quality."
+    "theme_id": "fraud_ethics",
+    "theme_name": "Fraud & Ethics",
+    "reason": "The review explicitly accuses the company of being fraudulent and unethical."
   },
   {
     "review_id": "5c5c1fc4-3f0c-4aa3-bbb8-a8efa587fc79",
@@ -453,103 +117,103 @@
     "review_id": "3f95a4cf-624f-4604-9237-6c537a94e535",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review describes a specific feature, 'instant exit,' as not working, indicating a functional defect."
+    "reason": "The review reports a specific feature, 'instant exit,' is not functioning."
   },
   {
     "review_id": "d17aa6b5-218b-475a-93ea-0e49349c41ac",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review details a horrible customer care process, including difficulty reaching an executive, long holds, and disconnections."
+    "reason": "The review details a poor experience with customer care, including long holds and disconnections."
   },
   {
     "review_id": "87532518-277c-431e-8ddf-e8cc78bc8c4b",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review mentions technical issues and missing funds, which aligns with functional defects and incorrect balances covered by glitches."
+    "reason": "The review highlights technical issues and missing funds, which fall under functional defects and incorrect balances."
   },
   {
     "review_id": "a9c3e09b-052a-4db3-acb6-1424b538f0d9",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review describes multiple functional defects like the app hanging, orders not triggering, and buttons not working, leading to trading losses."
+    "reason": "The review describes multiple functional defects and errors during trade execution, leading to losses."
   },
   {
     "review_id": "eaafdefc-34e3-4eb3-b738-776ffc7a8668",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review contains garbled text, which suggests a potential issue with the app's input mechanism or overall stability."
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "The review text is unintelligible and contains random characters and emojis."
   },
   {
     "review_id": "16cd3630-70e0-444b-bebd-db20b0ed6a26",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review expresses a general positive sentiment about the platform, implying a good overall user experience and interaction."
+    "theme_id": "overall_experience",
+    "theme_name": "Overall Experience",
+    "reason": "The review provides general positive feedback about the platform's quality for investment."
   },
   {
     "review_id": "031d5d71-0615-46c7-934d-1310b22a5aea",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review expresses a general positive sentiment about the app, implying a good overall user experience and interaction."
+    "theme_id": "overall_experience",
+    "theme_name": "Overall Experience",
+    "reason": "The review expresses general positive sentiment about the application."
   },
   {
     "review_id": "7476b882-1b23-4902-84f4-f997bca50d88",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "The review highlights the ease of account opening, switching, and user-friendliness, which relates to the quality of customer interaction and onboarding experience."
+    "theme_id": "user_experience",
+    "theme_name": "User Experience",
+    "reason": "The user praises the application's user-friendliness and ease of use, especially for specific features like IPO applications."
   },
   {
     "review_id": "7efa0b5b-42be-48ef-9ae7-e572247dca28",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review explicitly states that the 'trigger sale or buy option never works,' indicating a broken feature or functional defect."
+    "reason": "The review mentions a broken feature where trigger sale or buy options do not work."
   },
   {
     "review_id": "4c8954b4-f5d8-4f30-b2c8-f6f5c2c06cbf",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "The review mentions 'missing amount not pay on time,' which directly relates to issues with transaction reliability and settlement delays."
+    "reason": "The review indicates an issue with missing amounts and delayed payments."
   },
   {
     "review_id": "06d3c9e8-76f3-4057-8e8e-3e0882c030f7",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review describes the app as 'very slow and hanged a lot of times,' which are clear indicators of performance issues."
+    "reason": "The user complains about the application being very slow and frequently hanging."
   },
   {
     "review_id": "285e0a21-2c48-4bc1-a3d4-66678978e5ed",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review states the app is 'always hanging while trading,' which is a direct complaint about slow performance and unresponsiveness."
+    "reason": "The review states the app is always hanging during trading, indicating performance issues."
   },
   {
     "review_id": "4d604a18-e01d-4831-acc6-7cd2acacf578",
-    "theme_id": "trust_and_reputation",
-    "theme_name": "Trust & Reputation",
-    "reason": "The review expresses concerns about the company being a 'grand fraud company' and questions its legitimacy, which falls outside the scope of existing themes."
+    "theme_id": "trust_legitimacy",
+    "theme_name": "Trust & Legitimacy",
+    "reason": "The review raises serious concerns about the company's legitimacy and potential fraud."
   },
   {
     "review_id": "11710841-687b-43f8-a619-22087c5489f7",
-    "theme_id": "security_privacy",
-    "theme_name": "Security & Privacy",
-    "reason": "The user suspects data leakage leading to third-party calls, indicating a security and privacy concern."
+    "theme_id": "security_concerns",
+    "theme_name": "Security Concerns",
+    "reason": "The user suspects data leakage due to receiving third-party calls related to their trading activity, indicating a security and privacy concern."
   },
   {
     "review_id": "5b6253a8-e449-4d60-91a8-efe57cec64f5",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment and does not fit any specific problem-oriented theme."
+    "reason": "The review is a general positive comment about the app's usefulness and trustworthiness, not fitting any specific problem-oriented theme."
   },
   {
     "review_id": "56005c23-725f-43e6-9429-064642defc24",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review is a general positive comment about feature availability and does not fit any specific problem-oriented theme."
+    "reason": "The review is a positive comment about the availability of trading and MF options, not fitting any specific problem-oriented theme."
   },
   {
     "review_id": "110b8e68-6d81-465c-b20a-7bfcd96cb736",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The user explicitly requests improvement in customer support."
+    "reason": "The user explicitly requests improvement in customer support, which directly aligns with the customer support theme."
   },
   {
     "review_id": "71f63609-9d8e-4cec-8a3a-1a6b7c07888c",
@@ -561,163 +225,163 @@
     "review_id": "88a6d668-6b86-4714-bc3d-a0a1d37b86b8",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The user complains about high brokerage and suggests reducing trading charges."
+    "reason": "The user complains about high brokerage fees and suggests reducing charges, which directly relates to the fees and charges theme."
   },
   {
     "review_id": "3c1aa27c-169e-497f-8d0c-2fdaa71c286d",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The user reports accidental order placement due to lack of confirmation and issues with Autopay requests lacking application IDs, both indicating functional defects."
+    "reason": "The user reports an issue with accidental order placement due to a lack of confirmation prompt, which is a functional defect or order placement error."
   },
   {
     "review_id": "dfe4aadc-5fb7-4bee-a9f7-409e8f0aa0a7",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The user reports a functional defect where the application forces setup completion or closes, preventing exploration."
+    "reason": "The user reports a functional defect where the app forces setup completion and closes if not done, preventing exploration."
   },
   {
     "review_id": "f6d53e4b-b931-4496-8cf8-38558c96c68c",
     "theme_id": "accessibility_ux",
     "theme_name": "Accessibility & UX",
-    "reason": "The review discusses the application's accessibility for screen readers, which is not covered by existing themes."
+    "reason": "The review highlights a need for better accessibility for screen readers, which falls outside the predefined themes."
   },
   {
     "review_id": "d656e397-f815-4889-8c9b-0e19cc56b5ac",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review explicitly mentions the application is lagging too much, indicating a performance issue."
+    "reason": "The review explicitly mentions the application is lagging too much, indicating performance issues."
   },
   {
     "review_id": "fe5a3128-571f-4b43-a6a1-757162fd1b56",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "The review reports that UPI is not working for IPOs, which is a payment transaction reliability issue."
+    "reason": "The review states that UPI is not working for IPOs, which is a payment transaction issue."
   },
   {
     "review_id": "cfcaaa2f-b3ca-4a60-9544-ce6568645da6",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review states the app does not respond, indicating a functional defect or crash."
+    "reason": "The review indicates the app is not responding, which points to a functional defect or bug."
   },
   {
     "review_id": "739b8d16-c14b-4bb2-bcff-ef366595b99e",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review directly states that the chart responds slowly, indicating a performance issue."
+    "reason": "The review mentions the chart responds slowly, indicating a performance issue."
   },
   {
     "review_id": "46fd98ac-a985-4e85-b545-69fca12e77dc",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review discusses brokerage and other charges, which falls under financial transparency and deductions."
+    "reason": "The review discusses brokerage and other charges impacting profits, which falls under fees and financial transparency."
   },
   {
     "review_id": "b94b83bb-16e9-4b69-b9a5-c6ad6b52874b",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "The review describes auto payment failures for mutual fund SIPs, which is a transaction reliability issue."
+    "reason": "The review describes auto payment failures for mutual fund SIPs, indicating a transaction reliability issue."
   },
   {
     "review_id": "4a16d02f-f219-4e8d-866b-762eed990af4",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review mentions the app takes too much time to show daily gain/loss, indicating a performance delay."
+    "reason": "The review states the app takes too much time to show daily gain/loss, which is a complaint about slow performance."
   },
   {
     "review_id": "837cecab-f476-4545-ba28-61ba31eb37de",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The review explicitly mentions poor customer service and unresponsiveness to calls."
+    "reason": "The review explicitly mentions 'customer service is the worst' and issues with call responsiveness."
   },
   {
     "review_id": "d4510fc9-121a-4ff2-970c-a3cf610dc659",
     "theme_id": "app_features",
     "theme_name": "App Features",
-    "reason": "The user is requesting a change in how data is arranged and displayed within the app, which is a feature request."
+    "reason": "The user is requesting a change in how index shares are arranged and asking for customization options, which relates to app functionality and user preferences."
   },
   {
     "review_id": "d0612420-56e3-4a72-9f0c-00d9d1a5b654",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review describes an order placement error where a target sell price was not met, indicating a functional defect or bug."
+    "reason": "The review describes a 'bug' where a sell order executed at a different price than the target, indicating a functional defect."
   },
   {
     "review_id": "9625d818-fb56-4f3c-a953-0e40e86b1b08",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The primary complaint is about high brokerage charges, which directly relates to fees and financial transparency."
+    "reason": "The primary complaint is about 'brokerage charges are very high' and deductions, directly relating to financial costs."
   },
   {
     "review_id": "2f66a5ca-e96f-4be9-9756-aa09a210d453",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review is a generic positive comment that does not fit any specific predefined problem theme."
+    "reason": "This review is a general positive comment that does not fit any specific predefined theme related to issues or feature requests."
   },
   {
     "review_id": "33c8dc03-bca7-4a02-aa0f-b18c72a907bb",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review is a positive comment about the app's ease of use and GUI, not fitting any problem-oriented theme."
+    "reason": "This review provides positive feedback about the GUI but does not fit any specific predefined theme related to issues or feature requests."
   },
   {
     "review_id": "4ee2c765-30bf-498e-a0c5-866d259792eb",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review directly complains about high brokerage, which falls under fees and charges."
+    "reason": "The review explicitly states 'high brokrage', which falls under the theme of financial charges."
   },
   {
     "review_id": "53bb4bce-7579-41af-8315-0a0b5bbaab2f",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "The review states the app stopped working with an old Android OS, indicating a functional defect or compatibility issue."
+    "theme_id": "compatibility_issues",
+    "theme_name": "Compatibility Issues",
+    "reason": "The review indicates the app stopped working with an 'old android OS', pointing to a problem with software compatibility."
   },
   {
     "review_id": "8521b389-ab20-44d2-b880-f7844a775b38",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "The review explicitly mentions the app is 'very laaging' and 'very slow,' indicating performance issues."
+    "reason": "The review explicitly mentions the app is 'very slow' and 'lagging,' directly aligning with the slow performance theme."
   },
   {
     "review_id": "2f8c2cb1-1db1-464f-a132-9d4ca87b7a50",
-    "theme_id": "general_positive_feedback",
-    "theme_name": "General Positive Feedback",
-    "reason": "The review provides general positive feedback about the app's utility for wealth building, which doesn't fit existing problem-focused themes."
+    "theme_id": "app_utility",
+    "theme_name": "App Utility",
+    "reason": "The review praises the app's effectiveness for wealth building, indicating its general utility."
   },
   {
     "review_id": "493be4f0-a557-481a-88b0-9d8d1b486c49",
-    "theme_id": "account_onboarding",
-    "theme_name": "Account Onboarding Issues",
-    "reason": "The user is unable to register or sign up, indicating an issue with the account onboarding process."
+    "theme_id": "account_creation",
+    "theme_name": "Account Creation",
+    "reason": "The user is unable to register or sign up, indicating an issue with account creation."
   },
   {
     "review_id": "24254262-cad4-4ad6-9812-d1fd4c6fbb72",
-    "theme_id": "general_positive_feedback",
-    "theme_name": "Unclassified",
-    "reason": "The review praises the app's user-friendly interface and convenience, falling under general positive feedback."
+    "theme_id": "app_usability",
+    "theme_name": "App Usability",
+    "reason": "The review highlights the app's simple, user-friendly interface and ease of making investing convenient."
   },
   {
     "review_id": "c5ee8633-8c55-40a1-886f-72b34e301b86",
-    "theme_id": "general_positive_feedback",
+    "theme_id": "app_usability",
     "theme_name": "Unclassified",
-    "reason": "The review highlights the app's user-friendly interface and suitability for various users, indicating general positive feedback."
+    "reason": "The review praises the app's user-friendly interface and suitability for both beginners and traders."
   },
   {
     "review_id": "ccc1fbba-6903-4767-9345-51a0d377cd9d",
-    "theme_id": "general_positive_feedback",
+    "theme_id": "app_usability",
     "theme_name": "Unclassified",
-    "reason": "The review expresses satisfaction with the app's ease of use and intuitive design, categorizing it as general positive feedback."
+    "reason": "The user finds the application very easy to use and intuitive, indicating good usability."
   },
   {
     "review_id": "a618db1d-2925-457c-95a9-a1cddb7d02d4",
-    "theme_id": "trust_and_reliability",
-    "theme_name": "Trust and Reliability",
-    "reason": "The review explicitly labels the app as a 'scam,' indicating a severe concern about trust and reliability."
+    "theme_id": "trust_reliability",
+    "theme_name": "Trust & Reliability",
+    "reason": "The review explicitly states the app is a 'scam,' raising concerns about trust and reliability."
   },
   {
     "review_id": "112e6d6c-9aa9-4529-aeee-0069d932f599",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The review reports multiple features, including AI, news, and fundamental analysis, are not working properly or showing errors."
+    "reason": "The review reports that the AI is not working properly, not showing results, and has errors in fundamental data, indicating functional defects."
   },
   {
     "review_id": "a94fca0f-816b-489e-aafb-cefb0b8b0312",
@@ -735,13 +399,13 @@
     "review_id": "4162f39d-1c39-438d-b10b-91b7fb4b1e22",
     "theme_id": "app_experience",
     "theme_name": "App Experience",
-    "reason": "The review offers positive feedback regarding the app's user-friendliness for new traders."
+    "reason": "The review expresses positive sentiment regarding the app's user-friendliness for new traders."
   },
   {
     "review_id": "355b08a8-4dfb-4e1c-a9c8-84e7c7a46700",
-    "theme_id": "feature_request",
-    "theme_name": "Feature Request",
-    "reason": "The review proposes a new feature or policy for underage users to start trading."
+    "theme_id": "feature_requests",
+    "theme_name": "Feature Requests",
+    "reason": "The review suggests a new feature or policy for underage users to start trading."
   },
   {
     "review_id": "a496b7aa-9eee-4322-9e89-4ec92b85b3e6",
@@ -759,97 +423,97 @@
     "review_id": "0a934b00-8c9a-4f91-8189-fa1ac170262c",
     "theme_id": "investment_outcomes",
     "theme_name": "Investment Outcomes",
-    "reason": "The review expresses strong dissatisfaction regarding perceived financial losses and the platform's profitability."
+    "reason": "The review expresses strong negative sentiment regarding potential financial losses and the platform's profitability for users."
   },
   {
     "review_id": "4be965bb-f260-436d-b98b-6a6ee4e05ad8",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "The review states that the charges are high."
+    "reason": "The review complains about high charges."
   },
   {
     "review_id": "84fec246-cdc9-4bfc-8402-3126519834dc",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review provides a general negative sentiment without specifying any particular issue or problem with the application."
+    "reason": "The review expresses general dissatisfaction without specifying a particular issue."
   },
   {
     "review_id": "c65134d2-b20f-4c29-bcc6-0cd7a753fd7b",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The user reports that the app is not opening, which indicates a functional defect or crash."
+    "reason": "The user reports a critical functional defect where the application fails to open."
   },
   {
     "review_id": "316a6b34-ec2e-4d9c-ab85-7dea670db4bd",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review comments on market performance rather than the application's functionality or service."
+    "reason": "The review comments on external market conditions rather than the application's features or performance."
   },
   {
     "review_id": "76c770ac-a256-4504-85f4-76b2bc10284d",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review is a general, non-specific comment that does not point to any particular issue or feature of the app."
+    "reason": "The review provides a general, non-specific comment about the application's utility."
   },
   {
     "review_id": "3f170c1a-1a53-4a4e-94c5-a1b86f96da01",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review provides general positive feedback that does not fit into any of the problem-oriented predefined themes."
+    "reason": "The review expresses general positive sentiment without detailing specific features or experiences."
   },
   {
     "review_id": "371e9758-78be-4118-aba0-a1bf4581f14b",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review provides general positive feedback that does not fit into any of the problem-oriented predefined themes."
+    "reason": "The review expresses general positive sentiment without detailing specific features or experiences."
   },
   {
     "review_id": "6f801168-f713-4850-9ea0-11d1a8ecf299",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review provides general positive feedback that does not fit into any of the problem-oriented predefined themes."
+    "reason": "The review expresses general positive sentiment without detailing specific features or experiences."
   },
   {
     "review_id": "af8b7abd-5e6d-4033-83f9-6f3e260bf967",
-    "theme_id": "security_fraud",
-    "theme_name": "Security & Fraud",
-    "reason": "The review describes serious allegations of money being taken and phone hacking, which falls under security and fraudulent activities."
+    "theme_id": "security_concerns",
+    "theme_name": "Security Concerns",
+    "reason": "The review alleges unauthorized access, hacking, and fraudulent money withdrawal, indicating a severe security breach."
   },
   {
     "review_id": "f7a732e0-7588-48a0-a9d6-d784716c756e",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The user reports a network issue specifically when placing orders, indicating a functional defect or bug within the app."
+    "reason": "The review describes app-specific network issues that prevent order placement, indicating a functional defect or bug."
   },
   {
     "review_id": "90484106-38e3-42b4-af63-791068145ab3",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "The review text is unintelligible and does not convey any clear feedback or issue."
+    "reason": "The review text is unintelligible and does not provide enough information to classify it into a specific theme."
   },
   {
     "review_id": "d175f832-f53f-4452-9527-ed770d54dd0a",
-    "theme_id": "trading_losses",
-    "theme_name": "Trading Losses",
-    "reason": "The user complains about significant financial losses incurred through the app, alleging fraud and unfair trading outcomes regardless of market conditions."
+    "theme_id": "trading_integrity",
+    "theme_name": "Trading Integrity",
+    "reason": "The user alleges fraud and significant financial losses due to the app's trading mechanisms, regardless of market conditions."
   },
   {
     "review_id": "538eb3a0-b858-48ea-a8b6-d3ab57c93742",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "The user reports that the app's charts are getting stuck on mobile, indicating a functional defect or bug."
+    "reason": "The review reports that the app's chart feature gets stuck, indicating a functional defect or bug."
   },
   {
     "review_id": "503d8fc0-cee9-4cb2-8c32-17f7b13e8ce7",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The user explicitly states a negative experience with customer care support."
+    "reason": "The review directly criticizes the quality of customer care support."
   },
   {
     "review_id": "499e9c4e-c35c-456e-b920-07f2334a3628",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "The user experienced failed money transfers and mandates, leading to issues with IPO application despite having sufficient funds."
+    "reason": "The review details issues with money transfer failures and uncertainty regarding funds for an IPO application."
   },
   {
     "review_id": "78c1fcef-d07f-449c-a648-bc0081ab94a2",
@@ -861,13 +525,13 @@
     "review_id": "e5a16e46-bacf-407f-b966-7c09cd347b83",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "The user reports a worst customer support experience, citing an unresolved account activation issue and lack of satisfactory response."
+    "reason": "The review details a poor customer support experience, including an unresolved account activation issue and lack of satisfactory response."
   },
   {
     "review_id": "7ac65a33-f4a4-4bf1-9d1f-cd1d7e9b93f2",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "account_management",
+    "theme_name": "Account Management",
+    "reason": "The review describes difficulties and delays with documentation requirements for a share transfer process."
   },
   {
     "review_id": "55adef6a-46be-4bfe-aef6-068bdea6fdfd",
@@ -879,433 +543,421 @@
     "review_id": "ac7d4081-93de-4b54-8e2d-1077aca9bf52",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly mentions the app is lagging, indicating a performance issue."
   },
   {
     "review_id": "e1e1d6aa-7403-4af2-8877-83865523058e",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
-  },
-  {
-    "review_id": "8b8bf807-4d85-4759-a5c2-615920683f89",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is a general positive comment and does not describe a specific issue or theme."
   },
   {
     "review_id": "b0f6e5d6-86f3-476a-ad4c-322fb747db9c",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review contains unintelligible text and does not convey a clear message or issue."
   },
   {
     "review_id": "ddaefbb7-6816-4f1d-aea9-dc8f8e3fb3c1",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is a general positive comment and does not describe a specific issue or theme."
   },
   {
     "review_id": "322c3e49-4b45-4a66-b0d9-2b2be3d1ca34",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "product_features",
+    "theme_name": "Product Features",
+    "reason": "The review suggests new functionalities and improvements for fund transfer and IPO application processes."
   },
   {
     "review_id": "94109845-c9cc-46d4-8306-913e8159bb1d",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly mentions high hidden charges, which falls under the fees and charges theme."
   },
   {
     "review_id": "1d8a4e0c-e8b7-411a-bc39-2e82f390c6a6",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review describes the app freezing and incorrect price updates, which are functional defects."
   },
   {
     "review_id": "fcd4b5ac-80bf-4e60-9e6d-36f5571378d6",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly states the app is slow in execution and experiences lag."
   },
   {
     "review_id": "d94b0d94-8555-41ba-b22b-4f6b0b724a3c",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "The review complains about hidden charges, which falls under financial transparency and deductions."
   },
   {
     "review_id": "901b3754-bc7c-4d7e-b0ba-ef8c129c1378",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is too vague and short to confidently map to any specific predefined theme."
   },
   {
     "review_id": "fbee9c95-cf46-4a00-97d4-c502c6fa5ed0",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is a general positive comment and does not relate to any specific predefined problem-oriented theme."
   },
   {
     "review_id": "bc296ba5-ca27-4395-bb50-47549ad277dd",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The review requests or comments on the display of specific trading features like stop loss or target trail."
   },
   {
     "review_id": "1824f515-e668-4fe8-870a-c33544137fa2",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "feature_availability",
+    "theme_name": "Feature Availability",
+    "reason": "The review highlights inconsistencies in feature availability, such as trading options and preferences, across different user accounts."
   },
   {
     "review_id": "9487319d-4aff-43c5-99ec-eb464690916a",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review describes delayed refunds and unblocking of funds related to IPO applications, which falls under settlement delays and transaction reliability."
   },
   {
     "review_id": "ebc51828-079b-4d2c-8420-1eaaab9ba25f",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly mentions significant brokerage and DP charges, which falls under financial transparency and deductions."
   },
   {
     "review_id": "7303ded7-e475-42d4-8413-c7b450eb3abe",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is a general positive comment and does not relate to any specific predefined issue-based theme."
   },
   {
     "review_id": "442731e8-9481-4422-bffa-568275a52b27",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "trading_issues",
+    "theme_name": "Trading Issues",
+    "reason": "The review describes an issue where the system automatically exits trades, preventing profit, which is a core trading functionality problem."
   },
   {
     "review_id": "b6c5838f-b90f-4ade-9eba-bf3cc3d9b79d",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "account_setup",
+    "theme_name": "Account Setup",
+    "reason": "The review details a problem encountered during the account signup process, specifically being unable to correct a submitted PAN card and being stuck in the onboarding flow."
   },
   {
     "review_id": "9ec4a98c-ab97-4416-a935-b00c2db430e2",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly states the app is 'hanging,' indicating a performance issue."
   },
   {
     "review_id": "86d6af3c-4adc-40e6-b561-d6fd4ffc3391",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review complains about high brokerage charges, which falls under financial transparency and deductions."
   },
   {
     "review_id": "e14c22a0-8d3d-431d-81ce-b467eda76a19",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review is a general positive comment and does not relate to any specific predefined issue-based theme."
   },
   {
     "review_id": "2743fe86-5ddb-4ed0-90a4-ba570414f550",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review mentions that the charts are running slowly, indicating a performance issue."
   },
   {
     "review_id": "daa2e301-b922-48d0-b5d3-e09e142e90a6",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review expresses a general positive sentiment about learning the app without specific thematic content."
   },
   {
     "review_id": "167e1ec8-fe10-4d8c-a07b-fcc3455526eb",
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "The review explicitly mentions the application not working properly, being unresponsive and laggy, indicating performance issues."
   },
   {
     "review_id": "3032962f-6ae2-4e9f-9f42-1e5b9779ca99",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "This is a general positive sentiment review that does not fit into any specific predefined theme."
   },
   {
     "review_id": "d9818f01-7105-497a-bbab-501faaf7f1ee",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review contains a non-specific, general comment unrelated to the app's functionality or service."
   },
   {
     "review_id": "59a1eabd-6cb8-45e1-b421-2dd38705983d",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "The review explicitly praises the app for having 'No Annual Fee, No Other charges', directly relating to financial transparency and costs."
   },
   {
     "review_id": "28f41abd-849f-40b7-86fe-6b66c8f43312",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "This is a general positive sentiment review that does not fit into any specific predefined theme."
   },
   {
     "review_id": "e92eb123-c803-4f49-984c-cbe9e33fe957",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
-  },
-  {
-    "review_id": "7e35ca34-1011-44e7-ad78-6b7fbce163c0",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
-  },
-  {
-    "review_id": "c59b0a76-3103-4c50-b8fe-43b8d7c81c74",
-    "theme_id": "customer_support",
-    "theme_name": "Customer Support",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "feature_requests",
+    "theme_name": "Feature Requests",
+    "reason": "The review requests new functionalities like a 'scalpers option' and suggests developing another app for commodity trading."
   },
   {
     "review_id": "26156ce5-b754-4afd-9d15-1aa979a31fbf",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "product_offerings",
+    "theme_name": "Product Offerings",
+    "reason": "The review expresses dissatisfaction with a specific investment product, 'ib mutual fund', indicating an issue with product quality or offering."
   },
   {
     "review_id": "27995cf1-c55f-4416-a006-e7f916bdb5b5",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The review mentions 'page not loding' and 'chart not showing,' indicating functional defects and loading issues within the app."
   },
   {
     "review_id": "dba03874-2942-4936-aa1f-67980c04a225",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The user experienced critical issues like inability to exit orders or set stop-loss, leading to significant financial loss, which are clear functional defects."
   },
   {
     "review_id": "5f8c5ff5-ec6e-428f-afac-ed452820b47a",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review text 'believable' is too vague and lacks sufficient detail to be confidently mapped to any specific theme."
   },
   {
     "review_id": "5a69ecb5-05c2-4e02-9ae5-1f4e76e4d6fb",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "ipo_application_issues",
+    "theme_name": "IPO Application Issues",
+    "reason": "The user consistently faces disappointment with IPO allotments after applying multiple times, indicating issues with the IPO application process."
   },
   {
     "review_id": "6c8c66d5-bfa6-4b74-9604-c36446a094d1",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The phrase 'unable to buy' suggests a functional defect or an error preventing the user from completing a transaction."
   },
   {
     "review_id": "b05a0361-3d23-480a-9f6b-fa42f3401831",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly states 'money send late,' which directly relates to settlement delays and transaction reliability."
   },
   {
     "review_id": "fe3df52e-1bd3-4bdd-b79a-90f551a64ef1",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "privacy_data_control",
+    "theme_name": "Privacy & Data Control",
+    "reason": "The user expresses frustration about being forced to grant permissions, share PAN card details, and send money, indicating concerns about privacy and data control."
   },
   {
     "review_id": "5c3a16cd-6612-4c4a-ab60-6f559d9225a2",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review mentions 'Charts are not opening' and 'failed to load,' which are clear indicators of broken features and functional defects."
   },
   {
     "review_id": "a7883ec2-66b0-4baa-a714-7eada76bd1eb",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The user is requesting a new feature related to trading indicators."
   },
   {
     "review_id": "87668d2c-2b86-4ecd-aaa0-072be127fc96",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "investment_performance",
+    "theme_name": "Investment Performance",
+    "reason": "The user is complaining about the app's performance in securing IPOs."
   },
   {
     "review_id": "eb9c1e84-9673-4bb9-8b04-65dd11a5f83e",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "The user is praising the helpfulness of the service provided."
   },
   {
     "review_id": "877ff233-32a6-45d3-b429-3f581fdffeeb",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The user reports a functional defect preventing quick order modification."
   },
   {
     "review_id": "c191b188-5100-4db4-b708-b8dc150fe181",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "The user complains about incompetent customer service failing to resolve a mutual funds display issue."
   },
   {
     "review_id": "439235ed-1e0a-4a45-962a-40c6488b803a",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "The user complains about high brokerage charges."
   },
   {
     "review_id": "a006ff3a-4e75-4d0f-93e3-5dcad3af00c7",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "The user reports that the app slows down when trying to buy stocks."
   },
   {
     "review_id": "1ad8c1c4-eb15-43b3-a42d-a6f707dbd0c8",
     "theme_id": "slow",
     "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The user complains about the app being slow for trading."
   },
   {
     "review_id": "ee2337ec-32db-4b07-9a5f-f4b89d99baa9",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly mentions high brokerage, which falls under financial charges."
   },
   {
     "review_id": "852d3263-443b-4bd0-a306-67530d2b25f7",
     "theme_id": "fees",
     "theme_name": "Fees & Charges",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The user complains about fake or excessive charges being applied."
   },
   {
     "review_id": "3e3eadcb-d481-49fd-8a7a-c32e7c085cfc",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review text is unintelligible and does not provide enough information to classify it into a specific theme."
+  },
+  {
+    "review_id": "b38e20d8-1c24-4b8d-9e87-c9e0df7286ee",
+    "theme_id": "account_operations",
+    "theme_name": "Account Operations",
+    "reason": "The user is unable to redeem a SIP, indicating a problem with account management or specific financial product operations."
   },
   {
     "review_id": "b52b8bc6-61fc-403b-b967-ea447c405a24",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The review describes charts not syncing and becoming worse after an update, indicating a functional defect or bug."
   },
   {
     "review_id": "489b1ba0-15e3-44c3-aa5a-ae003b1d1b41",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The user reports placed orders not showing and encountering a glitch when trying to end a bulk trade."
   },
   {
     "review_id": "05df9998-4a0b-47c7-ac83-cb8a8da2809d",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review provides general positive feedback and does not describe any specific issue or theme."
   },
   {
     "review_id": "5025acc3-5229-44b1-8306-40339a8264c8",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "Default assignment (classification failed)"
   },
   {
     "review_id": "92f8e5b3-97a3-4ec4-a617-7f33945581ff",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "user_experience",
+    "theme_name": "User Experience",
+    "reason": "This review praises the app's smooth experience, ease of use, and beginner-friendliness, indicating positive feedback on the overall user experience."
   },
   {
     "review_id": "4deb067b-82b0-4a6b-9039-6d1bda13906b",
     "theme_id": "customer_support",
     "theme_name": "Customer Support",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review explicitly states that customer support could be improved, directly aligning with the theme of support quality."
   },
   {
     "review_id": "6944c997-1b3c-4537-a1d0-285dfbd57168",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "user_experience",
+    "theme_name": "User Experience",
+    "reason": "This review provides positive feedback on the app's suitability for trading, indicating a good user experience for that function."
   },
   {
     "review_id": "e14905a2-2364-4e69-bdca-206d85d8a7ac",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "feature_functionality",
+    "theme_name": "Feature Functionality",
+    "reason": "The review points out a perceived flaw in the logic or design of the mutual fund locking system, indicating a feature functionality issue."
   },
   {
     "review_id": "5c5901fc-3394-4317-ae2e-1a015c516a5c",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "The review describes a selling order not working and an error message, which indicates a functional defect or bug in the application."
   },
   {
     "review_id": "37f7c293-4781-47b2-912c-c4d26ba09d1b",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The review complains about the failure to receive IPO UPI requests and notifications, which directly relates to issues with payment processing."
   },
   {
     "review_id": "03bc7369-9e32-4ce0-a261-e1128bb5344f",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "feature_requests",
+    "theme_name": "Feature Requests",
+    "reason": "The review suggests that more functions should be available, indicating a request for new features."
   },
   {
     "review_id": "b252300d-0d7c-42eb-bfd0-970d87bdf729",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "ui_ux_design",
+    "theme_name": "UI/UX Design",
+    "reason": "The review provides feedback on a specific UI element ('explore in chat') and its appearance, indicating a concern with the application's design."
   },
   {
     "review_id": "7c1cd182-a949-4d92-bab7-f37801025b75",
-    "theme_id": "unclassified",
-    "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The user is requesting a new trading feature for commodities."
   },
   {
     "review_id": "4a5ef645-52f4-4d0a-bfa7-64d64353599c",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The user is requesting a new feature to display live portfolio values in the notification bar."
   },
   {
     "review_id": "9250281e-3da7-4f38-921a-37c9ba93a81b",
     "theme_id": "payments",
     "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The user is inquiring about the availability of more bank options for funding US investments, which relates to payment methods."
   },
   {
     "review_id": "97c471c8-a3c5-417b-99ab-b6933bf32f6b",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review text is nonsensical and does not provide any actionable feedback."
   },
   {
     "review_id": "8231449d-a013-4463-916e-73d98cf8c9f8",
     "theme_id": "unclassified",
     "theme_name": "Unclassified",
-    "reason": "Fallback assignment (LLM classification failed)"
+    "reason": "The review text is unintelligible and cannot be categorized into a specific theme."
   },
   {
     "review_id": "df11f179-aa36-47c0-92b4-09a47b96323a",
-    "theme_id": "payments",
-    "theme_name": "Payments",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "trading_features",
+    "theme_name": "Trading Features",
+    "reason": "The user is requesting a new feature for F&O order preferences."
   },
   {
     "review_id": "81112da8-f793-40a0-9eea-1cd538fae90b",
-    "theme_id": "slow",
-    "theme_name": "Slow Performance",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "A specific UI element for date range selection is missing after an app update, indicating a functional defect."
   },
   {
     "review_id": "ddef3eea-1c55-4f1f-8ea0-90996d19ea37",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
-    "reason": "Heuristic assignment (LLM classification failed)"
+    "reason": "The app is intermittently not working and freezing during trading, which points to functional defects or bugs."
   },
   {
     "review_id": "94ed0e78-26bb-45c0-9ca8-64421ebf9ec5",
@@ -1335,6 +987,360 @@
     "review_id": "f3c80961-8536-4753-b079-b73082e9162e",
     "theme_id": "glitches",
     "theme_name": "Glitches & Bugs",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "04b6eb1a-646e-4004-99b4-1ac3f0ce3e3b",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "6bd028f8-1fec-44bb-bcdc-5886901d6843",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "1ff16c11-901e-4525-a5fe-0da7ead33725",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "beaaeeab-6820-40d3-9c80-c453f496168c",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "ce987db5-ff84-45a5-b1a6-6d9ce40e40d0",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "8c03dca6-5cab-453d-85fd-f1aca40088e1",
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "74efd359-958e-4e35-8b82-fbfe81e529da",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "c3bb1e64-25f7-45d0-b51e-e9501a1389c5",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "c347bb4b-72da-417b-88eb-90cfd7788739",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "cbdb2c4b-3d44-495e-8c7c-145c0abe772b",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "304d609f-2dda-4a07-b184-86832850fd60",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "fba86fcc-c81f-4791-a13d-ff8e28092a13",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "eda3da54-7f8a-4ce6-9d79-32a95790a102",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "7da49135-65c2-436c-ac27-369ecd151e4b",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "87b39b14-fa71-4ac4-995c-77f917bef69d",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "1da75d88-869a-45ef-be8b-4cce2231aba5",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "3742aaef-fe62-4d91-9a74-eac80b50c378",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "b15d5a70-3153-4f89-a381-38836f98a508",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "0a6f1460-deef-4396-8114-cf66ae60aa26",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "16a36a54-5b73-4d02-aaa1-84d4de20d4e9",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "87e7d487-ed60-4978-a170-f7173105b9f3",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "89478126-0225-4752-96b9-b4929b07aca8",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "0c06b6ce-d909-4865-bf10-7d73974efddf",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "2a6bfd0a-b3b4-4491-8b51-6dee74b96583",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "80ff4cc4-0312-456d-afb0-7389439a7354",
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "c6d3f1d5-52dd-4f80-881a-dc7852fddb5a",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "15abc5ac-dc6a-48f3-9d09-e060477071a7",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "16ca8d32-3a24-413c-8344-6e4d6871b438",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "1e8349f6-cb6f-4112-92a7-6b995ed793fa",
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "9df59fad-1e67-45de-9a0f-7308347193fe",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "9d86f4db-be72-48aa-9aa9-77c03f935346",
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "cb30ef00-58db-4633-93f3-3236ee4679d0",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "ac713d18-7503-40d5-9087-2ccc8bb602f6",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "3834fa35-4e2f-4a98-8dec-dff9b59a40bd",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "8cd919a9-1630-40a0-b0cd-56583910191b",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "f92d59fa-cb6e-45d3-99bf-bb0f302cc16a",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "0d9550ee-b06d-4247-945a-da6fa4fcb606",
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "b65ca8d1-cfde-40fd-9860-22f12272e2a1",
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "2e78a161-c140-41ff-a6f8-2cdfd2fcfb03",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "06ff1950-427d-4b7d-95e5-fac7a77d4fb5",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "9619b7b4-16a0-4424-8c67-30a8b290238f",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "374a0230-145a-48e5-8e4b-f0188611c4e1",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "b4cbd7fb-bbbf-4a94-b99b-2f1fdf643777",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "11c89d46-3495-429f-85f4-b3422bae0508",
+    "theme_id": "slow",
+    "theme_name": "Slow Performance",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "cc58215a-063c-4012-8272-c610fd22c715",
+    "theme_id": "glitches",
+    "theme_name": "Glitches & Bugs",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "367ab5b9-0769-4bf3-a1c9-54c42b5bb552",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "8b24bb73-42d7-4c7c-81c7-9299c7ce5d08",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "9843cc8d-2d95-482c-99f3-b192216770ce",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "24298d24-96b7-40af-b74d-442e8c0e510d",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "8b7bd94a-dc3c-4b56-b7b9-05570da97824",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "105286bf-9e0c-47ac-aac3-97a672086871",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "d08bbaec-62ed-42db-859e-a4184e69e986",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "2673a6f3-91fa-400c-a342-d938887fa277",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "2e1074f3-4a83-4c86-9534-c6958d0c6d41",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "8eb54068-cf1d-4a6c-9073-5a829a84afd1",
+    "theme_id": "fees",
+    "theme_name": "Fees & Charges",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "a410c0bc-682f-4ed2-b9f8-d3a5efc5cfcd",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "ce989785-4106-468a-be35-ca7658b4e3f4",
+    "theme_id": "unclassified",
+    "theme_name": "Unclassified",
+    "reason": "Fallback assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "2eda0770-5709-414a-a0d9-329ea35c0679",
+    "theme_id": "payments",
+    "theme_name": "Payments",
+    "reason": "Heuristic assignment (LLM classification failed)"
+  },
+  {
+    "review_id": "3ecd4ba2-03b9-4886-914f-f755d102ed83",
+    "theme_id": "customer_support",
+    "theme_name": "Customer Support",
     "reason": "Heuristic assignment (LLM classification failed)"
   }
 ]

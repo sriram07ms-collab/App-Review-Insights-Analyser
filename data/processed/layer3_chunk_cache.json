@@ -1109,20 +1109,5 @@
       "One review distinctly conveyed a very negative general experience with the application."
     ],
     "candidate_quotes": []
-  },
-  "391f9573fd012b2cf6dfa916531bf6ded0e1385012b4655c765073bd2855da2e": {
-    "theme_id": "glitches",
-    "theme_name": "Glitches & Bugs",
-    "key_points": [
-      "Frequent technical errors are reported, affecting functionalities such as document uploads, order placement, and stop-loss execution.",
-      "The application and web platform are prone to freezing or hanging, particularly during critical actions like placing orders, and some users cannot open the app after updates.",
-      "Users encounter specific display issues, including chart drawings disappearing, incorrect indicative prices, and missing candlestick charts for certain stocks.",
-      "Several reports mention generic 'no healthy upstream' errors and automatic, incorrect selections within the app."
-    ],
-    "candidate_quotes": [
-      "Most of the time, the stop-loss doesn’t get placed, and because of this, I end up taking losses.",
-      "This app is terrible; no other app has as many technical errors as this one.",
-      "Bad experience, both app and web hang frequently, especially when placing orders."
-    ]
   }
 }
